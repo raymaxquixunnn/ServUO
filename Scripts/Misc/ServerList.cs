@@ -49,7 +49,7 @@ namespace Server.Misc
 
 		private static IPAddress _PublicAddress;
 
-		private static readonly Regex _AddressPattern = new Regex(@"(255.255.255.255");
+		private static readonly Regex _AddressPattern = new Regex(@"(192.168.0.10)");
 
 		public static void Initialize()
 		{
