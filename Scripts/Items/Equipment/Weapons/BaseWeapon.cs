@@ -1539,7 +1539,7 @@ namespace Server.Items
 					ticks = 5;
 				}
 
-				delayInSeconds = ticks * 0.25;
+				delayInSeconds = ticks * 0.05;
 			}
 			else if (Core.AOS)
 			{
