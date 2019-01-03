@@ -15,6 +15,13 @@ namespace Server.Items
         {
         }
 
+        public override int ExplosionRange
+        {
+            get
+            {
+                return 2;
+            }
+        }
         public override int MinDamage
         {
             get

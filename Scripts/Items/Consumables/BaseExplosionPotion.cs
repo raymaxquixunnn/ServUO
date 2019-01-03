@@ -14,7 +14,7 @@ namespace Server.Items
 		private static readonly bool LeveledExplosion = false; // Should explosion potions explode other nearby potions?
 		private static readonly bool InstantExplosion = false; // Should explosion potions explode on impact?
 		private static readonly bool RelativeLocation = false; // Is the explosion target location relative for mobiles?
-		private const int ExplosionRange = 2; // How long is the blast radius?
+		public abstract int ExplosionRange { get; } // How long is the blast radius?
 		private Timer m_Timer;
 		private ArrayList m_Users;
 

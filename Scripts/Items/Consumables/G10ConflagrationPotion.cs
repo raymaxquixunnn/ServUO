@@ -2,40 +2,40 @@ using System;
 
 namespace Server.Items
 {
-    public class ExplosionPotion : BaseExplosionPotion
+    public class G10ConflagrationPotion : BaseConflagrationPotion
     {
         [Constructable]
-        public ExplosionPotion()
-            : base(PotionEffect.Explosion)
+        public G10ConflagrationPotion()
+            : base(PotionEffect.ConflagrationGreater)
         {
         }
 
-        public ExplosionPotion(Serial serial)
+        public G10ConflagrationPotion(Serial serial)
             : base(serial)
         {
         }
 
-        public override int ExplosionRange
-        {
-            get
-            {
-                return 2;
-            }
-        }
         public override int MinDamage
         {
             get
             {
-                return 10;
+                return 40;
             }
         }
         public override int MaxDamage
         {
             get
             {
-                return 20;
+                return 80;
             }
         }
+        public override int LabelNumber
+        {
+            get
+            {
+                return 1072098;
+            }
+        }// a Greater Conflagration potion
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

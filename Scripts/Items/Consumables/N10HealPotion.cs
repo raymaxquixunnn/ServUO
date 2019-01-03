@@ -2,38 +2,38 @@ using System;
 
 namespace Server.Items
 {
-    public class ExplosionPotion : BaseExplosionPotion
+    public class N10HealPotion : BaseHealPotion
     {
         [Constructable]
-        public ExplosionPotion()
-            : base(PotionEffect.Explosion)
+        public N10HealPotion()
+            : base(PotionEffect.Heal)
         {
         }
 
-        public ExplosionPotion(Serial serial)
+        public N10HealPotion(Serial serial)
             : base(serial)
         {
         }
 
-        public override int ExplosionRange
+        public override int MinHeal
         {
             get
             {
-                return 2;
+                return (Core.AOS ? 130 : 60);
             }
         }
-        public override int MinDamage
+        public override int MaxHeal
         {
             get
             {
-                return 10;
+                return (Core.AOS ? 160 : 200);
             }
         }
-        public override int MaxDamage
+        public override double Delay
         {
             get
             {
-                return 20;
+                return (Core.AOS ? 80.0 : 100.0);
             }
         }
         public override void Serialize(GenericWriter writer)

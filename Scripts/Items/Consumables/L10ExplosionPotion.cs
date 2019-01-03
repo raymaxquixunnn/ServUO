@@ -2,15 +2,15 @@ using System;
 
 namespace Server.Items
 {
-    public class ExplosionPotion : BaseExplosionPotion
+    public class L10ExplosionPotion : BaseExplosionPotion
     {
         [Constructable]
-        public ExplosionPotion()
-            : base(PotionEffect.Explosion)
+        public L10ExplosionPotion()
+            : base(PotionEffect.ExplosionLesser)
         {
         }
 
-        public ExplosionPotion(Serial serial)
+        public L10ExplosionPotion(Serial serial)
             : base(serial)
         {
         }
@@ -19,21 +19,21 @@ namespace Server.Items
         {
             get
             {
-                return 2;
+                return 6;
             }
         }
         public override int MinDamage
         {
             get
             {
-                return 10;
+                return 50;
             }
         }
         public override int MaxDamage
         {
             get
             {
-                return 20;
+                return 100;
             }
         }
         public override void Serialize(GenericWriter writer)

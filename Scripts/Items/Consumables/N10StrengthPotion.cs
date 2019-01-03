@@ -2,38 +2,31 @@ using System;
 
 namespace Server.Items
 {
-    public class ExplosionPotion : BaseExplosionPotion
+    public class N10StrengthPotion : BaseStrengthPotion
     {
         [Constructable]
-        public ExplosionPotion()
-            : base(PotionEffect.Explosion)
+        public N10StrengthPotion()
+            : base(PotionEffect.Strength)
         {
         }
 
-        public ExplosionPotion(Serial serial)
+        public N10StrengthPotion(Serial serial)
             : base(serial)
         {
         }
 
-        public override int ExplosionRange
-        {
-            get
-            {
-                return 2;
-            }
-        }
-        public override int MinDamage
+        public override int StrOffset
         {
             get
             {
                 return 10;
             }
         }
-        public override int MaxDamage
+        public override TimeSpan Duration
         {
             get
             {
-                return 20;
+                return TimeSpan.FromMinutes(20.0);
             }
         }
         public override void Serialize(GenericWriter writer)
