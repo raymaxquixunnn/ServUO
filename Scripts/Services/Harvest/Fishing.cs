@@ -74,7 +74,7 @@ namespace Server.Engines.Harvest
             fish.EffectSounds = new int[0];
             fish.EffectCounts = new int[] { 1 };
             fish.EffectDelay = TimeSpan.Zero;
-            fish.EffectSoundDelay = TimeSpan.FromSeconds(8.0);
+            fish.EffectSoundDelay = TimeSpan.FromSeconds(1.0);
 
             fish.NoResourcesMessage = 503172; // The fish don't seem to be biting here.
             fish.FailMessage = 503171; // You fish a while, but fail to catch anything.

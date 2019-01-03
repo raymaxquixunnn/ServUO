@@ -78,8 +78,8 @@ namespace Server.Engines.Harvest
             oreAndStone.EffectActions = new int[] { Core.SA ? 3 : 11 };
             oreAndStone.EffectSounds = new int[] { 0x125, 0x126 };
             oreAndStone.EffectCounts = new int[] { 1 };
-            oreAndStone.EffectDelay = TimeSpan.FromSeconds(1.6);
-            oreAndStone.EffectSoundDelay = TimeSpan.FromSeconds(0.9);
+            oreAndStone.EffectDelay = TimeSpan.FromSeconds(0.0);
+            oreAndStone.EffectSoundDelay = TimeSpan.FromSeconds(0.1);
 
             oreAndStone.NoResourcesMessage = 503040; // There is no metal here to mine.
             oreAndStone.DoubleHarvestMessage = 503042; // Someone has gotten to the metal before you.
@@ -172,8 +172,8 @@ namespace Server.Engines.Harvest
             sand.EffectActions = new int[] { Core.SA ? 3 : 11 };
             sand.EffectSounds = new int[] { 0x125, 0x126 };
             sand.EffectCounts = new int[] { 6 };
-            sand.EffectDelay = TimeSpan.FromSeconds(1.6);
-            sand.EffectSoundDelay = TimeSpan.FromSeconds(0.9);
+            sand.EffectDelay = TimeSpan.FromSeconds(0.0);
+            sand.EffectSoundDelay = TimeSpan.FromSeconds(0.1);
 
             sand.NoResourcesMessage = 1044629; // There is no sand here to mine.
             sand.DoubleHarvestMessage = 1044629; // There is no sand here to mine.
