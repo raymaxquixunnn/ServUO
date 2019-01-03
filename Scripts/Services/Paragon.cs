@@ -37,7 +37,7 @@ namespace Server.Mobiles
         public static double SpeedBuff = 2.00;
         public static double FameBuff = 2.00;
         public static double KarmaBuff = 2.00;
-        public static int DamageBuff = 5.00;
+        public static int DamageBuff = 5;
         public static void Convert(BaseCreature bc)
         {
             if (bc.IsParagon ||
