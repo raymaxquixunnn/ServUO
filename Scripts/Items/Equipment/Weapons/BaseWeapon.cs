@@ -1558,9 +1558,9 @@ namespace Server.Items
 
 				// Maximum swing rate capped at one swing per second
 				// OSI dev said that it has and is supposed to be 1.25
-				if (delayInSeconds < 1.25)
+				if (delayInSeconds < 0.25)
 				{
-					delayInSeconds = 1.25;
+					delayInSeconds = 0.25;
 				}
 			}
 			else

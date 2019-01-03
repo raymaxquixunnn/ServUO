@@ -54,12 +54,12 @@ namespace Server.Engines.Harvest
             oreAndStone.BankHeight = 8;
 
             // Every bank holds from 10 to 34 ore
-            oreAndStone.MinTotal = 10;
-            oreAndStone.MaxTotal = 34;
+            oreAndStone.MinTotal = 10000;
+            oreAndStone.MaxTotal = 34000;
 
             // A resource bank will respawn its content every 10 to 20 minutes
-            oreAndStone.MinRespawn = TimeSpan.FromMinutes(10.0);
-            oreAndStone.MaxRespawn = TimeSpan.FromMinutes(20.0);
+            oreAndStone.MinRespawn = TimeSpan.FromMinutes(0.0);
+            oreAndStone.MaxRespawn = TimeSpan.FromMinutes(0.0);
 
             // Skill checking is done on the Mining skill
             oreAndStone.Skill = SkillName.Mining;
@@ -71,8 +71,8 @@ namespace Server.Engines.Harvest
             oreAndStone.MaxRange = 2;
 
             // One ore per harvest action
-            oreAndStone.ConsumedPerHarvest = 1;
-            oreAndStone.ConsumedPerFeluccaHarvest = 2;
+            oreAndStone.ConsumedPerHarvest = 1000;
+            oreAndStone.ConsumedPerFeluccaHarvest = 2000;
 
             // The digging effect
             oreAndStone.EffectActions = new int[] { Core.SA ? 3 : 11 };
@@ -135,7 +135,7 @@ namespace Server.Engines.Harvest
             }
 
             oreAndStone.RaceBonus = Core.ML;
-            oreAndStone.RandomizeVeins = Core.ML;
+            oreAndStone.RandomizeVeins = false;
 
             this.Definitions.Add(oreAndStone);
             #endregion
@@ -148,12 +148,12 @@ namespace Server.Engines.Harvest
             sand.BankHeight = 8;
 
             // Every bank holds from 6 to 12 sand
-            sand.MinTotal = 6;
-            sand.MaxTotal = 13;
+            sand.MinTotal = 6000;
+            sand.MaxTotal = 12000;
 
             // A resource bank will respawn its content every 10 to 20 minutes
-            sand.MinRespawn = TimeSpan.FromMinutes(10.0);
-            sand.MaxRespawn = TimeSpan.FromMinutes(20.0);
+            sand.MinRespawn = TimeSpan.FromMinutes(0.0);
+            sand.MaxRespawn = TimeSpan.FromMinutes(0.0);
 
             // Skill checking is done on the Mining skill
             sand.Skill = SkillName.Mining;
@@ -165,8 +165,8 @@ namespace Server.Engines.Harvest
             sand.MaxRange = 2;
 
             // One sand per harvest action
-            sand.ConsumedPerHarvest = 1;
-            sand.ConsumedPerFeluccaHarvest = 2;
+            sand.ConsumedPerHarvest = 1000;
+            sand.ConsumedPerFeluccaHarvest = 2000;
 
             // The digging effect
             sand.EffectActions = new int[] { Core.SA ? 3 : 11 };

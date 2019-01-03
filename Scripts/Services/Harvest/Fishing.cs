@@ -47,12 +47,12 @@ namespace Server.Engines.Harvest
             fish.BankHeight = 8;
 
             // Every bank holds from 5 to 15 fish
-            fish.MinTotal = 5;
-            fish.MaxTotal = 15;
+            fish.MinTotal = 5000;
+            fish.MaxTotal = 15000;
 
             // A resource bank will respawn its content every 10 to 20 minutes
-            fish.MinRespawn = TimeSpan.FromMinutes(10.0);
-            fish.MaxRespawn = TimeSpan.FromMinutes(20.0);
+            fish.MinRespawn = TimeSpan.FromMinutes(0.0);
+            fish.MaxRespawn = TimeSpan.FromMinutes(0.0);
 
             // Skill checking is done on the Fishing skill
             fish.Skill = SkillName.Fishing;
@@ -66,8 +66,8 @@ namespace Server.Engines.Harvest
             fish.MaxRange = 4;
 
             // One fish per harvest action
-            fish.ConsumedPerHarvest = 1;
-            fish.ConsumedPerFeluccaHarvest = 1;
+            fish.ConsumedPerHarvest = 1000;
+            fish.ConsumedPerFeluccaHarvest = 1000;
 
             // The fishing
             fish.EffectActions = new int[] { Core.SA ? 6 : 12 };
