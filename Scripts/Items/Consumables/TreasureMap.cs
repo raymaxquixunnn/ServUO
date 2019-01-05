@@ -1066,18 +1066,46 @@ namespace Server.Items
             switch (m_Level)
             {
                 case 1:
-                    return Core.AOS ? 27.0 : -3.0;
+                    return 30;
                 case 2:
-                    return Core.AOS ? 71.0 : 41.0;
+                    return 35;
                 case 3:
-                    return Core.AOS ? 81.0 : 51.0;
+                    return 40;
                 case 4:
-                    return Core.AOS ? 91.0 : 61.0;
+                    return 45;
                 case 5:
+                    return 50;
                 case 6:
-                    return Core.AOS ? 100.0 : 70.0;
+                    return 55;
                 case 7:
-                    return 100.0;
+                    return 60;
+                case 8:
+                    return 65;
+                case 9:
+                    return 70;
+                case 10:
+                    return 75;
+                case 11:
+                    return 80;
+                case 12:
+                    return 85;
+                case 13:
+                    return 90;
+                case 14:
+                    return 95;
+                case 15:
+                    return 100;
+                case 16:
+                    return 110;
+                case 17:
+                    return 120;
+                case 18:
+                    return 130;
+                case 19:
+                    return 140;
+                case 20:
+                    return 150;
+
 
                 default:
                     return 0.0;

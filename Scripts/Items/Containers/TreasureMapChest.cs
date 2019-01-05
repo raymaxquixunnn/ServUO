@@ -213,39 +213,78 @@ namespace Server.Items
             else
             {
                 cont.TrapType = TrapType.ExplosionTrap;
-                cont.TrapPower = level * 25;
+                cont.TrapPower = level * 50;
                 cont.TrapLevel = level;
 
                 switch (level)
                 {
                     case 1:
-                        cont.RequiredSkill = 5;
+                        cont.RequiredSkill = 50;
                         break;
                     case 2:
-                        cont.RequiredSkill = 45;
+                        cont.RequiredSkill = 100;
                         break;
                     case 3:
-                        cont.RequiredSkill = 65;
+                        cont.RequiredSkill = 150;
                         break;
                     case 4:
-                        cont.RequiredSkill = 75;
+                        cont.RequiredSkill = 200;
                         break;
                     case 5:
-                        cont.RequiredSkill = 75;
+                        cont.RequiredSkill = 250;
                         break;
                     case 6:
-                        cont.RequiredSkill = 80;
+                        cont.RequiredSkill = 300;
                         break;
-					case 7:
-                        cont.RequiredSkill = 80;
+                    case 7:
+                        cont.RequiredSkill = 350;
+                        break;
+                    case 8:
+                        cont.RequiredSkill = 400;
+                        break;
+                    case 9:
+                        cont.RequiredSkill = 450;
+                        break;
+                    case 10:
+                        cont.RequiredSkill = 500;
+                        break;
+                    case 11:
+                        cont.RequiredSkill = 550;
+                        break;
+                    case 12:
+                        cont.RequiredSkill = 600;
+                        break;
+                    case 13:
+                        cont.RequiredSkill = 650;
+                        break;
+                    case 14:
+                        cont.RequiredSkill = 700;
+                        break;
+                    case 15:
+                        cont.RequiredSkill = 750;
+                        break;
+                    case 16:
+                        cont.RequiredSkill = 800;
+                        break;
+                    case 17:
+                        cont.RequiredSkill = 850;
+                        break;
+                    case 18:
+                        cont.RequiredSkill = 900;
+                        break;
+                    case 19:
+                        cont.RequiredSkill = 950;
+                        break;
+                    case20:
+                        cont.RequiredSkill = 1000;
                         break;
                 }
 
-                cont.LockLevel = cont.RequiredSkill - 10;
-                cont.MaxLockLevel = cont.RequiredSkill + 40;
+                cont.LockLevel = cont.RequiredSkill;
+                cont.MaxLockLevel = cont.RequiredSkill;
 
                 #region Gold
-                cont.DropItem(new Gold(isSos ? level * 10000 : level * 5000));
+                cont.DropItem(new Gold(isSos ? level * 3000 : level * 3000));
                 #endregion
 
                 #region Scrolls
