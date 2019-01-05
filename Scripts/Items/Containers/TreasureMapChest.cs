@@ -218,65 +218,65 @@ namespace Server.Items
 
                 switch (level)
                 {
-                    case 1:
-                        cont.RequiredSkill = 50;
+                    case 1
+                        cont.RequiredSkill = 30;
                         break;
                     case 2:
-                        cont.RequiredSkill = 100;
+                        cont.RequiredSkill = 35;
                         break;
                     case 3:
-                        cont.RequiredSkill = 150;
+                        cont.RequiredSkill = 40;
                         break;
                     case 4:
-                        cont.RequiredSkill = 200;
+                        cont.RequiredSkill = 45;
                         break;
                     case 5:
-                        cont.RequiredSkill = 250;
+                        cont.RequiredSkill = 50;
                         break;
                     case 6:
-                        cont.RequiredSkill = 300;
+                        cont.RequiredSkill = 55;
                         break;
                     case 7:
-                        cont.RequiredSkill = 350;
+                        cont.RequiredSkill = 60;
                         break;
                     case 8:
-                        cont.RequiredSkill = 400;
+                        cont.RequiredSkill = 65;
                         break;
                     case 9:
-                        cont.RequiredSkill = 450;
+                        cont.RequiredSkill = 70;
                         break;
                     case 10:
-                        cont.RequiredSkill = 500;
+                        cont.RequiredSkill = 75;
                         break;
                     case 11:
-                        cont.RequiredSkill = 550;
+                        cont.RequiredSkill = 80;
                         break;
                     case 12:
-                        cont.RequiredSkill = 600;
+                        cont.RequiredSkill = 85;
                         break;
                     case 13:
-                        cont.RequiredSkill = 650;
+                        cont.RequiredSkill = 90;
                         break;
                     case 14:
-                        cont.RequiredSkill = 700;
+                        cont.RequiredSkill = 95;
                         break;
                     case 15:
-                        cont.RequiredSkill = 750;
+                        cont.RequiredSkill = 100;
                         break;
                     case 16:
-                        cont.RequiredSkill = 800;
+                        cont.RequiredSkill = 110;
                         break;
                     case 17:
-                        cont.RequiredSkill = 850;
+                        cont.RequiredSkill = 120;
                         break;
                     case 18:
-                        cont.RequiredSkill = 900;
+                        cont.RequiredSkill = 130;
                         break;
                     case 19:
-                        cont.RequiredSkill = 950;
+                        cont.RequiredSkill = 140;
                         break;
                     case20:
-                        cont.RequiredSkill = 1000;
+                        cont.RequiredSkill = 150;
                         break;
                 }
 
