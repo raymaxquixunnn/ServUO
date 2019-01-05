@@ -32,7 +32,7 @@ namespace Server.Engines.BulkOrders
                     break;
             }
 
-            int amountMax = Utility.RandomList(10, 15, 20, 20);
+            int amountMax = 20;
 
             this.Hue = 2505;
             this.AmountMax = amountMax;

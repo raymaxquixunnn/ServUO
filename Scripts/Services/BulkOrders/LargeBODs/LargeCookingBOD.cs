@@ -42,7 +42,7 @@ namespace Server.Engines.BulkOrders
             }
 
             this.Hue = 1169;
-            this.AmountMax = Utility.RandomList(10, 15, 20, 20);
+            this.AmountMax = 20;
             this.Entries = entries;
             this.RequireExceptional = !nonexceptional && 0.825 > Utility.RandomDouble();
         }

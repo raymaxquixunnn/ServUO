@@ -29,7 +29,7 @@ namespace Server.Engines.BulkOrders
             if (entries.Length > 0)
             {
                 int hue = 0x483;
-                int amountMax = Utility.RandomList(10, 15, 20);
+                int amountMax = 20;
 
                 BulkMaterialType material;
 
@@ -95,14 +95,7 @@ namespace Server.Engines.BulkOrders
 
             if (entries.Length > 0)
             {
-                int amountMax;
-
-                if (theirSkill >= 70.1)
-                    amountMax = Utility.RandomList(10, 15, 20, 20);
-                else if (theirSkill >= 50.1)
-                    amountMax = Utility.RandomList(10, 15, 15, 20);
-                else
-                    amountMax = Utility.RandomList(10, 10, 15, 20);
+                int amountMax = 20;
 
                 BulkMaterialType material = BulkMaterialType.None;
 
