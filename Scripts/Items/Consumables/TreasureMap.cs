@@ -699,7 +699,7 @@ namespace Server.Items
             {
                 bool spawned = false;
 
-                for (int i = 0; !spawned && i < 10; ++i)
+                for (int i = 0; !spawned && i < 30; ++i)
                 {
                     int x = p.X - 3 + Utility.Random(21);
                     int y = p.Y - 3 + Utility.Random(21);
