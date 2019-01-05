@@ -59,7 +59,29 @@ namespace Server.Items
             }
             set
             {
-                m_Level = Math.Max(1, Math.Min(value, 4));
+                double levelchance = Utility.RandomDouble();
+
+				     if (levelchance >= 0.475713)  m_Level =01;
+				else if (levelchance >= 0.262144)  m_Level =02;
+				else if (levelchance >= 0.131072)  m_Level =03;
+				else if (levelchance >= 0.065536)  m_Level =04;
+				else if (levelchance >= 0.032768)  m_Level =05;
+				else if (levelchance >= 0.016384)  m_Level =06;
+				else if (levelchance >= 0.008192)  m_Level =07;
+				else if (levelchance >= 0.004096)  m_Level =08;
+				else if (levelchance >= 0.002048)  m_Level =09;
+				else if (levelchance >= 0.001024)  m_Level =10;
+				else if (levelchance >= 0.000512)  m_Level =11;
+				else if (levelchance >= 0.000256)  m_Level =12;
+				else if (levelchance >= 0.000128)  m_Level =13;
+				else if (levelchance >= 0.000064)  m_Level =14;
+				else if (levelchance >= 0.000032)  m_Level =15;
+				else if (levelchance >= 0.000016)  m_Level =16;
+				else if (levelchance >= 0.000008)  m_Level =17;
+				else if (levelchance >= 0.000004)  m_Level =18;
+				else if (levelchance >= 0.000002)  m_Level =19;
+				else                               m_Level =20;                
+                
             }
         }
         public static int GetRandomLevel()
@@ -67,7 +89,7 @@ namespace Server.Items
             if (Core.AOS && 10 == Utility.RandomMinMax(1,25))
                 return 4; // ancient
 
-            return Utility.RandomMinMax(1, 3);
+            return Utility.RandomMinMax(1, 20);
         }
 
         public override void Serialize(GenericWriter writer)
