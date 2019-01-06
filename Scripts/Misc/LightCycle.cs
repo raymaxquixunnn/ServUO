@@ -140,6 +140,27 @@ namespace Server
             }
         }
 
+        public class DungeonNightSightTimer : Timer
+        {
+            private readonly Mobile m_Owner;
+
+            public NightSightTimer(Mobile owner)
+                : base(TimeSpan.FromMinutes(100))
+            {
+				m_Owner = owner;
+
+				Priority = TimerPriority.OneMinute;
+            }
+
+            protected override void OnTick()
+            {
+				m_Owner.EndAction(typeof(LightCycle));
+				m_Owner.LightLevel = 0;
+
+				BuffInfo.RemoveBuff(m_Owner, BuffIcon.NightSight);
+            }
+        }
+
         private class LightCycleTimer : Timer
         {
 			public LightCycleTimer(double interval)

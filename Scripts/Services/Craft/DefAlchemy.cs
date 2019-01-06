@@ -178,6 +178,9 @@ namespace Server.Engines.Craft
             index = AddCraft(typeof(NightSightPotion), 1116349, 1044542, -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
+            index = AddCraft(typeof(DungeonNightSightPotion), 1116349, 1044542, 10.0, 60.0, typeof(NightSightPotion), 1044360, 10, 1044368);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
             index = AddCraft(typeof(StrengthPotion), 1116349, 1044546, 25.0, 75.0, typeof(MandrakeRoot), 1044357, 2, 1044365);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
