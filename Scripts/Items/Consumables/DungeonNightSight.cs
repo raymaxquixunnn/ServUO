@@ -34,7 +34,7 @@ namespace Server.Items
             if (from.BeginAction(typeof(LightCycle)))
             {
                 new LightCycle.DungeonNightSightTimer(from).Start();
-                from.LightLevel = DayLevel;
+                from.LightLevel = LightCycle.DayLevel;
 
                 from.FixedParticles(0x376A, 9, 32, 5007, EffectLayer.Waist);
                 from.PlaySound(0x1E3);

@@ -218,7 +218,7 @@ namespace Server.Items
 
                 switch (level)
                 {
-                    case 1
+                    case 1:
                         cont.RequiredSkill = 30;
                         break;
                     case 2:

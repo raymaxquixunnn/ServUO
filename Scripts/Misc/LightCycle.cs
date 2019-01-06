@@ -144,7 +144,7 @@ namespace Server
         {
             private readonly Mobile m_Owner;
 
-            public NightSightTimer(Mobile owner)
+            public DungeonNightSightTimer(Mobile owner)
                 : base(TimeSpan.FromMinutes(100))
             {
 				m_Owner = owner;
