@@ -124,7 +124,7 @@ namespace Server
             private readonly Mobile m_Owner;
 
             public NightSightTimer(Mobile owner)
-                : base(TimeSpan.FromMinutes(Utility.Random(15, 25)))
+                : base(TimeSpan.FromMinutes(20))
             {
 				m_Owner = owner;
 
