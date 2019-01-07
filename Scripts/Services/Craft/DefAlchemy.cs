@@ -143,13 +143,10 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
             // Add Healing and Curative
             index = AddCraft(typeof(L10HealPotion), 1116348, 1044543, -25.0, 25.0, typeof(LesserHealPotion), 1116348, 10, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(N10HealPotion), 1116348, 1044544, 15.0, 65.0, typeof(HealPotion), 1116348, 10, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(G10HealPotion), 1116348, 1044545, 55.0, 105.0, typeof(GreaterHealPotion), 1116348, 10, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
 
             if (Core.SA)
@@ -178,27 +175,21 @@ namespace Server.Engines.Craft
             index = AddCraft(typeof(NightSightPotion), 1116349, 1044542, -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(DungeonNightSightPotion), 1116349, 1044542, 10.0, 60.0, typeof(NightSightPotion), 1044360, 10, 1044368);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
             index = AddCraft(typeof(StrengthPotion), 1116349, 1044546, 25.0, 75.0, typeof(MandrakeRoot), 1044357, 2, 1044365);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(GreaterStrengthPotion), 1116349, 1044547, 45.0, 95.0, typeof(MandrakeRoot), 1044357, 5, 1044365);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-            
-            // Add Enhancement
+
+            index = AddCraft(typeof(DungeonNightSightPotion), 1116349, 1044542, 10.0, 60.0, typeof(NightSightPotion), 1044360, 10, 1044368);
+
             index = AddCraft(typeof(N10AgilityPotion), 1116349, 1044540, 50.0, 100.0, typeof(AgilityPotion), 1116349, 10, 1044362);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(G10AgilityPotion), 1116349, 1044541, 70.0, 120.0, typeof(GreaterAgilityPotion), 1116349, 10, 1044362);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(N10StrengthPotion), 1116349, 1044546, 60.0, 110.0, typeof(StrengthPotion), 1116349, 10, 1044365);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(G10StrengthPotion), 1116349, 1044547, 80.0, 130.0, typeof(GreaterStrengthPotion), 1116349, 10, 1044365);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
 
 
@@ -284,13 +275,10 @@ namespace Server.Engines.Craft
             
 			//Add new Explosive
             index = AddCraft(typeof(L10ExplosionPotion), 1116351, 1044555, 40.0, 90.0, typeof(LesserExplosionPotion), 1116351, 10, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(N10ExplosionPotion), 1116351, 1044556, 70.0, 120.0, typeof(ExplosionPotion), 1116351, 10, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(G10ExplosionPotion), 1116351, 1044557, 100.0, 150.0, typeof(GreaterExplosionPotion), 1116351, 10, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             if (Core.ML)
             {
@@ -308,10 +296,9 @@ namespace Server.Engines.Craft
 
                 // Add new
                 index = AddCraft(typeof(N10ConflagrationPotion), 1116351, 1072096, 90.0, 140.0, typeof(ConflagrationPotion), 1116351, 10, 500315);
-                AddRes(index, typeof(GraveDust), 1023983, 5, 1044253);
 
                 index = AddCraft(typeof(G10ConflagrationPotion), 1116351, 1072099, 105.0, 155.0, typeof(GreaterConflagrationPotion), 1116351, 10, 500315);
-                AddRes(index, typeof(GraveDust), 1023983, 10, 1044253);
+
 
             }
 
