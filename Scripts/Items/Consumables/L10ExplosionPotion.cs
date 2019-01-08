@@ -15,6 +15,8 @@ namespace Server.Items
         {
         }
 
+		public override string DefaultName { get { return "L10ExplosionPotion"; } }
+
         public override int ExplosionRange
         {
             get

@@ -15,6 +15,8 @@ namespace Server.Items
         {
         }
 
+		public override string DefaultName { get { return "G10StrengthPotion"; } }
+
         public override int StrOffset
         {
             get

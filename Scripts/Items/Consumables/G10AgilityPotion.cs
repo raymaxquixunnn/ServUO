@@ -15,6 +15,8 @@ namespace Server.Items
         {
         }
 
+		public override string DefaultName { get { return "G10AgilityPotion"; } }
+
         public override int DexOffset
         {
             get

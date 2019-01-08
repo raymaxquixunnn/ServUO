@@ -15,6 +15,8 @@ namespace Server.Items
         {
         }
 
+		public override string DefaultName { get { return "DungeonNightSightPotion"; } }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

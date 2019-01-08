@@ -15,6 +15,8 @@ namespace Server.Items
         {
         }
 
+		public override string DefaultName { get { return "G10HealPotion"; } }
+
         public override int MinHeal
         {
             get

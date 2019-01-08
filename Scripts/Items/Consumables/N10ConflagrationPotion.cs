@@ -15,6 +15,8 @@ namespace Server.Items
         {
         }
 
+		public override string DefaultName { get { return "N10ConflagrationPotion"; } }
+
         public override int MinDamage
         {
             get
