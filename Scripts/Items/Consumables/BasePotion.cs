@@ -90,6 +90,7 @@ namespace Server.Items
             : base(itemID)
         {
             this.m_PotionEffect = effect;
+            this.Stackable = true;
 
             this.Stackable = Core.ML;
             this.Weight = 1.0;
