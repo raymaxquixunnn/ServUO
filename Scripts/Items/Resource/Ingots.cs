@@ -51,7 +51,7 @@ namespace Server.Items
         {
             get
             {
-                if (this.m_Resource >= CraftResource.DullCopper && this.m_Resource <= CraftResource.Valorite)
+                if (this.m_Resource >= CraftResource.DullCopper && this.m_Resource <= CraftResource.Guardians)
                     return 1042684 + (int)(this.m_Resource - CraftResource.DullCopper);
 
                 return 1042692;

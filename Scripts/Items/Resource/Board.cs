@@ -18,7 +18,7 @@ namespace Server.Items
 		{ 
 			get
 			{
-				if ( m_Resource >= CraftResource.OakWood && m_Resource <= CraftResource.YewWood )
+				if ( m_Resource >= CraftResource.OakWood && m_Resource <= CraftResource.Guardianswood )
 					return 1075052 + ( (int)m_Resource - (int)CraftResource.OakWood );
 
 				switch ( m_Resource )

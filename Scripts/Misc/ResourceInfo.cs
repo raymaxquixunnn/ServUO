@@ -937,11 +937,35 @@ namespace Server.Items
             else if (info.Level == 5)
                 return CraftResource.Gold;
             else if (info.Level == 6)
-                return CraftResource.Agapite;
+                return CraftResource.Silver;
             else if (info.Level == 7)
-                return CraftResource.Verite;
+                return CraftResource.Agapite;
             else if (info.Level == 8)
+                return CraftResource.Verite;
+            else if (info.Level == 9)
                 return CraftResource.Valorite;
+            else if (info.Level == 10)
+                return CraftResource.Uridium;
+            else if (info.Level == 11)
+                return CraftResource.Trillium;
+            else if (info.Level == 12)
+                return CraftResource.Titanium;
+            else if (info.Level == 13)
+                return CraftResource.Platinum;
+            else if (info.Level == 14)
+                return CraftResource.Zenite;
+            else if (info.Level == 15)
+                return CraftResource.Naquinite;
+            else if (info.Level == 16)
+                return CraftResource.Galvinite;
+            else if (info.Level == 17)
+                return CraftResource.Trilamide;
+            else if (info.Level == 18)
+                return CraftResource.Veramide;
+            else if (info.Level == 19)
+                return CraftResource.Zenlamide;
+            else if (info.Level == 20)
+                return CraftResource.Guardians;
 
             return CraftResource.None;
         }
@@ -962,7 +986,40 @@ namespace Server.Items
                     return CraftResource.HornedLeather;
                 else if (info.Level == 3)
                     return CraftResource.BarbedLeather;
-
+                else if (info.Level == 4)
+                    return CraftResource.DullLeather;
+                else if (info.Level == 5)
+                    return CraftResource.ShadowLeather;
+                else if (info.Level == 6)
+                    return CraftResource.CopperLeather;
+                else if (info.Level == 7)
+                    return CraftResource.BronzeLeather;
+                else if (info.Level == 8)
+                    return CraftResource.GoldenLeather;
+                else if (info.Level == 9)
+                    return CraftResource.SilverLeather;
+                else if (info.Level == 10)
+                    return CraftResource.AgapiteLeather;
+                else if (info.Level == 11)
+                    return CraftResource.VeriteLeather;
+                else if (info.Level == 12)
+                    return CraftResource.ValoriteLeather;
+                else if (info.Level == 13)
+                    return CraftResource.UridiumLeather;
+                else if (info.Level == 14)
+                    return CraftResource.AmberLeather;
+                else if (info.Level == 15)
+                    return CraftResource.AmethystLeather;
+                else if (info.Level == 16)
+                    return CraftResource.AragoniteLeather;
+                else if (info.Level == 17)
+                    return CraftResource.BixbiteLeather;
+                else if (info.Level == 18)
+                    return CraftResource.BloodLeather;
+                else if (info.Level == 19)
+                    return CraftResource.AmazonLeather;
+                else if (info.Level == 20)
+                    return CraftResource.GuardiansLeather;
                 return CraftResource.None;
             }
 
@@ -980,9 +1037,21 @@ namespace Server.Items
         public static readonly OreInfo Copper = new OreInfo(3, 0x96D, "Copper");
         public static readonly OreInfo Bronze = new OreInfo(4, 0x972, "Bronze");
         public static readonly OreInfo Gold = new OreInfo(5, 0x8A5, "Gold");
-        public static readonly OreInfo Agapite = new OreInfo(6, 0x979, "Agapite");
-        public static readonly OreInfo Verite = new OreInfo(7, 0x89F, "Verite");
-        public static readonly OreInfo Valorite = new OreInfo(8, 0x8AB, "Valorite");
+        public static readonly OreInfo Silver = new OreInfo(6, 0x8A5, "Silver");
+        public static readonly OreInfo Agapite = new OreInfo(7, 0x979, "Agapite");
+        public static readonly OreInfo Verite = new OreInfo(8, 0x89F, "Verite");
+        public static readonly OreInfo Valorite = new OreInfo(9, 0x8AB, "Valorite");
+        public static readonly OreInfo Uridium = new OreInfo(10, 0x000, "Uridium");
+        public static readonly OreInfo Trillium = new OreInfo(11, 0x000, "Trillium");
+        public static readonly OreInfo Titanium = new OreInfo(12, 0x000, "Titanium");
+        public static readonly OreInfo Platinum = new OreInfo(13, 0x000, "Platinum");
+        public static readonly OreInfo Zenite = new OreInfo(14, 0x000, "Zenite");
+        public static readonly OreInfo Naquinite = new OreInfo(15, 0x000, "Naquinite");
+        public static readonly OreInfo Galvinite = new OreInfo(16, 0x000, "Galvinite");
+        public static readonly OreInfo Trilamide = new OreInfo(17, 0x000, "Trilamide");
+        public static readonly OreInfo Veramide = new OreInfo(18, 0x000, "Veramide");
+        public static readonly OreInfo Zenlamide = new OreInfo(19, 0x000, "Zenlamide");
+        public static readonly OreInfo Guardians = new OreInfo(20, 0x000, "Guardians");
 
         private readonly int m_Level;
         private readonly int m_Hue;
