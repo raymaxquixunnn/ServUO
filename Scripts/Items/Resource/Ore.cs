@@ -59,36 +59,72 @@ namespace Server.Items
 
                         switch ( reader.ReadInt() )
                         {
-                            case 0:
-                                info = OreInfo.Iron;
-                                break;
-                            case 1:
-                                info = OreInfo.DullCopper;
-                                break;
-                            case 2:
-                                info = OreInfo.ShadowIron;
-                                break;
-                            case 3:
-                                info = OreInfo.Copper;
-                                break;
-                            case 4:
-                                info = OreInfo.Bronze;
-                                break;
-                            case 5:
-                                info = OreInfo.Gold;
-                                break;
-                            case 6:
-                                info = OreInfo.Agapite;
-                                break;
-                            case 7:
-                                info = OreInfo.Verite;
-                                break;
-                            case 8:
-                                info = OreInfo.Valorite;
-                                break;
-                            default:
-                                info = null;
-                                break;
+						case 0:
+							info = OreInfo.Iron;
+							break;
+						case 1:
+							info = OreInfo.DullCopper;
+							break;
+						case 2:
+							info = OreInfo.ShadowIron;
+							break;
+						case 3:
+							info = OreInfo.Copper;
+							break;
+						case 4:
+							info = OreInfo.Bronze;
+							break;
+						case 5:
+							info = OreInfo.Gold;
+							break;
+						case 6:
+							info = OreInfo.Silver;
+							break;
+						case 7:
+							info = OreInfo.Agapite;
+							break;
+						case 8:
+							info = OreInfo.Verite;
+							break;
+						case 9:
+							info = OreInfo.Valorite;
+							break;
+						case 10:
+							info = OreInfo.Uridium;
+							break;
+						case 11:
+							info = OreInfo.Trillium;
+							break;
+						case 12:
+							info = OreInfo.Titanium;
+							break;
+						case 13:
+							info = OreInfo.Platinum;
+							break;
+						case 14:
+							info = OreInfo.Zenite;
+							break;
+						case 15:
+							info = OreInfo.Naquinite;
+							break;
+						case 16:
+							info = OreInfo.Galvinite;
+							break;
+						case 17:
+							info = OreInfo.Trilamide;
+							break;
+						case 18:
+							info = OreInfo.Veramide;
+							break;
+						case 19:
+							info = OreInfo.Zenlamide;
+							break;
+						case 20:
+							info = OreInfo.Guardians;
+							break;
+						default:
+							info = null;
+							break;
                         }
 
                         this.m_Resource = CraftResources.GetFromOreInfo(info);
@@ -326,30 +362,66 @@ namespace Server.Items
                         default:
                             difficulty = 50.0;
                             break;
-                        case CraftResource.DullCopper:
-                            difficulty = 65.0;
-                            break;
-                        case CraftResource.ShadowIron:
-                            difficulty = 70.0;
-                            break;
-                        case CraftResource.Copper:
-                            difficulty = 75.0;
-                            break;
-                        case CraftResource.Bronze:
-                            difficulty = 80.0;
-                            break;
-                        case CraftResource.Gold:
-                            difficulty = 85.0;
-                            break;
-                        case CraftResource.Agapite:
-                            difficulty = 90.0;
-                            break;
-                        case CraftResource.Verite:
-                            difficulty = 95.0;
-                            break;
-                        case CraftResource.Valorite:
-                            difficulty = 99.0;
-                            break;
+						case CraftResource.DullCopper:
+							difficulty = 65.0;
+							break;
+						case CraftResource.ShadowIron:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Copper:
+							difficulty = 95.0;
+							break;
+						case CraftResource.Bronze:
+							difficulty = 100.0;
+							break;
+						case CraftResource.Gold:
+							difficulty = 105.0;
+							break;
+						case CraftResource.Silver:
+							difficulty = 110.0;
+							break;
+						case CraftResource.Agapite:
+							difficulty = 115.0;
+							break;
+						case CraftResource.Verite:
+							difficulty = 120.0;
+							break;
+						case CraftResource.Valorite:
+							difficulty = 125.0;
+							break;
+						case CraftResource.Uridium:
+							difficulty = 125.0;
+							break;
+						case CraftResource.Trillium:
+							difficulty = 130.0;
+							break;
+						case CraftResource.Titanium:
+							difficulty = 130.0;
+							break;
+						case CraftResource.Platinum:
+							difficulty = 135.0;
+							break;
+						case CraftResource.Zenite:
+							difficulty = 135.0;
+							break;
+						case CraftResource.Naquinite:
+							difficulty = 140.0;
+							break;
+						case CraftResource.Galvinite:
+							difficulty = 140.0;
+							break;
+						case CraftResource.Trilamide:
+							difficulty = 145.0;
+							break;
+						case CraftResource.Veramide:
+							difficulty = 145.0;
+							break;
+						case CraftResource.Zenlamide:
+							difficulty = 150.0;
+							break;
+						case CraftResource.Guardians:
+							difficulty = 150.0;
+							break;
                     }
 
                     double minSkill = difficulty - 25.0;
@@ -686,6 +758,47 @@ namespace Server.Items
         }
     }
 
+    public class SilverOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Silver; } }
+
+        [Constructable]
+        public SilverOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public SilverOre(int amount)
+            : base(CraftResource.Silver, amount)
+        {
+        }
+
+        public SilverOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new SilverIngot();
+        }
+    }
+
     public class AgapiteOre : BaseOre
     {
         protected override CraftResource DefaultResource { get { return CraftResource.Agapite; } }
@@ -808,4 +921,480 @@ namespace Server.Items
             return new ValoriteIngot();
         }
     }
+
+
+
+    public class UridiumOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Uridium; } }
+
+        [Constructable]
+        public UridiumOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public UridiumOre(int amount)
+            : base(CraftResource.Uridium, amount)
+        {
+        }
+
+        public UridiumOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "UridiumOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new UridiumIngot();
+        }
+    }
+
+    public class TrilliumOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Trillium; } }
+
+        [Constructable]
+        public TrilliumOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TrilliumOre(int amount)
+            : base(CraftResource.Trillium, amount)
+        {
+        }
+
+        public TrilliumOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TrilliumOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new TrilliumIngot();
+        }
+    }
+
+    public class TitaniumOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Titanium; } }
+
+        [Constructable]
+        public TitaniumOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TitaniumOre(int amount)
+            : base(CraftResource.Titanium, amount)
+        {
+        }
+
+        public TitaniumOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TitaniumOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new TitaniumIngot();
+        }
+    }
+
+    public class PlatinumOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Platinum; } }
+
+        [Constructable]
+        public PlatinumOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public PlatinumOre(int amount)
+            : base(CraftResource.Platinum, amount)
+        {
+        }
+
+        public PlatinumOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "PlatinumOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new PlatinumIngot();
+        }
+    }
+
+    public class ZeniteOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Zenite; } }
+
+        [Constructable]
+        public ZeniteOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public ZeniteOre(int amount)
+            : base(CraftResource.Zenite, amount)
+        {
+        }
+
+        public ZeniteOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "ZeniteOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new ZeniteIngot();
+        }
+    }
+
+    public class NaquiniteOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Naquinite; } }
+
+        [Constructable]
+        public NaquiniteOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public NaquiniteOre(int amount)
+            : base(CraftResource.Naquinite, amount)
+        {
+        }
+
+        public NaquiniteOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "NaquiniteOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new NaquiniteIngot();
+        }
+    }
+
+    public class GalviniteOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Galvinite; } }
+
+        [Constructable]
+        public GalviniteOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public GalviniteOre(int amount)
+            : base(CraftResource.Galvinite, amount)
+        {
+        }
+
+        public GalviniteOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "GalviniteOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new GalviniteIngot();
+        }
+    }
+
+    public class TrilamideOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Trilamide; } }
+
+        [Constructable]
+        public TrilamideOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TrilamideOre(int amount)
+            : base(CraftResource.Trilamide, amount)
+        {
+        }
+
+        public TrilamideOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TrilamideOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new TrilamideIngot();
+        }
+    }
+
+    public class VeramideOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Veramide; } }
+
+        [Constructable]
+        public VeramideOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public VeramideOre(int amount)
+            : base(CraftResource.Veramide, amount)
+        {
+        }
+
+        public VeramideOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "VeramideOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new VeramideIngot();
+        }
+    }
+
+    public class ZenlamideOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Zenlamide; } }
+
+        [Constructable]
+        public ZenlamideOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public ZenlamideOre(int amount)
+            : base(CraftResource.Zenlamide, amount)
+        {
+        }
+
+        public ZenlamideOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "ZenlamideOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new ZenlamideIngot();
+        }
+    }
+
+    public class GuardiansOre : BaseOre
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Guardians; } }
+
+        [Constructable]
+        public GuardiansOre()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public GuardiansOre(int amount)
+            : base(CraftResource.Guardians, amount)
+        {
+        }
+
+        public GuardiansOre(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "GuardiansOre"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override BaseIngot GetIngot()
+        {
+            return new GuardiansIngot();
+        }
+    }
+
 }

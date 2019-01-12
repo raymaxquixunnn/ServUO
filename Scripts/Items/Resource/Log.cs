@@ -404,4 +404,621 @@ namespace Server.Items
             return true;
         }
     }
+
+    public class CalcitewoodLog : BaseLog
+    {
+        [Constructable]
+        public CalcitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public CalcitewoodLog(int amount)
+            : base(CraftResource.Calcitewood, amount)
+        {
+        }
+
+        public CalcitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "CalcitewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new CalcitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class GoldwoodLog : BaseLog
+    {
+        [Constructable]
+        public GoldwoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public GoldwoodLog(int amount)
+            : base(CraftResource.Goldwood, amount)
+        {
+        }
+
+        public GoldwoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "GoldwoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new GoldwoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class LabradoritewoodLog : BaseLog
+    {
+        [Constructable]
+        public LabradoritewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public LabradoritewoodLog(int amount)
+            : base(CraftResource.Labradoritewood, amount)
+        {
+        }
+
+        public LabradoritewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "LabradoritewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new LabradoritewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class MoldavitewoodLog : BaseLog
+    {
+        [Constructable]
+        public MoldavitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public MoldavitewoodLog(int amount)
+            : base(CraftResource.Moldavitewood, amount)
+        {
+        }
+
+        public MoldavitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "MoldavitewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new MoldavitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class MorganitewoodLog : BaseLog
+    {
+        [Constructable]
+        public MorganitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public MorganitewoodLog(int amount)
+            : base(CraftResource.Morganitewood, amount)
+        {
+        }
+
+        public MorganitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "MorganitewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new MorganitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class QuartzwoodLog : BaseLog
+    {
+        [Constructable]
+        public QuartzwoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public QuartzwoodLog(int amount)
+            : base(CraftResource.Quartzwood, amount)
+        {
+        }
+
+        public QuartzwoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "QuartzwoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new QuartzwoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class RhodonitewoodLog : BaseLog
+    {
+        [Constructable]
+        public RhodonitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public RhodonitewoodLog(int amount)
+            : base(CraftResource.Rhodonitewood, amount)
+        {
+        }
+
+        public RhodonitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "RhodonitewoodLog"; } }
+
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new RhodonitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class RubywoodLog : BaseLog
+    {
+        [Constructable]
+        public RubywoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public RubywoodLog(int amount)
+            : base(CraftResource.Rubywood, amount)
+        {
+        }
+
+        public RubywoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "RubywoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new RubywoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class SapphirewoodLog : BaseLog
+    {
+        [Constructable]
+        public SapphirewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public SapphirewoodLog(int amount)
+            : base(CraftResource.Sapphirewood, amount)
+        {
+        }
+
+        public SapphirewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "SapphirewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new SapphirewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class SugilitewoodLog : BaseLog
+    {
+        [Constructable]
+        public SugilitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public SugilitewoodLog(int amount)
+            : base(CraftResource.Sugilitewood, amount)
+        {
+        }
+
+        public SugilitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "SugilitewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new SugilitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class TanzanitewoodLog : BaseLog
+    {
+        [Constructable]
+        public TanzanitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TanzanitewoodLog(int amount)
+            : base(CraftResource.Tanzanitewood, amount)
+        {
+        }
+
+        public TanzanitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TanzanitewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new TanzanitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class TurquoisewoodLog : BaseLog
+    {
+        [Constructable]
+        public TurquoisewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TurquoisewoodLog(int amount)
+            : base(CraftResource.Turquoisewood, amount)
+        {
+        }
+
+        public TurquoisewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TurquoisewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new TurquoisewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class VarisitewoodLog : BaseLog
+    {
+        [Constructable]
+        public VarisitewoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public VarisitewoodLog(int amount)
+            : base(CraftResource.Varisitewood, amount)
+        {
+        }
+
+        public VarisitewoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "VarisitewoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new VarisitewoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
+
+    public class GuardianswoodLog : BaseLog
+    {
+        [Constructable]
+        public GuardianswoodLog()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public GuardianswoodLog(int amount)
+            : base(CraftResource.Guardianswood, amount)
+        {
+        }
+
+        public GuardianswoodLog(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "GuardianswoodLog"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+
+        public override bool Axe(Mobile from, BaseAxe axe)
+        {
+            if (!this.TryCreateBoards(from, 95, new GuardianswoodBoard()))
+                return false;
+
+            return true;
+        }
+    }
 }

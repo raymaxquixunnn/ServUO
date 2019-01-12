@@ -103,36 +103,72 @@ namespace Server.Items
 
                         switch ( reader.ReadInt() )
                         {
-                            case 0:
-                                info = OreInfo.Iron;
-                                break;
-                            case 1:
-                                info = OreInfo.DullCopper;
-                                break;
-                            case 2:
-                                info = OreInfo.ShadowIron;
-                                break;
-                            case 3:
-                                info = OreInfo.Copper;
-                                break;
-                            case 4:
-                                info = OreInfo.Bronze;
-                                break;
-                            case 5:
-                                info = OreInfo.Gold;
-                                break;
-                            case 6:
-                                info = OreInfo.Agapite;
-                                break;
-                            case 7:
-                                info = OreInfo.Verite;
-                                break;
-                            case 8:
-                                info = OreInfo.Valorite;
-                                break;
-                            default:
-                                info = null;
-                                break;
+						case 0:
+							info = OreInfo.Iron;
+							break;
+						case 1:
+							info = OreInfo.DullCopper;
+							break;
+						case 2:
+							info = OreInfo.ShadowIron;
+							break;
+						case 3:
+							info = OreInfo.Copper;
+							break;
+						case 4:
+							info = OreInfo.Bronze;
+							break;
+						case 5:
+							info = OreInfo.Gold;
+							break;
+						case 6:
+							info = OreInfo.Silver;
+							break;
+						case 7:
+							info = OreInfo.Agapite;
+							break;
+						case 8:
+							info = OreInfo.Verite;
+							break;
+						case 9:
+							info = OreInfo.Valorite;
+							break;
+						case 10:
+							info = OreInfo.Uridium;
+							break;
+						case 11:
+							info = OreInfo.Trillium;
+							break;
+						case 12:
+							info = OreInfo.Titanium;
+							break;
+						case 13:
+							info = OreInfo.Platinum;
+							break;
+						case 14:
+							info = OreInfo.Zenite;
+							break;
+						case 15:
+							info = OreInfo.Naquinite;
+							break;
+						case 16:
+							info = OreInfo.Galvinite;
+							break;
+						case 17:
+							info = OreInfo.Trilamide;
+							break;
+						case 18:
+							info = OreInfo.Veramide;
+							break;
+						case 19:
+							info = OreInfo.Zenlamide;
+							break;
+						case 20:
+							info = OreInfo.Guardians;
+							break;
+						default:
+							info = null;
+							break;
                         }
 
                         this.m_Resource = CraftResources.GetFromOreInfo(info);
@@ -480,6 +516,474 @@ namespace Server.Items
             : base(serial)
         {
         }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class SilverIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Silver; } }
+
+        [Constructable]
+        public SilverIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public SilverIngot(int amount)
+            : base(CraftResource.Silver, amount)
+        {
+        }
+
+        public SilverIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "SilverIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class UridiumIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Uridium; } }
+
+        [Constructable]
+        public UridiumIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public UridiumIngot(int amount)
+            : base(CraftResource.Uridium, amount)
+        {
+        }
+
+        public UridiumIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "UridiumIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class TrilliumIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Trillium; } }
+
+        [Constructable]
+        public TrilliumIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TrilliumIngot(int amount)
+            : base(CraftResource.Trillium, amount)
+        {
+        }
+
+        public TrilliumIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TrilliumIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class TitaniumIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Titanium; } }
+
+        [Constructable]
+        public TitaniumIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TitaniumIngot(int amount)
+            : base(CraftResource.Titanium, amount)
+        {
+        }
+
+        public TitaniumIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TitaniumIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class PlatinumIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Platinum; } }
+
+        [Constructable]
+        public PlatinumIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public PlatinumIngot(int amount)
+            : base(CraftResource.Platinum, amount)
+        {
+        }
+
+        public PlatinumIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "PlatinumIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class ZeniteIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Zenite; } }
+
+        [Constructable]
+        public ZeniteIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public ZeniteIngot(int amount)
+            : base(CraftResource.Zenite, amount)
+        {
+        }
+
+        public ZeniteIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "ZeniteIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class NaquiniteIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Naquinite; } }
+
+        [Constructable]
+        public NaquiniteIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public NaquiniteIngot(int amount)
+            : base(CraftResource.Naquinite, amount)
+        {
+        }
+
+        public NaquiniteIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "NaquiniteIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class GalviniteIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Galvinite; } }
+
+        [Constructable]
+        public GalviniteIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public GalviniteIngot(int amount)
+            : base(CraftResource.Galvinite, amount)
+        {
+        }
+
+        public GalviniteIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "GalviniteIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class TrilamideIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Trilamide; } }
+
+        [Constructable]
+        public TrilamideIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public TrilamideIngot(int amount)
+            : base(CraftResource.Trilamide, amount)
+        {
+        }
+
+        public TrilamideIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "TrilamideIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class VeramideIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Veramide; } }
+
+        [Constructable]
+        public VeramideIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public VeramideIngot(int amount)
+            : base(CraftResource.Veramide, amount)
+        {
+        }
+
+        public VeramideIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "VeramideIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class ZenlamideIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Zenlamide; } }
+
+        [Constructable]
+        public ZenlamideIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public ZenlamideIngot(int amount)
+            : base(CraftResource.Zenlamide, amount)
+        {
+        }
+
+        public ZenlamideIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "ZenlamideIngot"; } }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    [FlipableAttribute(0x1BF2, 0x1BEF)]
+    public class GuardiansIngot : BaseIngot
+    {
+        protected override CraftResource DefaultResource { get { return CraftResource.Guardians; } }
+
+        [Constructable]
+        public GuardiansIngot()
+            : this(1)
+        {
+        }
+
+        [Constructable]
+        public GuardiansIngot(int amount)
+            : base(CraftResource.Guardians, amount)
+        {
+        }
+
+        public GuardiansIngot(Serial serial)
+            : base(serial)
+        {
+        }
+
+		public override string DefaultName { get { return "GuardiansIngot"; } }
 
         public override void Serialize(GenericWriter writer)
         {
