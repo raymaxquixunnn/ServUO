@@ -30,15 +30,15 @@ namespace Server.Engines.BulkOrders
 
         public static double[] m_TinkerMaterialChances = new double[]
         {
-            0.501953125, // None
-            0.250000000, // Dull Copper
-            0.125000000, // Shadow Iron
-            0.062500000, // Copper
-            0.031250000, // Bronze
-            0.015625000, // Gold
-            0.007812500, // Agapite
-            0.003906250, // Verite
-            0.001953125  // Valorite
+            1.0, // None
+            0.0, // Dull Copper
+            0.0, // Shadow Iron
+            0.0, // Copper
+            0.0, // Bronze
+            0.0, // Gold
+            0.0, // Agapite
+            0.0, // Verite
+            0.0  // Valorite
         };
 
         [Constructable]

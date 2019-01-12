@@ -10,10 +10,10 @@ namespace Server.Engines.BulkOrders
 
         public static double[] m_TailoringMaterialChances = new double[]
         {
-            0.857421875, // None
-            0.125000000, // Spined
-            0.015625000, // Horned
-            0.001953125  // Barbed
+            1.0, // None
+            0.0, // Spined
+            0.0, // Horned
+            0.0  // Barbed
         };
         [Constructable]
         public SmallTailorBOD()
