@@ -508,8 +508,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (exceptional)
                 points += 200;
@@ -645,7 +645,7 @@ namespace Server.Engines.BulkOrders
             int[][][] goldTable = m_GoldTable;
 
             int typeIndex = this.ComputeType(type, itemCount);
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
             int mtrlIndex = (material >= BulkMaterialType.DullCopper && material <= BulkMaterialType.Valorite) ? 1 + (int)(material - BulkMaterialType.DullCopper) : 0;
 
             if (exceptional)
@@ -859,8 +859,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (exceptional)
                 points += 100;
@@ -998,7 +998,7 @@ namespace Server.Engines.BulkOrders
             int[][][] goldTable = (Core.AOS ? m_AosGoldTable : m_OldGoldTable);
 
             int typeIndex = ((itemCount == 6 ? 3 : itemCount == 5 ? 2 : itemCount == 4 ? 1 : 0) * 2) + (exceptional ? 1 : 0);
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
             int mtrlIndex = (material == BulkMaterialType.Barbed ? 3 : material == BulkMaterialType.Horned ? 2 : material == BulkMaterialType.Spined ? 1 : 0);
 
             gold = goldTable[typeIndex][quanIndex][mtrlIndex];
@@ -1085,8 +1085,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             switch (itemCount)
             {
@@ -1181,7 +1181,7 @@ namespace Server.Engines.BulkOrders
             int[][][] goldTable = m_GoldTable;
 
             int typeIndex = ((itemCount == 6 ? 3 : itemCount == 5 ? 2 : itemCount == 4 ? 1 : 0) * 2) + (exceptional ? 1 : 0);
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
             int mtrlIndex = (material >= BulkMaterialType.DullCopper && material <= BulkMaterialType.Valorite) ? 1 + (int)(material - BulkMaterialType.DullCopper) : 0;
 
             gold = goldTable[typeIndex][quanIndex][mtrlIndex];
@@ -1276,8 +1276,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (exceptional)
                 points += 200;
@@ -1374,7 +1374,7 @@ namespace Server.Engines.BulkOrders
             int[][][] goldTable = m_GoldTable;
 
             int typeIndex = ((itemCount == 5 ? 2 : itemCount == 4 ? 1 : 0) * 2) + (exceptional ? 1 : 0);
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
             int mtrlIndex = (material == BulkMaterialType.Frostwood ? 5 : material == BulkMaterialType.Bloodwood ? 4 : material == BulkMaterialType.Heartwood ? 3 : material == BulkMaterialType.YewWood ? 2 : material == BulkMaterialType.AshWood ? 1 : 0);
 
             gold = goldTable[typeIndex][quanIndex][mtrlIndex];
@@ -1442,8 +1442,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (itemCount > 1)
                 points += this.LookupTypePoints(m_Types, type);
@@ -1499,7 +1499,7 @@ namespace Server.Engines.BulkOrders
 
             int[][] goldTable = m_GoldTable;
 
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
 
             gold = goldTable[itemCount - 1][quanIndex];
 
@@ -1572,8 +1572,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (exceptional)
                 points += 200;
@@ -1633,7 +1633,7 @@ namespace Server.Engines.BulkOrders
 
             int[][] goldTable = m_GoldTable;
 
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
 
             gold = goldTable[itemCount - 1][quanIndex];
 
@@ -1710,8 +1710,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (exceptional)
                 points += 200;
@@ -1794,7 +1794,7 @@ namespace Server.Engines.BulkOrders
             int[][][] goldTable = m_GoldTable;
 
             int typeIndex = ((itemCount == 5 ? 2 : itemCount == 4 ? 1 : 0) * 2) + (exceptional ? 1 : 0);
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
             int mtrlIndex = (material == BulkMaterialType.Frostwood ? 5 : material == BulkMaterialType.Bloodwood ? 4 : material == BulkMaterialType.Heartwood ? 3 : material == BulkMaterialType.YewWood ? 2 : material == BulkMaterialType.AshWood ? 1 : 0);
 
             gold = goldTable[typeIndex][quanIndex][mtrlIndex];
@@ -1875,8 +1875,8 @@ namespace Server.Engines.BulkOrders
                 points += 10;
             else if (quantity == 15)
                 points += 25;
-            else if (quantity == 20)
-                points += 50;
+            else if (quantity == 1000)
+                points += 1250;
 
             if (itemCount == 3)
             {
@@ -1933,7 +1933,7 @@ namespace Server.Engines.BulkOrders
 
             int[][] goldTable = m_GoldTable;
 
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            int quanIndex = (quantity == 1000 ? 100 : quantity == 15 ? 1 : 0);
 
             gold = goldTable[itemCount - 1][quanIndex];
 

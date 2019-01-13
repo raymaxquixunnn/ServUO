@@ -20,7 +20,7 @@ namespace Server.Engines.BulkOrders
 
             if (entries.Length > 0)
             {
-                int amountMax = 20;
+                int amountMax = 1000;
 
                 BulkMaterialType material;
                 material = BulkMaterialType.None;
@@ -75,7 +75,7 @@ namespace Server.Engines.BulkOrders
 
             if (entries.Length > 0)
             {
-                int amountMax = 20;
+                int amountMax = 1000;
 
                 CraftSystem system = DefAlchemy.CraftSystem;
 

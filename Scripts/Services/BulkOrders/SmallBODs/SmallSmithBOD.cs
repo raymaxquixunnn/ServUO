@@ -35,7 +35,7 @@ namespace Server.Engines.BulkOrders
             if (entries.Length > 0)
             {
                 int hue = 0x44E;
-                int amountMax = 20;
+                int amountMax = 1000;
 
                 BulkMaterialType material;
 
@@ -101,7 +101,7 @@ namespace Server.Engines.BulkOrders
             if (entries.Length > 0)
             {
                 double theirSkill = BulkOrderSystem.GetBODSkill(m, SkillName.Blacksmith);
-                int amountMax = 20;
+                int amountMax = 1000;
 
                 BulkMaterialType material = BulkMaterialType.None;
 

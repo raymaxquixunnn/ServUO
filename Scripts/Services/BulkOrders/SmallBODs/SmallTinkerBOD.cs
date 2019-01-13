@@ -54,7 +54,7 @@ namespace Server.Engines.BulkOrders
 
             if (entries.Length > 0)
             {
-                int amountMax = 20;
+                int amountMax = 1000;
 
                 BulkMaterialType material;
 
@@ -131,7 +131,7 @@ namespace Server.Engines.BulkOrders
             if (entries.Length > 0)
             {
                 double theirSkill = BulkOrderSystem.GetBODSkill(m, SkillName.Tinkering);
-                int amountMax = 20;
+                int amountMax = 1000;
 
                 BulkMaterialType material = BulkMaterialType.None;
 
