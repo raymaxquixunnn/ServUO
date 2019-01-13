@@ -85,19 +85,46 @@ namespace Server.Engines.Harvest
                     new HarvestResource(80.0, 40.0, 120.0, 1072542, typeof(AshLog)),
                     new HarvestResource(95.0, 55.0, 135.0, 1072543, typeof(YewLog)),
                     new HarvestResource(100.0, 60.0, 140.0, 1072544, typeof(HeartwoodLog)),
-                    new HarvestResource(100.0, 60.0, 140.0, 1072545, typeof(BloodwoodLog)),
-                    new HarvestResource(100.0, 60.0, 140.0, 1072546, typeof(FrostwoodLog)),
+                    new HarvestResource(105.0, 65.0, 145.0, 1072545, typeof(BloodwoodLog)),
+                    new HarvestResource(110.0, 70.0, 150.0, 1072546, typeof(FrostwoodLog)),
+                    new HarvestResource(115.0, 75.0, 155.0, 1072540, typeof(CalcitewoodLog)),
+                    new HarvestResource(120.0, 80.0, 160.0, 1072540, typeof(GoldwoodLog)),
+                    new HarvestResource(125.0, 85.0, 165.0, 1072540, typeof(LabradoritewoodLog)),
+                    new HarvestResource(125.0, 85.0, 165.0, 1072540, typeof(MoldavitewoodLog)),
+                    new HarvestResource(130.0, 90.0, 170.0, 1072540, typeof(MorganitewoodLog)),
+                    new HarvestResource(130.0, 90.0, 170.0, 1072540, typeof(QuartzwoodLog)),
+                    new HarvestResource(135.0, 95.0, 175.0, 1072540, typeof(RhodonitewoodLog)),
+                    new HarvestResource(135.0, 95.0, 175.0, 1072540, typeof(RubywoodLog)),
+                    new HarvestResource(140.0, 100.0, 180.0, 1072540, typeof(SapphirewoodLog)),
+                    new HarvestResource(140.0, 100.0, 180.0, 1072540, typeof(SugilitewoodLog)),
+                    new HarvestResource(145.0, 105.0, 185.0, 1072540, typeof(TanzanitewoodLog)),
+                    new HarvestResource(145.0, 105.0, 185.0, 1072540, typeof(TurquoisewoodLog)),
+                    new HarvestResource(150.0, 110.0, 190.0, 1072540, typeof(VarisitewoodLog)),
+                    new HarvestResource(150.0, 110.0, 190.0, 1072540, typeof(GuardianswoodLog)),
                 };
 
                 veins = new HarvestVein[]
                 {
-                    new HarvestVein(49.0, 0.0, res[0], null), // Ordinary Logs
-                    new HarvestVein(30.0, 0.5, res[1], res[0]), // Oak
-                    new HarvestVein(10.0, 0.5, res[2], res[0]), // Ash
-                    new HarvestVein(05.0, 0.5, res[3], res[0]), // Yew
-                    new HarvestVein(03.0, 0.5, res[4], res[0]), // Heartwood
-                    new HarvestVein(02.0, 0.5, res[5], res[0]), // Bloodwood
-                    new HarvestVein(01.0, 0.5, res[6], res[0]), // Frostwood
+					new HarvestVein(50.0000, 0.0, res[0], null),
+					new HarvestVein(25.0000, 0.5, res[1], res[0]),
+					new HarvestVein(12.5000, 0.5, res[2], res[0]),
+					new HarvestVein(06.2500, 0.5, res[3], res[0]),
+					new HarvestVein(03.1250, 0.5, res[4], res[0]),
+					new HarvestVein(01.5625, 0.5, res[5], res[0]),
+					new HarvestVein(00.7813, 0.5, res[6], res[0]),
+					new HarvestVein(00.3906, 0.5, res[7], res[0]),
+					new HarvestVein(00.1953, 0.5, res[8], res[0]),
+					new HarvestVein(00.0977, 0.5, res[9], res[0]),
+					new HarvestVein(00.0488, 0.5, res[10], res[0]),
+					new HarvestVein(00.0244, 0.5, res[11], res[0]),
+					new HarvestVein(00.0122, 0.5, res[12], res[0]),
+					new HarvestVein(00.0061, 0.5, res[13], res[0]),
+					new HarvestVein(00.0031, 0.5, res[14], res[0]),
+					new HarvestVein(00.0015, 0.5, res[15], res[0]),
+					new HarvestVein(00.0008, 0.5, res[16], res[0]),
+					new HarvestVein(00.0004, 0.5, res[17], res[0]),
+					new HarvestVein(00.0002, 0.5, res[18], res[0]),
+					new HarvestVein(00.0001, 0.5, res[19], res[0]),
                 };
 
                 lumber.BonusResources = new BonusHarvestResource[]
@@ -155,6 +182,34 @@ namespace Server.Engines.Harvest
                     newType = typeof(BloodwoodBoard);
                 else if (type == typeof(FrostwoodLog))
                     newType = typeof(FrostwoodBoard);
+                else if (type == typeof(CalcitewoodLog))
+                    newType = typeof(CalcitewoodBoard);
+                else if (type == typeof(GoldwoodLog))
+                    newType = typeof(GoldwoodBoard);
+                else if (type == typeof(LabradoritewoodLog))
+                    newType = typeof(LabradoritewoodBoard);
+                else if (type == typeof(MoldavitewoodLog))
+                    newType = typeof(MoldavitewoodBoard);
+                else if (type == typeof(MorganitewoodLog))
+                    newType = typeof(MorganitewoodBoard);
+                else if (type == typeof(QuartzwoodLog))
+                    newType = typeof(QuartzwoodBoard);
+                else if (type == typeof(RhodonitewoodLog))
+                    newType = typeof(RhodonitewoodBoard);
+                else if (type == typeof(RubywoodLog))
+                    newType = typeof(RubywoodBoard);
+                else if (type == typeof(SapphirewoodLog))
+                    newType = typeof(SapphirewoodBoard);
+                else if (type == typeof(SugilitewoodLog))
+                    newType = typeof(SugilitewoodBoard);
+                else if (type == typeof(TanzanitewoodLog))
+                    newType = typeof(TanzanitewoodBoard);
+                else if (type == typeof(TurquoisewoodLog))
+                    newType = typeof(TurquoisewoodBoard);
+                else if (type == typeof(VarisitewoodLog))
+                    newType = typeof(VarisitewoodBoard);
+                else if (type == typeof(GuardianswoodLog))
+                    newType = typeof(GuardianswoodBoard);
 
                 if (newType != type)
                 {
