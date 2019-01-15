@@ -265,7 +265,7 @@ namespace Server.Items
         public static readonly CraftAttributeInfo DullCopper, ShadowIron, Copper, Bronze, Gold, Silver, Agapite, Verite, Valorite, Uridium, Trillium, Titanium, Platinum, Zenite, Naquinite, Galvinite, Trilamide, Veramide, Zenlamide, Guardians;
         public static readonly CraftAttributeInfo SpinedLeather, HornedLeather, BarbedLeather, DullLeather, ShadowLeather, CopperLeather, BronzeLeather, GoldenLeather, SilverLeather, AgapiteLeather, VeriteLeather, ValoriteLeather, UridiumLeather, AmberLeather, AmethystLeather, AragoniteLeather, BixbiteLeather, BloodLeather, AmazonLeather, GuardiansLeather;
         public static readonly CraftAttributeInfo RedScales, YellowScales, BlackScales, GreenScales, WhiteScales, BlueScales;
-        public static readonly CraftAttributeInfo OakWood, AshWood, YewWood, Heartwood, Bloodwood, Frostwood, Calcitewood, Goldwood, Labradoritewood, Moldavitewood, Morganitewood, Quartzwood, Rhodonitewood, Rubywood, Sapphirewood, Sugilitewood, Tanzanitewood, TurquoisewoodVarisitewood, Guardianswood;
+        public static readonly CraftAttributeInfo OakWood, AshWood, YewWood, Heartwood, Bloodwood, Frostwood, Calcitewood, Goldwood, Labradoritewood, Moldavitewood, Morganitewood, Quartzwood, Rhodonitewood, Rubywood, Sapphirewood, Sugilitewood, Tanzanitewood, Turquoisewood, Varisitewood, Guardianswood;
 
         static CraftAttributeInfo()
         {
@@ -6098,9 +6098,21 @@ namespace Server.Items
             new CraftResourceInfo(0x96D, 1053106, "Copper", CraftAttributeInfo.Copper, CraftResource.Copper, typeof(CopperIngot), typeof(CopperOre), typeof(CopperGranite)),
             new CraftResourceInfo(0x972, 1053105, "Bronze", CraftAttributeInfo.Bronze, CraftResource.Bronze, typeof(BronzeIngot), typeof(BronzeOre), typeof(BronzeGranite)),
             new CraftResourceInfo(0x8A5, 1053104, "Gold", CraftAttributeInfo.Gold, CraftResource.Gold, typeof(GoldIngot), typeof(GoldOre), typeof(GoldGranite)),
+            new CraftResourceInfo(0x000, 1053109, "Silver", CraftAttributeInfo.Silver, CraftResource.Silver, typeof(SilverIngot), typeof(SilverOre)),
             new CraftResourceInfo(0x979, 1053103, "Agapite", CraftAttributeInfo.Agapite, CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
             new CraftResourceInfo(0x89F, 1053102, "Verite", CraftAttributeInfo.Verite, CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
             new CraftResourceInfo(0x8AB, 1053101, "Valorite", CraftAttributeInfo.Valorite,	CraftResource.Valorite, typeof(ValoriteIngot),	typeof(ValoriteOre), typeof(ValoriteGranite)),
+            new CraftResourceInfo(0x000, 1053109, "Uridium", CraftAttributeInfo.Uridium, CraftResource.Uridium, typeof(UridiumIngot), typeof(UridiumOre)),
+            new CraftResourceInfo(0x000, 1053109, "Trillium", CraftAttributeInfo.Trillium, CraftResource.Trillium, typeof(TrilliumIngot), typeof(TrilliumOre)),
+            new CraftResourceInfo(0x000, 1053109, "Titanium", CraftAttributeInfo.Titanium, CraftResource.Titanium, typeof(TitaniumIngot), typeof(TitaniumOre)),
+            new CraftResourceInfo(0x000, 1053109, "Platinum", CraftAttributeInfo.Platinum, CraftResource.Platinum, typeof(PlatinumIngot), typeof(PlatinumOre)),
+            new CraftResourceInfo(0x000, 1053109, "Zenite", CraftAttributeInfo.Zenite, CraftResource.Zenite, typeof(ZeniteIngot), typeof(ZeniteOre)),
+            new CraftResourceInfo(0x000, 1053109, "Naquinite", CraftAttributeInfo.Naquinite, CraftResource.Naquinite, typeof(NaquiniteIngot), typeof(NaquiniteOre)),
+            new CraftResourceInfo(0x000, 1053109, "Galvinite", CraftAttributeInfo.Galvinite, CraftResource.Galvinite, typeof(GalviniteIngot), typeof(GalviniteOre)),
+            new CraftResourceInfo(0x000, 1053109, "Trilamide", CraftAttributeInfo.Trilamide, CraftResource.Trilamide, typeof(TrilamideIngot), typeof(TrilamideOre)),
+            new CraftResourceInfo(0x000, 1053109, "Veramide", CraftAttributeInfo.Veramide, CraftResource.Veramide, typeof(VeramideIngot), typeof(VeramideOre)),
+            new CraftResourceInfo(0x000, 1053109, "Zenlamide", CraftAttributeInfo.Zenlamide, CraftResource.Zenlamide, typeof(ZenlamideIngot), typeof(ZenlamideOre)),
+            new CraftResourceInfo(0x000, 1053109, "Guardians", CraftAttributeInfo.Guardians, CraftResource.Guardians, typeof(GuardiansIngot), typeof(GuardiansOre))
         };
 
         private static readonly CraftResourceInfo[] m_ScaleInfo = new CraftResourceInfo[]
@@ -6118,7 +6130,24 @@ namespace Server.Items
             new CraftResourceInfo(0x000, 1049353, "Normal", CraftAttributeInfo.Blank, CraftResource.RegularLeather,	typeof(Leather), typeof(Hides)),
             new CraftResourceInfo(0x283, 1049354, "SpinedLeather", CraftAttributeInfo.SpinedLeather, CraftResource.SpinedLeather,	typeof(SpinedLeather),	typeof(SpinedHides)),
             new CraftResourceInfo(0x227, 1049355, "HornedLeather", CraftAttributeInfo.HornedLeather, CraftResource.HornedLeather,	typeof(HornedLeather),	typeof(HornedHides)),
-            new CraftResourceInfo(0x1C1, 1049356, "BarbedLeather", CraftAttributeInfo.BarbedLeather, CraftResource.BarbedLeather,	typeof(BarbedLeather),	typeof(BarbedHides))
+            new CraftResourceInfo(0x1C1, 1049356, "BarbedLeather", CraftAttributeInfo.BarbedLeather, CraftResource.BarbedLeather,	typeof(BarbedLeather),	typeof(BarbedHides)),
+            new CraftResourceInfo(0x000, 1049353, "DullLeather", CraftAttributeInfo.DullLeather, CraftResource.DullLeather, typeof(DullLeather)),
+            new CraftResourceInfo(0x000, 1049353, "ShadowLeather", CraftAttributeInfo.ShadowLeather, CraftResource.ShadowLeather, typeof(ShadowLeather)),
+            new CraftResourceInfo(0x000, 1049353, "CopperLeather", CraftAttributeInfo.CopperLeather, CraftResource.CopperLeather, typeof(CopperLeather)),
+            new CraftResourceInfo(0x000, 1049353, "BronzeLeather", CraftAttributeInfo.BronzeLeather, CraftResource.BronzeLeather, typeof(BronzeLeather)),
+            new CraftResourceInfo(0x000, 1049353, "GoldenLeather", CraftAttributeInfo.GoldenLeather, CraftResource.GoldenLeather, typeof(GoldenLeather)),
+            new CraftResourceInfo(0x000, 1049353, "SilverLeather", CraftAttributeInfo.SilverLeather, CraftResource.SilverLeather, typeof(SilverLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AgapiteLeather", CraftAttributeInfo.AgapiteLeather, CraftResource.AgapiteLeather, typeof(AgapiteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "VeriteLeather", CraftAttributeInfo.VeriteLeather, CraftResource.VeriteLeather, typeof(VeriteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "ValoriteLeather", CraftAttributeInfo.ValoriteLeather, CraftResource.ValoriteLeather, typeof(ValoriteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "UridiumLeather", CraftAttributeInfo.UridiumLeather, CraftResource.UridiumLeather, typeof(UridiumLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AmberLeather", CraftAttributeInfo.AmberLeather, CraftResource.AmberLeather, typeof(AmberLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AmethystLeather", CraftAttributeInfo.AmethystLeather, CraftResource.AmethystLeather, typeof(AmethystLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AragoniteLeather", CraftAttributeInfo.AragoniteLeather, CraftResource.AragoniteLeather, typeof(AragoniteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "BixbiteLeather", CraftAttributeInfo.BixbiteLeather, CraftResource.BixbiteLeather, typeof(BixbiteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "BloodLeather", CraftAttributeInfo.BloodLeather, CraftResource.BloodLeather, typeof(BloodLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AmazonLeather", CraftAttributeInfo.AmazonLeather, CraftResource.AmazonLeather, typeof(AmazonLeather)),
+            new CraftResourceInfo(0x000, 1049353, "GuardiansLeather", CraftAttributeInfo.GuardiansLeather, CraftResource.GuardiansLeather, typeof(GuardiansLeather))
         };
 
         private static readonly CraftResourceInfo[] m_AOSLeatherInfo = new CraftResourceInfo[]
@@ -6127,6 +6156,23 @@ namespace Server.Items
             new CraftResourceInfo(0x8AC, 1049354, "SpinedLeather", CraftAttributeInfo.SpinedLeather, CraftResource.SpinedLeather,	typeof(SpinedLeather),	typeof(SpinedHides)),
             new CraftResourceInfo(0x845, 1049355, "HornedLeather", CraftAttributeInfo.HornedLeather, CraftResource.HornedLeather,	typeof(HornedLeather),	typeof(HornedHides)),
             new CraftResourceInfo(0x851, 1049356, "BarbedLeather", CraftAttributeInfo.BarbedLeather, CraftResource.BarbedLeather,	typeof(BarbedLeather),	typeof(BarbedHides)),
+            new CraftResourceInfo(0x000, 1049353, "DullLeather", CraftAttributeInfo.DullLeather, CraftResource.DullLeather, typeof(DullLeather)),
+            new CraftResourceInfo(0x000, 1049353, "ShadowLeather", CraftAttributeInfo.ShadowLeather, CraftResource.ShadowLeather, typeof(ShadowLeather)),
+            new CraftResourceInfo(0x000, 1049353, "CopperLeather", CraftAttributeInfo.CopperLeather, CraftResource.CopperLeather, typeof(CopperLeather)),
+            new CraftResourceInfo(0x000, 1049353, "BronzeLeather", CraftAttributeInfo.BronzeLeather, CraftResource.BronzeLeather, typeof(BronzeLeather)),
+            new CraftResourceInfo(0x000, 1049353, "GoldenLeather", CraftAttributeInfo.GoldenLeather, CraftResource.GoldenLeather, typeof(GoldenLeather)),
+            new CraftResourceInfo(0x000, 1049353, "SilverLeather", CraftAttributeInfo.SilverLeather, CraftResource.SilverLeather, typeof(SilverLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AgapiteLeather", CraftAttributeInfo.AgapiteLeather, CraftResource.AgapiteLeather, typeof(AgapiteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "VeriteLeather", CraftAttributeInfo.VeriteLeather, CraftResource.VeriteLeather, typeof(VeriteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "ValoriteLeather", CraftAttributeInfo.ValoriteLeather, CraftResource.ValoriteLeather, typeof(ValoriteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "UridiumLeather", CraftAttributeInfo.UridiumLeather, CraftResource.UridiumLeather, typeof(UridiumLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AmberLeather", CraftAttributeInfo.AmberLeather, CraftResource.AmberLeather, typeof(AmberLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AmethystLeather", CraftAttributeInfo.AmethystLeather, CraftResource.AmethystLeather, typeof(AmethystLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AragoniteLeather", CraftAttributeInfo.AragoniteLeather, CraftResource.AragoniteLeather, typeof(AragoniteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "BixbiteLeather", CraftAttributeInfo.BixbiteLeather, CraftResource.BixbiteLeather, typeof(BixbiteLeather)),
+            new CraftResourceInfo(0x000, 1049353, "BloodLeather", CraftAttributeInfo.BloodLeather, CraftResource.BloodLeather, typeof(BloodLeather)),
+            new CraftResourceInfo(0x000, 1049353, "AmazonLeather", CraftAttributeInfo.AmazonLeather, CraftResource.AmazonLeather, typeof(AmazonLeather)),
+            new CraftResourceInfo(0x000, 1049353, "GuardiansLeather", CraftAttributeInfo.GuardiansLeather, CraftResource.GuardiansLeather, typeof(GuardiansLeather))
         };
 
         private static readonly CraftResourceInfo[] m_WoodInfo = new CraftResourceInfo[]
@@ -6137,7 +6183,20 @@ namespace Server.Items
             new CraftResourceInfo(0x4A8, 1072535, "YewWood", CraftAttributeInfo.YewWood, CraftResource.YewWood, typeof(YewLog), typeof(YewBoard)),
             new CraftResourceInfo(0x4A9, 1072536, "Heartwood", CraftAttributeInfo.Heartwood,	CraftResource.Heartwood,	typeof(HeartwoodLog),	typeof(HeartwoodBoard)),
             new CraftResourceInfo(0x4AA, 1072538, "Bloodwood", CraftAttributeInfo.Bloodwood,	CraftResource.Bloodwood,	typeof(BloodwoodLog),	typeof(BloodwoodBoard)),
-            new CraftResourceInfo(0x47F, 1072539, "Frostwood", CraftAttributeInfo.Frostwood,	CraftResource.Frostwood,	typeof(FrostwoodLog),	typeof(FrostwoodBoard))
+            new CraftResourceInfo(0x47F, 1072539, "Frostwood", CraftAttributeInfo.Frostwood,	CraftResource.Frostwood,	typeof(FrostwoodLog),	typeof(FrostwoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Goldwood", CraftAttributeInfo.Goldwood, CraftResource.Goldwood, typeof(GoldwoodLog), typeof(GoldwoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Labradoritewood", CraftAttributeInfo.Labradoritewood, CraftResource.Labradoritewood, typeof(LabradoritewoodLog), typeof(LabradoritewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Moldavitewood", CraftAttributeInfo.Moldavitewood, CraftResource.Moldavitewood, typeof(MoldavitewoodLog), typeof(MoldavitewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Morganitewood", CraftAttributeInfo.Morganitewood, CraftResource.Morganitewood, typeof(MorganitewoodLog), typeof(MorganitewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Quartzwood", CraftAttributeInfo.Quartzwood, CraftResource.Quartzwood, typeof(QuartzwoodLog), typeof(QuartzwoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Rhodonitewood", CraftAttributeInfo.Rhodonitewood, CraftResource.Rhodonitewood, typeof(RhodonitewoodLog), typeof(RhodonitewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Rubywood", CraftAttributeInfo.Rubywood, CraftResource.Rubywood, typeof(RubywoodLog), typeof(RubywoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Sapphirewood", CraftAttributeInfo.Sapphirewood, CraftResource.Sapphirewood, typeof(SapphirewoodLog), typeof(SapphirewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Sugilitewood", CraftAttributeInfo.Sugilitewood, CraftResource.Sugilitewood, typeof(SugilitewoodLog), typeof(SugilitewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Tanzanitewood", CraftAttributeInfo.Tanzanitewood, CraftResource.Tanzanitewood, typeof(TanzanitewoodLog), typeof(TanzanitewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Turquoisewood", CraftAttributeInfo.Turquoisewood, CraftResource.Turquoisewood, typeof(TurquoisewoodLog), typeof(TurquoisewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Varisitewood", CraftAttributeInfo.Varisitewood, CraftResource.Varisitewood, typeof(VarisitewoodLog), typeof(VarisitewoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Guardianswood", CraftAttributeInfo.Guardianswood, CraftResource.Guardianswood, typeof(GuardianswoodLog), typeof(GuardianswoodBoard))
         };
 
         /// <summary>
