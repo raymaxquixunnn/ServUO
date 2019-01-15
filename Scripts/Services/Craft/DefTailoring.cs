@@ -740,7 +740,24 @@ namespace Server.Engines.Craft
             AddSubRes(typeof(Leather), 1049150, 00.0, 1044462, 1049311);
             AddSubRes(typeof(SpinedLeather), 1049151, 65.0, 1044462, 1049311);
             AddSubRes(typeof(HornedLeather), 1049152, 80.0, 1044462, 1049311);
-            AddSubRes(typeof(BarbedLeather), 1049153, 99.0, 1044462, 1049311);
+            AddSubRes(typeof(BarbedLeather), 1049153, 95.0, 1044462, 1049311);
+            AddSubRes(typeof(DullLeather), 1049150, 100.0, 1044462, 1049311);
+            AddSubRes(typeof(ShadowLeather), 1049150, 105.0, 1044462, 1049311);
+            AddSubRes(typeof(CopperLeather), 1049150, 110.0, 1044462, 1049311);
+            AddSubRes(typeof(BronzeLeather), 1049150, 115.0, 1044462, 1049311);
+            AddSubRes(typeof(GoldenLeather), 1049150, 120.0, 1044462, 1049311);
+            AddSubRes(typeof(SilverLeather), 1049150, 125.0, 1044462, 1049311);
+            AddSubRes(typeof(AgapiteLeather), 1049150, 125.0, 1044462, 1049311);
+            AddSubRes(typeof(VeriteLeather), 1049150, 130.0, 1044462, 1049311);
+            AddSubRes(typeof(ValoriteLeather), 1049150, 130.0, 1044462, 1049311);
+            AddSubRes(typeof(UridiumLeather), 1049150, 135.0, 1044462, 1049311);
+            AddSubRes(typeof(AmberLeather), 1049150, 135.0, 1044462, 1049311);
+            AddSubRes(typeof(AmethystLeather), 1049150, 140.0, 1044462, 1049311);
+            AddSubRes(typeof(AragoniteLeather), 1049150, 140.0, 1044462, 1049311);
+            AddSubRes(typeof(BixbiteLeather), 1049150, 145.0, 1044462, 1049311);
+            AddSubRes(typeof(BloodLeather), 1049150, 145.0, 1044462, 1049311);
+            AddSubRes(typeof(AmazonLeather), 1049150, 150.0, 1044462, 1049311);
+            AddSubRes(typeof(GuardiansLeather), 1049150, 150.0, 1044462, 1049311);
 
             MarkOption = true;
             Repair = Core.AOS;
