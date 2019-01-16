@@ -248,11 +248,25 @@ namespace Server.Engines.Craft
             // This will override the overridable material	TODO: Verify the required skill amount
             this.AddSubRes(typeof(Board), 1072643, 00.0, 1044041, 1072652);
             this.AddSubRes(typeof(OakBoard), 1072644, 65.0, 1044041, 1072652);
-            this.AddSubRes(typeof(AshBoard), 1072645, 75.0, 1044041, 1072652);
-            this.AddSubRes(typeof(YewBoard), 1072646, 85.0, 1044041, 1072652);
-            this.AddSubRes(typeof(HeartwoodBoard), 1072647, 95.0, 1044041, 1072652);
-            this.AddSubRes(typeof(BloodwoodBoard), 1072648, 95.0, 1044041, 1072652);
-            this.AddSubRes(typeof(FrostwoodBoard), 1072649, 95.0, 1044041, 1072652);
+            this.AddSubRes(typeof(AshBoard), 1072645, 80.0, 1044041, 1072652);
+            this.AddSubRes(typeof(YewBoard), 1072646, 95.0, 1044041, 1072652);
+            this.AddSubRes(typeof(HeartwoodBoard), 1072647, 100.0, 1044041, 1072652);
+            this.AddSubRes(typeof(BloodwoodBoard), 1072648, 105.0, 1044041, 1072652);
+            this.AddSubRes(typeof(FrostwoodBoard), 1072649, 110.0, 1044041, 1072652);
+            this.AddSubRes(typeof(CalcitewoodBoard), 1049150, 115.0, 1044041, 1072652);
+            this.AddSubRes(typeof(GoldwoodBoard), 1049150, 120.0, 1044041, 1072652);
+            this.AddSubRes(typeof(LabradoritewoodBoard), 1049150, 125.0, 1044041, 1072652);
+            this.AddSubRes(typeof(MoldavitewoodBoard), 1049150, 125.0, 1044041, 1072652);
+            this.AddSubRes(typeof(MorganitewoodBoard), 1049150, 130.0, 1044041, 1072652);
+            this.AddSubRes(typeof(QuartzwoodBoard), 1049150, 130.0, 1044041, 1072652);
+            this.AddSubRes(typeof(RhodonitewoodBoard), 1049150, 135.0, 1044041, 1072652);
+            this.AddSubRes(typeof(RubywoodBoard), 1049150, 135.0, 1044041, 1072652);
+            this.AddSubRes(typeof(SapphirewoodBoard), 1049150, 140.0, 1044041, 1072652);
+            this.AddSubRes(typeof(SugilitewoodBoard), 1049150, 140.0, 1044041, 1072652);
+            this.AddSubRes(typeof(TanzanitewoodBoard), 1049150, 145.0, 1044041, 1072652);
+            this.AddSubRes(typeof(TurquoisewoodBoard), 1049150, 145.0, 1044041, 1072652);
+            this.AddSubRes(typeof(VarisitewoodBoard), 1049150, 150.0, 1044041, 1072652);
+            this.AddSubRes(typeof(GuardianswoodBoard), 1049150, 150.0, 1044041, 1072652);
             #endregion
 
             this.MarkOption = true;

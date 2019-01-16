@@ -1001,8 +1001,23 @@ namespace Server.Engines.Craft
             AddSubRes(typeof(AshBoard), 1072645, 80.0, 1044041, 1072652);
             AddSubRes(typeof(YewBoard), 1072646, 95.0, 1044041, 1072652);
             AddSubRes(typeof(HeartwoodBoard), 1072647, 100.0, 1044041, 1072652);
-            AddSubRes(typeof(BloodwoodBoard), 1072648, 100.0, 1044041, 1072652);
-            AddSubRes(typeof(FrostwoodBoard), 1072649, 100.0, 1044041, 1072652);
+            AddSubRes(typeof(BloodwoodBoard), 1072648, 105.0, 1044041, 1072652);
+            AddSubRes(typeof(FrostwoodBoard), 1072649, 110.0, 1044041, 1072652);
+            AddSubRes(typeof(CalcitewoodBoard), 1049150, 115.0, 1044041, 1072652);
+            AddSubRes(typeof(GoldwoodBoard), 1049150, 120.0, 1044041, 1072652);
+            AddSubRes(typeof(LabradoritewoodBoard), 1049150, 125.0, 1044041, 1072652);
+            AddSubRes(typeof(MoldavitewoodBoard), 1049150, 125.0, 1044041, 1072652);
+            AddSubRes(typeof(MorganitewoodBoard), 1049150, 130.0, 1044041, 1072652);
+            AddSubRes(typeof(QuartzwoodBoard), 1049150, 130.0, 1044041, 1072652);
+            AddSubRes(typeof(RhodonitewoodBoard), 1049150, 135.0, 1044041, 1072652);
+            AddSubRes(typeof(RubywoodBoard), 1049150, 135.0, 1044041, 1072652);
+            AddSubRes(typeof(SapphirewoodBoard), 1049150, 140.0, 1044041, 1072652);
+            AddSubRes(typeof(SugilitewoodBoard), 1049150, 140.0, 1044041, 1072652);
+            AddSubRes(typeof(TanzanitewoodBoard), 1049150, 145.0, 1044041, 1072652);
+            AddSubRes(typeof(TurquoisewoodBoard), 1049150, 145.0, 1044041, 1072652);
+            AddSubRes(typeof(VarisitewoodBoard), 1049150, 150.0, 1044041, 1072652);
+            AddSubRes(typeof(GuardianswoodBoard), 1049150, 150.0, 1044041, 1072652);
+
         }
     }
 }
