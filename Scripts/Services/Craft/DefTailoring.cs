@@ -731,6 +731,67 @@ namespace Server.Engines.Craft
                 AddRecipe(index, (int)TailorRecipe.CuffsOfTheArchmage);
             }
             #endregion
+            
+            index = AddCraft(typeof(SpinedLeather), 1044462, 1044463, 65.0, 65.0, typeof(Leather), 1044462, 1, 1044463);
+            AddRes(index, typeof(DullCopperIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(OakBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(HornedLeather), 1044462, 1044463, 85.0, 85.0, typeof(SpinedLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(ShadowIronIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(AshBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(BarbedLeather), 1044462, 1044463, 95.0, 95.0, typeof(HornedLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(CopperIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(YewBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(DullLeather), 1044462, 1044463, 100.0, 100.0, typeof(BarbedLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(BronzeIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(HeartwoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(ShadowLeather), 1044462, 1044463, 105.0, 105.0, typeof(DullLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(GoldIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(BloodwoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(CopperLeather), 1044462, 1044463, 110.0, 110.0, typeof(ShadowLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(SilverIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(FrostwoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(BronzeLeather), 1044462, 1044463, 115.0, 115.0, typeof(CopperLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(AgapiteIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(CalcitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(GoldenLeather), 1044462, 1044463, 120.0, 120.0, typeof(BronzeLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(VeriteIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(GoldwoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(SilverLeather), 1044462, 1044463, 125.0, 125.0, typeof(GoldenLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(ValoriteIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(LabradoritewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(AgapiteLeather), 1044462, 1044463, 125.0, 125.0, typeof(SilverLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(UridiumIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(MoldavitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(VeriteLeather), 1044462, 1044463, 130.0, 130.0, typeof(AgapiteLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(TrilliumIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(MorganitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(ValoriteLeather), 1044462, 1044463, 130.0, 130.0, typeof(VeriteLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(TitaniumIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(QuartzwoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(UridiumLeather), 1044462, 1044463, 135.0, 135.0, typeof(ValoriteLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(PlatinumIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(RhodonitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(AmberLeather), 1044462, 1044463, 135.0, 135.0, typeof(UridiumLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(ZeniteIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(RubywoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(AmethystLeather), 1044462, 1044463, 140.0, 140.0, typeof(AmberLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(NaquiniteIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(SapphirewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(AragoniteLeather), 1044462, 1044463, 140.0, 140.0, typeof(AmethystLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(GalviniteIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(SugilitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(BixbiteLeather), 1044462, 1044463, 145.0, 145.0, typeof(AragoniteLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(TrilamideIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(TanzanitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(BloodLeather), 1044462, 1044463, 145.0, 145.0, typeof(BixbiteLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(VeramideIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(TurquoisewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(AmazonLeather), 1044462, 1044463, 150.0, 150.0, typeof(BloodLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(ZenlamideIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(VarisitewoodBoard), 1044041, 1, 1044351);
+            index = AddCraft(typeof(GuardiansLeather), 1044462, 1044463, 150.0, 150.0, typeof(AmazonLeather), 1044462, 1, 1044463);
+            AddRes(index, typeof(GuardiansIngot), 1044036, 1, 1044037);
+            AddRes(index, typeof(GuardianswoodBoard), 1044041, 1, 1044351);
 
             // Set the overridable material
             SetSubRes(typeof(Leather), 1049150);
