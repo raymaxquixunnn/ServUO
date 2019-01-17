@@ -932,6 +932,46 @@ namespace Server.Engines.Craft
             }
 
             #endregion
+            AddCraft(typeof(DullCopperIngot), 1044036, 1044267, 65, 65, typeof(IronIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 65.0, 65.0);
+            AddCraft(typeof(ShadowIronIngot), 1044036, 1044267, 85, 85, typeof(DullCopperIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 85.0, 85.0);
+            AddCraft(typeof(CopperIngot), 1044036, 1044267, 95, 95, typeof(ShadowIronIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 95.0, 95.0);
+            AddCraft(typeof(BronzeIngot), 1044036, 1044267, 100, 100, typeof(CopperIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 100.0, 100.0);
+            AddCraft(typeof(GoldIngot), 1044036, 1044267, 105, 105, typeof(BronzeIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 105.0, 105.0);
+            AddCraft(typeof(SilverIngot), 1044036, 1044267, 110, 110, typeof(GoldIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 110.0, 110.0);
+            AddCraft(typeof(AgapiteIngot), 1044036, 1044267, 115, 115, typeof(SilverIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 115.0, .0);
+            AddCraft(typeof(VeriteIngot), 1044036, 1044267, 120, 120, typeof(AgapiteIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 120.0, 150.0);
+            AddCraft(typeof(ValoriteIngot), 1044036, 1044267, 125, 125, typeof(VeriteIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 125.0, 125.0);
+            AddCraft(typeof(UridiumIngot), 1044036, 1044267, 125, 125, typeof(ValoriteIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 125.0, 125.0);
+            AddCraft(typeof(TrilliumIngot), 1044036, 1044267, 130, 130, typeof(UridiumIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 130.0, 130.0);
+            AddCraft(typeof(TitaniumIngot), 1044036, 1044267, 130, 130, typeof(TrilliumIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 130.0, 130.0);
+            AddCraft(typeof(PlatinumIngot), 1044036, 1044267, 135, 135, typeof(TitaniumIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 135.0, 135.0);
+            AddCraft(typeof(ZeniteIngot), 1044036, 1044267, 135, 135, typeof(PlatinumIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 135.0, 135.0);
+            AddCraft(typeof(NaquiniteIngot), 1044036, 1044267, 140, 140, typeof(ZeniteIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 140.0, 140.0);
+            AddCraft(typeof(GalviniteIngot), 1044036, 1044267, 140, 140, typeof(NaquiniteIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 140.0, 140.0);
+            AddCraft(typeof(TrilamideIngot), 1044036, 1044267, 145, 145, typeof(GalviniteIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 145.0, 145.0);
+            AddCraft(typeof(VeramideIngot), 1044036, 1044267, 145, 145, typeof(TrilamideIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 145.0, 145.0);
+            AddCraft(typeof(ZenlamideIngot), 1044036, 1044267, 150, 150, typeof(VeramideIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 150.0, 150.0);
+            AddCraft(typeof(GuardiansIngot), 1044036, 1044267, 150, 150, typeof(ZenlamideIngot), 1044036, 3, 1044267);
+            AddSkill(index, SkillName.Mining, 150.0, 150.0);
 
             // Set the overridable material
             SetSubRes(typeof(IronIngot), 1044022);
