@@ -101,7 +101,7 @@ namespace Server.Items
             }
             else if (veinIndex >= (def.Veins.Length - 1))
             {
-                from.SendLocalizedMessage(1049061); // You cannot improve valorite ore through prospecting.
+                from.SendLocalizedMessage(1049061); // You cannot improve Guardians ore through prospecting.
             }
             else
             {
