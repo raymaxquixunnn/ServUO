@@ -988,10 +988,52 @@ namespace Server.Engines.Craft
             AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
             AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
 
+            index = AddCraft(typeof(OakBoard), 1044462, 1044463, 65.0, 65.0, typeof(Board), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 65.0, 65.0);
+            index = AddCraft(typeof(AshBoard), 1044462, 1044463, 85.0, 85.0, typeof(OakBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 85.0, 85.0);
+            index = AddCraft(typeof(YewBoard), 1044462, 1044463, 95.0, 95.0, typeof(AshBoard), 1044462, 31, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 95.0, 95.0);
+            index = AddCraft(typeof(HeartwoodBoard), 1044462, 1044463, 100.0, 100.0, typeof(YewBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 100.0, 100.0);
+            index = AddCraft(typeof(BloodwoodBoard), 1044462, 1044463, 105.0, 105.0, typeof(HeartwoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 105.0, 105.0);
+            index = AddCraft(typeof(FrostwoodBoard), 1044462, 1044463, 110.0, 110.0, typeof(BloodwoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 110.0, 110.0);
+            index = AddCraft(typeof(CalcitewoodBoard), 1044462, 1044463, 115.0, 115.0, typeof(FrostwoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 115.0, 115.0);
+            index = AddCraft(typeof(GoldwoodBoard), 1044462, 1044463, 120.0, 120.0, typeof(CalcitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 120.0, 120.0);
+            index = AddCraft(typeof(LabradoritewoodBoard), 1044462, 1044463, 125.0, 125.0, typeof(GoldwoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 125.0, 125.0);
+            index = AddCraft(typeof(MoldavitewoodBoard), 1044462, 1044463, 125.0, 125.0, typeof(LabradoritewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 125.0, 125.0);
+            index = AddCraft(typeof(MorganitewoodBoard), 1044462, 1044463, 130.0, 130.0, typeof(MoldavitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 130.0, 130.0);
+            index = AddCraft(typeof(QuartzwoodBoard), 1044462, 1044463, 130.0, 130.0, typeof(MorganitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 130.0, 130.0);
+            index = AddCraft(typeof(RhodonitewoodBoard), 1044462, 1044463, 135.0, 135.0, typeof(QuartzwoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 135.0, 135.0);
+            index = AddCraft(typeof(RubywoodBoard), 1044462, 1044463, 135.0, 135.0, typeof(RhodonitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 135.0, 135.0);
+            index = AddCraft(typeof(SapphirewoodBoard), 1044462, 1044463, 140.0, 140.0, typeof(RubywoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 140.0, 140.0);
+            index = AddCraft(typeof(SugilitewoodBoard), 1044462, 1044463, 140.0, 140.0, typeof(SapphirewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 140.0, 140.0);
+            index = AddCraft(typeof(TanzanitewoodBoard), 1044462, 1044463, 145.0, 145.0, typeof(SugilitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 145.0, 145.0);
+            index = AddCraft(typeof(TurquoisewoodBoard), 1044462, 1044463, 145.0, 145.0, typeof(TanzanitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 145.0, 145.0);
+            index = AddCraft(typeof(VarisitewoodBoard), 1044462, 1044463, 150.0, 150.0, typeof(TurquoisewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 150.0, 150.0);
+            index = AddCraft(typeof(GuardianswoodBoard), 1044462, 1044463, 150.0, 150.0, typeof(VarisitewoodBoard), 1044462, 3, 1044463);
+            AddSkill(index, SkillName.Lumberjacking, 150.0, 150.0);
+
             MarkOption = true;
             Repair = Core.AOS;
             CanEnhance = Core.ML;
 
+            // Set the overridable material
             SetSubRes(typeof(Board), 1072643);
 
             // Add every material you want the player to be able to choose from
