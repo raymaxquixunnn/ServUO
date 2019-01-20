@@ -1,36 +1,29 @@
 using System;
-using Server.Engines.Harvest;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class SturdyShovel : BaseHarvestTool
+    public class SturdySewingKit : BaseTool
     {
         [Constructable]
-        public SturdyShovel()
+        public SturdySewingKit()
             : this(180)
         {
+            this.Weight = 2.0;
         }
 
-        [Constructable]
-        public SturdyShovel(int uses)
-            : base(uses, 0xF39)
-        {
-            this.Weight = 5.0;
-            this.Hue = 0x973;
-        }
-
-        public SturdyShovel(Serial serial)
+        public SturdySewingKit(Serial serial)
             : base(serial)
         {
         }
 
-        public override string DefaultName { get { return "sturdy shovel"; } }
+        public override string DefaultName { get { return "sturdy sewing kit"; } }
 
-        public override HarvestSystem HarvestSystem
+        public override CraftSystem CraftSystem
         {
             get
             {
-                return Mining.System;
+                return DefTailoring.CraftSystem;
             }
         }
         public override void Serialize(GenericWriter writer)

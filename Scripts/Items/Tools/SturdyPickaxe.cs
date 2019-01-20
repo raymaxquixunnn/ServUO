@@ -26,13 +26,8 @@ namespace Server.Items
         {
         }
 
-        public override int LabelNumber
-        {
-            get
-            {
-                return 1045126;
-            }
-        }// sturdy pickaxe
+        public override string DefaultName { get { return "sturdy pickaxe"; } }
+
         public override HarvestSystem HarvestSystem
         {
             get

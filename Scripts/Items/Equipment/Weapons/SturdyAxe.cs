@@ -1,72 +1,66 @@
 using System;
-using Server.Engines.Harvest;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    [FlipableAttribute(0xE86, 0xE85)]
-    public class Pickaxe : BaseAxe, IUsesRemaining, IHarvestTool
+    [Alterable(typeof(DefBlacksmithy), typeof(GargishAxe))]
+    [FlipableAttribute(0xF49, 0xF4a)]
+    public class SturdyAxe : BaseAxe
     {
         [Constructable]
-        public Pickaxe()
-            : base(0xE86)
+        public SturdyAxe()
+            : this(180)
         {
-            this.Weight = 11.0;
-            this.UsesRemaining = 50;
-            this.ShowUsesRemaining = true;
+            this.Weight = 4.0;
         }
 
-        public Pickaxe(Serial serial)
+        public SturdyAxe(Serial serial)
             : base(serial)
         {
         }
 
-        public override HarvestSystem HarvestSystem
-        {
-            get
-            {
-                return Mining.System;
-            }
-        }
+        public override string DefaultName { get { return "sturdy axe"; } }
+
         public override WeaponAbility PrimaryAbility
         {
             get
             {
-                return WeaponAbility.DoubleStrike;
+                return WeaponAbility.CrushingBlow;
             }
         }
         public override WeaponAbility SecondaryAbility
         {
             get
             {
-                return WeaponAbility.Disarm;
+                return WeaponAbility.Dismount;
             }
         }
         public override int AosStrengthReq
         {
             get
             {
-                return 50;
+                return 35;
             }
         }
         public override int AosMinDamage
         {
             get
             {
-                return 12;
+                return 14;
             }
         }
         public override int AosMaxDamage
         {
             get
             {
-                return 16;
+                return 17;
             }
         }
         public override int AosSpeed
         {
             get
             {
-                return 35;
+                return 37;
             }
         }
         public override float MlSpeed
@@ -80,28 +74,28 @@ namespace Server.Items
         {
             get
             {
-                return 25;
+                return 35;
             }
         }
         public override int OldMinDamage
         {
             get
             {
-                return 1;
+                return 6;
             }
         }
         public override int OldMaxDamage
         {
             get
             {
-                return 15;
+                return 33;
             }
         }
         public override int OldSpeed
         {
             get
             {
-                return 35;
+                return 37;
             }
         }
         public override int InitMinHits
@@ -115,17 +109,7 @@ namespace Server.Items
         {
             get
             {
-                return 60;
-            }
-        }
-
-        public override bool CanBeWornByGargoyles { get { return true; } }
-
-        public override WeaponAnimation DefAnimation
-        {
-            get
-            {
-                return WeaponAnimation.Slash1H;
+                return 110;
             }
         }
         public override void Serialize(GenericWriter writer)
