@@ -2159,3 +2159,2061 @@ namespace Server.Mobiles
         }
     }
 }
+
+namespace Server.Mobiles
+{
+    [CorpseName("an WoodGelemental corpse&")]
+    public class WoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public WoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an WoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(66, 85);
+            this.SetDex(66, 85);
+            this.SetInt(71, 92);
+
+            this.SetHits(76, 93);
+
+            this.SetHits(76, 93);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 3500;
+            this.Karma = -3500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new Board(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public WoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an OakWoodGelemental corpse&")]
+    public class OakWoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public OakWoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an OakWoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(132, 170);
+            this.SetDex(132, 170);
+            this.SetInt(142, 184);
+
+            this.SetHits(152, 186);
+
+            this.SetHits(152, 186);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 7000;
+            this.Karma = -7000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new OakBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public OakWoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an AshWoodGelemental corpse&")]
+    public class AshWoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public AshWoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an AshWoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(198, 255);
+            this.SetDex(198, 255);
+            this.SetInt(213, 276);
+
+            this.SetHits(228, 279);
+
+            this.SetHits(228, 279);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 10500;
+            this.Karma = -10500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new AshBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public AshWoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an YewWoodGelemental corpse&")]
+    public class YewWoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public YewWoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an YewWoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(264, 340);
+            this.SetDex(264, 340);
+            this.SetInt(284, 368);
+
+            this.SetHits(304, 372);
+
+            this.SetHits(304, 372);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 14000;
+            this.Karma = -14000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new YewBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public YewWoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an HeartwoodGelemental corpse&")]
+    public class HeartwoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public HeartwoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an HeartwoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(330, 425);
+            this.SetDex(330, 425);
+            this.SetInt(355, 460);
+
+            this.SetHits(380, 465);
+
+            this.SetHits(380, 465);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 17500;
+            this.Karma = -17500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new HeartwoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public HeartwoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an BloodwoodGelemental corpse&")]
+    public class BloodwoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public BloodwoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an BloodwoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(396, 510);
+            this.SetDex(396, 510);
+            this.SetInt(426, 552);
+
+            this.SetHits(456, 558);
+
+            this.SetHits(456, 558);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 21000;
+            this.Karma = -21000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new BloodwoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public BloodwoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an FrostwoodGelemental corpse&")]
+    public class FrostwoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public FrostwoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an FrostwoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(462, 595);
+            this.SetDex(462, 595);
+            this.SetInt(497, 644);
+
+            this.SetHits(532, 651);
+
+            this.SetHits(532, 651);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 24500;
+            this.Karma = -24500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new FrostwoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public FrostwoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an CalcitewoodGelemental corpse&")]
+    public class CalcitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public CalcitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an CalcitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(528, 680);
+            this.SetDex(528, 680);
+            this.SetInt(568, 736);
+
+            this.SetHits(608, 744);
+
+            this.SetHits(608, 744);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 28000;
+            this.Karma = -28000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new CalcitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public CalcitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an GoldwoodGelemental corpse&")]
+    public class GoldwoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public GoldwoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an GoldwoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(594, 765);
+            this.SetDex(594, 765);
+            this.SetInt(639, 828);
+
+            this.SetHits(684, 837);
+
+            this.SetHits(684, 837);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 31500;
+            this.Karma = -31500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new GoldwoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public GoldwoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an LabradoritewoodGelemental corpse&")]
+    public class LabradoritewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public LabradoritewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an LabradoritewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(660, 850);
+            this.SetDex(660, 850);
+            this.SetInt(710, 920);
+
+            this.SetHits(760, 930);
+
+            this.SetHits(760, 930);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 35000;
+            this.Karma = -35000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new LabradoritewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public LabradoritewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an MoldavitewoodGelemental corpse&")]
+    public class MoldavitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public MoldavitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an MoldavitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(726, 935);
+            this.SetDex(726, 935);
+            this.SetInt(781, 1012);
+
+            this.SetHits(836, 1023);
+
+            this.SetHits(836, 1023);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 38500;
+            this.Karma = -38500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new MoldavitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public MoldavitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an MorganitewoodGelemental corpse&")]
+    public class MorganitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public MorganitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an MorganitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(792, 1020);
+            this.SetDex(792, 1020);
+            this.SetInt(852, 1104);
+
+            this.SetHits(912, 1116);
+
+            this.SetHits(912, 1116);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 42000;
+            this.Karma = -42000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new MorganitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public MorganitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an QuartzwoodGelemental corpse&")]
+    public class QuartzwoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public QuartzwoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an QuartzwoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(858, 1105);
+            this.SetDex(858, 1105);
+            this.SetInt(923, 1196);
+
+            this.SetHits(988, 1209);
+
+            this.SetHits(988, 1209);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 45500;
+            this.Karma = -45500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new QuartzwoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public QuartzwoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an RhodonitewoodGelemental corpse&")]
+    public class RhodonitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public RhodonitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an RhodonitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(924, 1190);
+            this.SetDex(924, 1190);
+            this.SetInt(994, 1288);
+
+            this.SetHits(1064, 1302);
+
+            this.SetHits(1064, 1302);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 49000;
+            this.Karma = -49000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new RhodonitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public RhodonitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an RubywoodGelemental corpse&")]
+    public class RubywoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public RubywoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an RubywoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(990, 1275);
+            this.SetDex(990, 1275);
+            this.SetInt(1065, 1380);
+
+            this.SetHits(1140, 1395);
+
+            this.SetHits(1140, 1395);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 52500;
+            this.Karma = -52500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new RubywoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public RubywoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an SapphirewoodGelemental corpse&")]
+    public class SapphirewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public SapphirewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an SapphirewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1056, 1360);
+            this.SetDex(1056, 1360);
+            this.SetInt(1136, 1472);
+
+            this.SetHits(1216, 1488);
+
+            this.SetHits(1216, 1488);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 56000;
+            this.Karma = -56000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new SapphirewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public SapphirewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an SugilitewoodGelemental corpse&")]
+    public class SugilitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public SugilitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an SugilitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1122, 1445);
+            this.SetDex(1122, 1445);
+            this.SetInt(1207, 1564);
+
+            this.SetHits(1292, 1581);
+
+            this.SetHits(1292, 1581);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 59500;
+            this.Karma = -59500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new SugilitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public SugilitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an TanzanitewoodGelemental corpse&")]
+    public class TanzanitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public TanzanitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an TanzanitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1188, 1530);
+            this.SetDex(1188, 1530);
+            this.SetInt(1278, 1656);
+
+            this.SetHits(1368, 1674);
+
+            this.SetHits(1368, 1674);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 63000;
+            this.Karma = -63000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new TanzanitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public TanzanitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an TurquoisewoodGelemental corpse&")]
+    public class TurquoisewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public TurquoisewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an TurquoisewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1254, 1615);
+            this.SetDex(1254, 1615);
+            this.SetInt(1349, 1748);
+
+            this.SetHits(1444, 1767);
+
+            this.SetHits(1444, 1767);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 66500;
+            this.Karma = -66500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new TurquoisewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public TurquoisewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an VarisitewoodGelemental corpse&")]
+    public class VarisitewoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public VarisitewoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an VarisitewoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1320, 1700);
+            this.SetDex(1320, 1700);
+            this.SetInt(1420, 1840);
+
+            this.SetHits(1520, 1860);
+
+            this.SetHits(1520, 1860);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 70000;
+            this.Karma = -70000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new VarisitewoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public VarisitewoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
+
+namespace Server.Mobiles
+{
+    [CorpseName("an GuardianswoodGelemental corpse&")]
+    public class GuardianswoodGElemental : BaseCreature
+    {
+        [Constructable]
+        public GuardianswoodGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an GuardianswoodGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1386, 1785);
+            this.SetDex(1386, 1785);
+            this.SetInt(1491, 1932);
+
+            this.SetHits(1596, 1953);
+
+            this.SetHits(1596, 1953);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 73500;
+            this.Karma = -73500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new GuardianswoodBoard(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public GuardianswoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+}
