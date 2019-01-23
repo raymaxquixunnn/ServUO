@@ -1,0 +1,46 @@
+These scripts do NOT work on RunUO versions prior to 1.0.0.
+
+Contents:
+
+SOSBookT.cs
+SOSBookGumpT.cs
+PortSextant.cs
+PortGump.cs
+Tillerman.cs
+TillerBell.cs
+SpellbookDyeTub.cs
+SOSBook.txt
+
+The SOSBookT holds up to 32 SOS's or PortSextant's.  [add SOSBookT
+
+Single click the SOSBookT for the option to name the book.  
+
+SOS's or marked PortSextant's are just dropped on the book to add them.  
+
+There are two buttons for each entry.  "Drop SOS" removes the SOS or PortSextant from the book and puts it in your backpack.  "Transport" teleports the boat to within a 15 tile radius of the entry destination.
+  
+Some shards have SOS's for Trammel, some for Felucca and some for both.  The book handles both.  The boat must be in the same facet as the SOS map setting.  You can NOT transport between facets.
+
+PortSextant entries will transport the boat to that port regardless of facet (Felucca or Trammel).  Example: You don't need a Trammel Britian Port entry and a Felucca Britian Port entry.  One Britian Port entry will work for both facets.
+  
+The SOSBookT is charged with PowderOfTranslocation.  20 Powders for each incant (transport).  PowderOfTranslocation is included in the RunUO 1.0.0 distro files.  It is part of the Solen Matriarch Quest.  or  [add PowderOfTranslocation 20
+
+TillerMan.cs is included to accomodate the messages the tillerman says from the SOSBookGump.cs.  Replace your Tillerman.cs with the one here.  This script has the corrected artwork ID for the tillerman to fix the Course Map issues also.
+
+PortSextant when double clicked, it gives a gump to set which port it is for.  After setting the desired port, drop the PortSextant on an SOSBookT.  You are able to drop the PortSextant out of the book but you can not reset the port location.  [add PortSextant
+
+TillerBell is used to navigate a boat using your mouse instead of typing commands.  This script is a small gump with 15 buttons for driving a boat. 12 directional buttons, stop button, anchor up and down. Each time a player pushes a button, it comsumes 2 GP from their backpack. With no gold in backpack, a message is displayed and the gump closes. [add TillerBell
+
+SpellbookDyeTub is included as it can be used to hue both SpellBooks and the SOSBookT.  I choose the SpellbookDyeTub rather than RunebookDyeTub because the SpellbookDyeTub was not getting any use on my shard.  [add SpellbookDyeTub
+
+As always, back up your TillerMan.cs and SpellbookDyeTub.cs first.  Drop the scripts into your custom scripts folder.  Replace your TillerMan.cs with the one here.
+
+Hope you enjoy this little project.  Haazen
+
+TillerBell notes:
+
+Edit the amount of gold to be consumed on this line. Change from 2 to some other amount.
+if ( pack != null && pack.ConsumeTotal( typeof( Gold ), 2 ) )
+
+If you want no gold required, change the line to look like this
+if ( pack != null ) // && pack.ConsumeTotal( typeof( Gold ), 2 ) )
