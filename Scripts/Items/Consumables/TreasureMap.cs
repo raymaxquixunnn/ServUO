@@ -231,7 +231,7 @@ namespace Server.Items
         private bool m_Completed;
         private Mobile m_CompletedBy;
         private Mobile m_Decoder;
-        //private Map m_Map;
+        private Map m_Map;
         private Point2D m_Location;
         private DateTime m_NextReset;
 
@@ -279,7 +279,7 @@ namespace Server.Items
             }
         }
 
-        /*[CommandProperty(AccessLevel.GameMaster)]
+        [CommandProperty(AccessLevel.GameMaster)]
         public Map ChestMap
         {
             get { return m_Map; }
@@ -288,7 +288,7 @@ namespace Server.Items
                 m_Map = value;
                 InvalidateProperties();
             }
-        }*/
+        }
 
         [CommandProperty(AccessLevel.GameMaster)]
         public Point2D ChestLocation { get { return m_Location; } set { m_Location = value; } }
