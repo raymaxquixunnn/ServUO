@@ -1,6 +1,7 @@
 using System;
 using Server.Items;
-using Server.Network;
+using Server.Mobiles;
+using Server.Targeting;
 using System.Linq;
 
 namespace Server.Engines.Harvest
@@ -20,13 +21,13 @@ namespace Server.Engines.Harvest
             }
         }
 
-        private readonly HarvestDefinition m_Definition;
+        private readonly HarvestDefinition  m_Wood;
 
-        public HarvestDefinition Definition
+        public HarvestDefinition lumber
         {
             get
             {
-                return this.m_Definition;
+                return this.m_Wood;
             }
         }
 
@@ -36,7 +37,7 @@ namespace Server.Engines.Harvest
             HarvestVein[] veins;
 
             #region Lumberjacking
-            HarvestDefinition lumber = new HarvestDefinition();
+            HarvestDefinition lumber = this.m_Wood = new HarvestDefinition();
 
             // Resource banks are every 4x3 tiles
             lumber.BankWidth = 4;
@@ -157,7 +158,6 @@ namespace Server.Engines.Harvest
             lumber.RaceBonus = Core.ML;
             lumber.RandomizeVeins = false;
 
-            this.m_Definition = lumber;
             this.Definitions.Add(lumber);
             #endregion
         }
@@ -220,56 +220,6 @@ namespace Server.Engines.Harvest
             return newType;
         }
 
-        public override void SendSuccessTo(Mobile from, Item item, HarvestResource resource)
-        {
-            if (item != null)
-            {
-                if (item != null && item.GetType().IsSubclassOf(typeof(BaseWoodBoard)))
-                {
-                    from.SendLocalizedMessage(1158776); // The axe magically creates boards from your logs.
-                    return;
-                }
-                else
-                {
-                    foreach (var res in m_Definition.Resources.Where(r => r.Types != null))
-                    {
-                        foreach (var type in res.Types)
-                        {
-                            if (item.GetType() == type)
-                            {
-                                res.SendSuccessTo(from);
-                                return;
-                            }
-                        }
-                    }
-                }
-            }
-
-            base.SendSuccessTo(from, item, resource);
-        }
-
-        public override bool CheckHarvest(Mobile from, Item tool)
-        {
-            if (!base.CheckHarvest(from, tool))
-                return false;
-
-            return true;
-        }
-
-        public override bool CheckHarvest(Mobile from, Item tool, HarvestDefinition def, object toHarvest)
-        {
-            if (!base.CheckHarvest(from, tool, def, toHarvest))
-                return false;
-
-			if (tool.Parent != from && from.Backpack != null && !tool.IsChildOf(from.Backpack))
-			{
-				from.SendLocalizedMessage(1080058); // This must be in your backpack to use it.
-				return false;
-			}
-
-			return true;
-        }
-
         public override Type GetResourceType(Mobile from, Item tool, HarvestDefinition def, Map map, Point3D loc, HarvestResource resource)
         {
             #region Void Pool Items
@@ -290,6 +240,33 @@ namespace Server.Engines.Harvest
             return base.GetResourceType(from, tool, def, map, loc, resource);
         }
 
+        public override void SendSuccessTo(Mobile from, Item item, HarvestResource resource)
+        {
+            if (item != null)
+            {
+                if (item != null && item.GetType().IsSubclassOf(typeof(BaseWoodBoard)))
+                {
+                    from.SendLocalizedMessage(1158776); // The axe magically creates boards from your logs.
+                    return;
+                }
+                else
+                {
+                    foreach (var res in lumber.Resources.Where(r => r.Types != null))
+                    {
+                        foreach (var type in res.Types)
+                        {
+                            if (item.GetType() == type)
+                            {
+                                res.SendSuccessTo(from);
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+            base.SendSuccessTo(from, item, resource);
+        }
+
         public override bool CheckResources(Mobile from, Item tool, HarvestDefinition def, Map map, Point3D loc, bool timed)
         {
             if (HarvestMap.CheckMapOnHarvest(from, loc, def) == null)
@@ -298,16 +275,120 @@ namespace Server.Engines.Harvest
             return true;
         }
 
-        public override void OnBadHarvestTarget(Mobile from, Item tool, object toHarvest)
+        public override bool CheckHarvest(Mobile from, Item tool)
         {
-            if (toHarvest is Mobile)
-                ((Mobile)toHarvest).PrivateOverheadMessage(MessageType.Regular, 0x3B2, 500450, from.NetState); // You can only skin dead creatures.
-            else if (toHarvest is Item)
-                ((Item)toHarvest).LabelTo(from, 500464); // Use this on corpses to carve away meat and hide
-            else if (toHarvest is Targeting.StaticTarget || toHarvest is Targeting.LandTarget)
-                from.SendLocalizedMessage(500489); // You can't use an axe on that.
-            else
-                from.SendLocalizedMessage(1005213); // You can't do that
+            if (!base.CheckHarvest(from, tool))
+                return false;
+
+            return true;
+        }
+
+        public override bool CheckHarvest(Mobile from, Item tool, HarvestDefinition def, object toHarvest)
+        {
+            if (!base.CheckHarvest(from, tool, def, toHarvest))
+                return false;
+
+            if (def == this.m_Wood && !(from is PlayerMobile && from.Skills[SkillName.Lumberjacking].Base >= 100.0 && ((PlayerMobile)from).SandMining))
+            {
+                this.OnBadHarvestTarget(from, tool, toHarvest);
+                return false;
+            }
+            else if (from.Mounted)
+            {
+                from.SendLocalizedMessage(501864); // You can't mine while riding.
+                return false;
+            }
+            else if (from.IsBodyMod && !from.Body.IsHuman)
+            {
+                from.SendLocalizedMessage(501865); // You can't mine while polymorphed.
+                return false;
+            }
+
+            return true;
+        }
+
+        public override HarvestVein MutateVein(Mobile from, Item tool, HarvestDefinition def, HarvestBank bank, object toHarvest, HarvestVein vein)
+        {
+            if (tool is GargoylesPickaxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 1))
+                    return def.Veins[veinIndex + 1];
+            }
+
+            return base.MutateVein(from, tool, def, bank, toHarvest, vein);
+        }
+
+        private static readonly int[] m_Offsets = new int[]
+        {
+            -1, -1,
+            -1, 0,
+            -1, 1,
+            0, -1,
+            0, 1,
+            1, -1,
+            1, 0,
+            1, 1
+        };
+
+        public override void OnHarvestFinished(Mobile from, Item tool, HarvestDefinition def, HarvestVein vein, HarvestBank bank, HarvestResource resource, object harvested)
+        {
+            if (tool is GargoylesPickaxe && def == this.m_Wood && 0.1 > Utility.RandomDouble() && HarvestMap.CheckMapOnHarvest(from, harvested, def) == null)
+            {
+                HarvestResource res = vein.PrimaryResource;
+
+                if (res == resource && res.Types.Length >= 3)
+                {
+                    try
+                    {
+                        Map map = from.Map;
+
+                        if (map == null)
+                            return;
+
+                        BaseCreature spawned = Activator.CreateInstance(res.Types[2], new object[] { 25 }) as BaseCreature;
+
+                        if (spawned != null)
+                        {
+                            int offset = Utility.Random(8) * 2;
+
+                            for (int i = 0; i < m_Offsets.Length; i += 2)
+                            {
+                                int x = from.X + m_Offsets[(offset + i) % m_Offsets.Length];
+                                int y = from.Y + m_Offsets[(offset + i + 1) % m_Offsets.Length];
+
+                                if (map.CanSpawnMobile(x, y, from.Z))
+                                {
+                                    spawned.OnBeforeSpawn(new Point3D(x, y, from.Z), map);
+                                    spawned.MoveToWorld(new Point3D(x, y, from.Z), map);
+                                    spawned.Combatant = from;
+                                    return;
+                                }
+                                else
+                                {
+                                    int z = map.GetAverageZ(x, y);
+
+                                    if (Math.Abs(z - from.Z) < 10 && map.CanSpawnMobile(x, y, z))
+                                    {
+                                        spawned.OnBeforeSpawn(new Point3D(x, y, z), map);
+                                        spawned.MoveToWorld(new Point3D(x, y, z), map);
+                                        spawned.Combatant = from;
+                                        return;
+                                    }
+                                }
+                            }
+
+                            spawned.OnBeforeSpawn(from.Location, from.Map);
+                            spawned.MoveToWorld(from.Location, from.Map);
+                            spawned.Combatant = from;
+                        }
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
         }
 
         public override void OnHarvestStarted(Mobile from, Item tool, HarvestDefinition def, object toHarvest)
@@ -318,9 +399,16 @@ namespace Server.Engines.Harvest
                 from.RevealingAction();
         }
 
-        public static void Initialize()
+        public override void OnBadHarvestTarget(Mobile from, Item tool, object toHarvest)
         {
-            Array.Sort(m_TreeTiles);
+            //if (toHarvest is Mobile)
+            //    ((Mobile)toHarvest).PrivateOverheadMessage(MessageType.Regular, 0x3B2, 500450, from.NetState); // You can only skin dead creatures.
+            if (toHarvest is Item)
+                ((Item)toHarvest).LabelTo(from, 500464); // Use this on corpses to carve away meat and hide
+            else if (toHarvest is Targeting.StaticTarget || toHarvest is Targeting.LandTarget)
+                from.SendLocalizedMessage(500489); // You can't use an axe on that.
+            else
+                from.SendLocalizedMessage(1005213); // You can't do that
         }
 
         #region Tile lists
