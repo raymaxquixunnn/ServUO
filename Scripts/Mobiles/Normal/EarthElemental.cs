@@ -100,10 +100,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an IronGelemental corpse&")]
     public class IronGElemental : BaseCreature
     {
@@ -198,10 +195,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an DullCopperGelemental corpse&")]
     public class DullCopperGElemental : BaseCreature
     {
@@ -296,10 +290,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an ShadowIronGelemental corpse&")]
     public class ShadowIronGElemental : BaseCreature
     {
@@ -394,10 +385,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an CopperGelemental corpse&")]
     public class CopperGElemental : BaseCreature
     {
@@ -492,10 +480,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an BronzeGelemental corpse&")]
     public class BronzeGElemental : BaseCreature
     {
@@ -590,10 +575,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an GoldGelemental corpse&")]
     public class GoldGElemental : BaseCreature
     {
@@ -688,10 +670,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an SilverGelemental corpse&")]
     public class SilverGElemental : BaseCreature
     {
@@ -786,10 +765,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an AgapiteGelemental corpse&")]
     public class AgapiteGElemental : BaseCreature
     {
@@ -884,10 +860,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an VeriteGelemental corpse&")]
     public class VeriteGElemental : BaseCreature
     {
@@ -982,10 +955,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an ValoriteGelemental corpse&")]
     public class ValoriteGElemental : BaseCreature
     {
@@ -1080,10 +1050,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an UridiumGelemental corpse&")]
     public class UridiumGElemental : BaseCreature
     {
@@ -1178,10 +1145,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an TrilliumGelemental corpse&")]
     public class TrilliumGElemental : BaseCreature
     {
@@ -1276,10 +1240,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an TitaniumGelemental corpse&")]
     public class TitaniumGElemental : BaseCreature
     {
@@ -1374,10 +1335,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an PlatinumGelemental corpse&")]
     public class PlatinumGElemental : BaseCreature
     {
@@ -1472,10 +1430,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an ZeniteGelemental corpse&")]
     public class ZeniteGElemental : BaseCreature
     {
@@ -1570,10 +1525,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an NaquiniteGelemental corpse&")]
     public class NaquiniteGElemental : BaseCreature
     {
@@ -1668,10 +1620,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an GalviniteGelemental corpse&")]
     public class GalviniteGElemental : BaseCreature
     {
@@ -1766,10 +1715,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an TrilamideGelemental corpse&")]
     public class TrilamideGElemental : BaseCreature
     {
@@ -1864,10 +1810,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an VeramideGelemental corpse&")]
     public class VeramideGElemental : BaseCreature
     {
@@ -1962,10 +1905,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an ZenlamideGelemental corpse&")]
     public class ZenlamideGElemental : BaseCreature
     {
@@ -2060,10 +2000,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an GuardiansGelemental corpse&")]
     public class GuardiansGElemental : BaseCreature
     {
@@ -2158,10 +2095,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an WoodGelemental corpse&")]
     public class WoodGElemental : BaseCreature
     {
@@ -2256,10 +2190,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an OakWoodGelemental corpse&")]
     public class OakWoodGElemental : BaseCreature
     {
@@ -2354,10 +2285,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an AshWoodGelemental corpse&")]
     public class AshWoodGElemental : BaseCreature
     {
@@ -2452,10 +2380,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an YewWoodGelemental corpse&")]
     public class YewWoodGElemental : BaseCreature
     {
@@ -2550,10 +2475,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an HeartwoodGelemental corpse&")]
     public class HeartwoodGElemental : BaseCreature
     {
@@ -2648,10 +2570,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an BloodwoodGelemental corpse&")]
     public class BloodwoodGElemental : BaseCreature
     {
@@ -2746,10 +2665,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an FrostwoodGelemental corpse&")]
     public class FrostwoodGElemental : BaseCreature
     {
@@ -2844,10 +2760,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an CalcitewoodGelemental corpse&")]
     public class CalcitewoodGElemental : BaseCreature
     {
@@ -2942,10 +2855,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an GoldwoodGelemental corpse&")]
     public class GoldwoodGElemental : BaseCreature
     {
@@ -3040,10 +2950,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an LabradoritewoodGelemental corpse&")]
     public class LabradoritewoodGElemental : BaseCreature
     {
@@ -3138,10 +3045,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an MoldavitewoodGelemental corpse&")]
     public class MoldavitewoodGElemental : BaseCreature
     {
@@ -3236,10 +3140,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an MorganitewoodGelemental corpse&")]
     public class MorganitewoodGElemental : BaseCreature
     {
@@ -3334,10 +3235,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an QuartzwoodGelemental corpse&")]
     public class QuartzwoodGElemental : BaseCreature
     {
@@ -3432,10 +3330,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an RhodonitewoodGelemental corpse&")]
     public class RhodonitewoodGElemental : BaseCreature
     {
@@ -3530,10 +3425,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an RubywoodGelemental corpse&")]
     public class RubywoodGElemental : BaseCreature
     {
@@ -3628,10 +3520,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an SapphirewoodGelemental corpse&")]
     public class SapphirewoodGElemental : BaseCreature
     {
@@ -3726,10 +3615,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an SugilitewoodGelemental corpse&")]
     public class SugilitewoodGElemental : BaseCreature
     {
@@ -3824,10 +3710,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an TanzanitewoodGelemental corpse&")]
     public class TanzanitewoodGElemental : BaseCreature
     {
@@ -3922,10 +3805,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an TurquoisewoodGelemental corpse&")]
     public class TurquoisewoodGElemental : BaseCreature
     {
@@ -4020,10 +3900,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an VarisitewoodGelemental corpse&")]
     public class VarisitewoodGElemental : BaseCreature
     {
@@ -4118,10 +3995,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
     }
-}
 
-namespace Server.Mobiles
-{
     [CorpseName("an GuardianswoodGelemental corpse&")]
     public class GuardianswoodGElemental : BaseCreature
     {
@@ -4165,6 +4039,2001 @@ namespace Server.Mobiles
         }
 
         public GuardianswoodGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an LeatherGelemental corpse&")]
+    public class LeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public LeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an LeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(66, 85);
+            this.SetDex(66, 85);
+            this.SetInt(71, 92);
+
+            this.SetHits(76, 93);
+
+            this.SetHits(76, 93);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 3500;
+            this.Karma = -3500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new Leather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public LeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an SpinedLeatherGelemental corpse&")]
+    public class SpinedLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public SpinedLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an SpinedLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(132, 170);
+            this.SetDex(132, 170);
+            this.SetInt(142, 184);
+
+            this.SetHits(152, 186);
+
+            this.SetHits(152, 186);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 7000;
+            this.Karma = -7000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new SpinedLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public SpinedLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an HornedLeatherGelemental corpse&")]
+    public class HornedLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public HornedLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an HornedLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(198, 255);
+            this.SetDex(198, 255);
+            this.SetInt(213, 276);
+
+            this.SetHits(228, 279);
+
+            this.SetHits(228, 279);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 10500;
+            this.Karma = -10500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new HornedLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public HornedLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an BarbedLeatherGelemental corpse&")]
+    public class BarbedLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public BarbedLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an BarbedLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(264, 340);
+            this.SetDex(264, 340);
+            this.SetInt(284, 368);
+
+            this.SetHits(304, 372);
+
+            this.SetHits(304, 372);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 14000;
+            this.Karma = -14000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new BarbedLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public BarbedLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an DullLeatherGelemental corpse&")]
+    public class DullLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public DullLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an DullLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(330, 425);
+            this.SetDex(330, 425);
+            this.SetInt(355, 460);
+
+            this.SetHits(380, 465);
+
+            this.SetHits(380, 465);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 17500;
+            this.Karma = -17500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new DullLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public DullLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an ShadowLeatherGelemental corpse&")]
+    public class ShadowLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public ShadowLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an ShadowLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(396, 510);
+            this.SetDex(396, 510);
+            this.SetInt(426, 552);
+
+            this.SetHits(456, 558);
+
+            this.SetHits(456, 558);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 21000;
+            this.Karma = -21000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new ShadowLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public ShadowLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an CopperLeatherGelemental corpse&")]
+    public class CopperLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public CopperLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an CopperLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(462, 595);
+            this.SetDex(462, 595);
+            this.SetInt(497, 644);
+
+            this.SetHits(532, 651);
+
+            this.SetHits(532, 651);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 24500;
+            this.Karma = -24500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new CopperLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public CopperLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an BronzeLeatherGelemental corpse&")]
+    public class BronzeLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public BronzeLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an BronzeLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(528, 680);
+            this.SetDex(528, 680);
+            this.SetInt(568, 736);
+
+            this.SetHits(608, 744);
+
+            this.SetHits(608, 744);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 28000;
+            this.Karma = -28000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new BronzeLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public BronzeLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an GoldenLeatherGelemental corpse&")]
+    public class GoldenLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public GoldenLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an GoldenLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(594, 765);
+            this.SetDex(594, 765);
+            this.SetInt(639, 828);
+
+            this.SetHits(684, 837);
+
+            this.SetHits(684, 837);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 31500;
+            this.Karma = -31500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new GoldenLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public GoldenLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an SilverLeatherGelemental corpse&")]
+    public class SilverLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public SilverLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an SilverLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(660, 850);
+            this.SetDex(660, 850);
+            this.SetInt(710, 920);
+
+            this.SetHits(760, 930);
+
+            this.SetHits(760, 930);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 35000;
+            this.Karma = -35000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new SilverLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public SilverLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an AgapiteLeatherGelemental corpse&")]
+    public class AgapiteLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public AgapiteLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an AgapiteLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(726, 935);
+            this.SetDex(726, 935);
+            this.SetInt(781, 1012);
+
+            this.SetHits(836, 1023);
+
+            this.SetHits(836, 1023);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 38500;
+            this.Karma = -38500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new AgapiteLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public AgapiteLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an VeriteLeatherGelemental corpse&")]
+    public class VeriteLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public VeriteLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an VeriteLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(792, 1020);
+            this.SetDex(792, 1020);
+            this.SetInt(852, 1104);
+
+            this.SetHits(912, 1116);
+
+            this.SetHits(912, 1116);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 42000;
+            this.Karma = -42000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new VeriteLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public VeriteLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an ValoriteLeatherGelemental corpse&")]
+    public class ValoriteLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public ValoriteLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an ValoriteLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(858, 1105);
+            this.SetDex(858, 1105);
+            this.SetInt(923, 1196);
+
+            this.SetHits(988, 1209);
+
+            this.SetHits(988, 1209);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 45500;
+            this.Karma = -45500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new ValoriteLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public ValoriteLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an UridiumLeatherGelemental corpse&")]
+    public class UridiumLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public UridiumLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an UridiumLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(924, 1190);
+            this.SetDex(924, 1190);
+            this.SetInt(994, 1288);
+
+            this.SetHits(1064, 1302);
+
+            this.SetHits(1064, 1302);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 49000;
+            this.Karma = -49000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new UridiumLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public UridiumLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an AmberLeatherGelemental corpse&")]
+    public class AmberLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public AmberLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an AmberLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(990, 1275);
+            this.SetDex(990, 1275);
+            this.SetInt(1065, 1380);
+
+            this.SetHits(1140, 1395);
+
+            this.SetHits(1140, 1395);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 52500;
+            this.Karma = -52500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new AmberLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public AmberLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an AmethystLeatherGelemental corpse&")]
+    public class AmethystLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public AmethystLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an AmethystLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1056, 1360);
+            this.SetDex(1056, 1360);
+            this.SetInt(1136, 1472);
+
+            this.SetHits(1216, 1488);
+
+            this.SetHits(1216, 1488);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 56000;
+            this.Karma = -56000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new AmethystLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public AmethystLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an AragoniteLeatherGelemental corpse&")]
+    public class AragoniteLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public AragoniteLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an AragoniteLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1122, 1445);
+            this.SetDex(1122, 1445);
+            this.SetInt(1207, 1564);
+
+            this.SetHits(1292, 1581);
+
+            this.SetHits(1292, 1581);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 59500;
+            this.Karma = -59500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new AragoniteLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public AragoniteLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an BixbiteLeatherGelemental corpse&")]
+    public class BixbiteLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public BixbiteLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an BixbiteLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1188, 1530);
+            this.SetDex(1188, 1530);
+            this.SetInt(1278, 1656);
+
+            this.SetHits(1368, 1674);
+
+            this.SetHits(1368, 1674);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 63000;
+            this.Karma = -63000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new BixbiteLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public BixbiteLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an BloodLeatherGelemental corpse&")]
+    public class BloodLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public BloodLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an BloodLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1254, 1615);
+            this.SetDex(1254, 1615);
+            this.SetInt(1349, 1748);
+
+            this.SetHits(1444, 1767);
+
+            this.SetHits(1444, 1767);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 66500;
+            this.Karma = -66500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new BloodLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public BloodLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an AmazonLeatherGelemental corpse&")]
+    public class AmazonLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public AmazonLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an AmazonLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1320, 1700);
+            this.SetDex(1320, 1700);
+            this.SetInt(1420, 1840);
+
+            this.SetHits(1520, 1860);
+
+            this.SetHits(1520, 1860);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 70000;
+            this.Karma = -70000;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new AmazonLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public AmazonLeatherGElemental(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override double DispelDifficulty
+        {
+            get
+            {
+                return 117.5;
+            }
+        }
+        public override double DispelFocus
+        {
+            get
+            {
+                return 45.0;
+            }
+        }
+        public override bool BleedImmune
+        {
+            get
+            {
+                return true;
+            }
+        }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+        public override void GenerateLoot()
+        {
+            this.AddLoot(LootPack.Average);
+            this.AddLoot(LootPack.Meager);
+            this.AddLoot(LootPack.Gems);
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0);
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
+    }
+
+    [CorpseName("an GuardiansLeatherGelemental corpse&")]
+    public class GuardiansLeatherGElemental : BaseCreature
+    {
+        [Constructable]
+        public GuardiansLeatherGElemental()
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        {
+            this.Name = "an GuardiansLeatherGelemental";
+            this.Body = 14;
+            this.BaseSoundID = 268;
+
+            this.SetDex(1386, 1785);
+            this.SetDex(1386, 1785);
+            this.SetInt(1491, 1932);
+
+            this.SetHits(1596, 1953);
+
+            this.SetHits(1596, 1953);
+
+            this.SetDamageType(ResistanceType.Physical, 100);
+
+            this.SetResistance(ResistanceType.Physical, 30, 35);
+            this.SetResistance(ResistanceType.Fire, 10, 20);
+            this.SetResistance(ResistanceType.Cold, 10, 20);
+            this.SetResistance(ResistanceType.Poison, 15, 25);
+            this.SetResistance(ResistanceType.Energy, 15, 25);
+
+            this.SetSkill(SkillName.MagicResist, 50.1, 95.0);
+            this.SetSkill(SkillName.Tactics, 60.1, 100.0);
+            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+
+            this.Fame = 73500;
+            this.Karma = -73500;
+
+            this.VirtualArmor = 34;
+            this.ControlSlots = 2;
+
+            Item ore = new GuardiansLeather(5);
+            ore.ItemID = 0x19B7;
+            this.PackItem(ore);
+        }
+
+        public GuardiansLeatherGElemental(Serial serial)
             : base(serial)
         {
         }
