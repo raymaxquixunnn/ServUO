@@ -343,6 +343,158 @@ namespace Server.Engines.Harvest
                     return def.Veins[veinIndex + 1];
             }
 
+            else if (tool is DullCopperGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 2))
+                    return def.Veins[veinIndex + 2];
+            }
+
+            else if (tool is ShadowIronGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 3))
+                    return def.Veins[veinIndex + 3];
+            }
+
+            else if (tool is CopperGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 4))
+                    return def.Veins[veinIndex + 4];
+            }
+
+            else if (tool is BronzeGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 5))
+                    return def.Veins[veinIndex + 5];
+            }
+
+            else if (tool is GoldenGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 6))
+                    return def.Veins[veinIndex + 6];
+            }
+
+            else if (tool is SilverGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 7))
+                    return def.Veins[veinIndex + 7];
+            }
+
+            else if (tool is AgapiteGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 8))
+                    return def.Veins[veinIndex + 8];
+            }
+
+            else if (tool is VeriteGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 9))
+                    return def.Veins[veinIndex + 9];
+            }
+
+            else if (tool is ValoriteGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 10))
+                    return def.Veins[veinIndex + 10];
+            }
+
+            else if (tool is UridiumGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 11))
+                    return def.Veins[veinIndex + 11];
+            }
+
+            else if (tool is TrilliumGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 12))
+                    return def.Veins[veinIndex + 12];
+            }
+
+            else if (tool is TitaniumGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 13))
+                    return def.Veins[veinIndex + 13];
+            }
+
+            else if (tool is PlatinumGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 14))
+                    return def.Veins[veinIndex + 14];
+            }
+
+            else if (tool is ZeniteGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 15))
+                    return def.Veins[veinIndex + 15];
+            }
+
+            else if (tool is NaquiniteGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 16))
+                    return def.Veins[veinIndex + 16];
+            }
+
+            else if (tool is GalviniteGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 17))
+                    return def.Veins[veinIndex + 17];
+            }
+
+            else if (tool is TrilamideGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 18))
+                    return def.Veins[veinIndex + 18];
+            }
+
+            else if (tool is VeramideGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 19))
+                    return def.Veins[veinIndex + 19];
+            }
+
+            /*else if (tool is ZenlamideGargoylesPickaxe && def == this.m_OreAndStone)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 20))
+                    return def.Veins[veinIndex + 20];
+            }*/
+
             return base.MutateVein(from, tool, def, bank, toHarvest, vein);
         }
 
