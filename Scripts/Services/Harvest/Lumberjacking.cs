@@ -309,14 +309,146 @@ namespace Server.Engines.Harvest
 
         public override HarvestVein MutateVein(Mobile from, Item tool, HarvestDefinition def, HarvestBank bank, object toHarvest, HarvestVein vein)
         {
-            if (tool is GargoylesPickaxe && def == this.m_Wood)
+            if (tool is GargoylesAxe && def == this.m_Wood)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 1))
                     return def.Veins[veinIndex + 1];
             }
+            else if (tool is GargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
 
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 2))
+                    return def.Veins[veinIndex + 2];
+            }
+            else if (tool is DullCopperGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 3))
+                    return def.Veins[veinIndex + 3];
+            }
+            else if (tool is ShadowIronGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 4))
+                    return def.Veins[veinIndex + 4];
+            }
+            else if (tool is CopperGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 5))
+                    return def.Veins[veinIndex + 5];
+            }
+            else if (tool is BronzeGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 6))
+                    return def.Veins[veinIndex + 6];
+            }
+            else if (tool is GoldenGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 7))
+                    return def.Veins[veinIndex + 7];
+            }
+            else if (tool is SilverGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 8))
+                    return def.Veins[veinIndex + 8];
+            }
+            else if (tool is AgapiteGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 9))
+                    return def.Veins[veinIndex + 9];
+            }
+            else if (tool is VeriteGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 10))
+                    return def.Veins[veinIndex + 10];
+            }
+            else if (tool is ValoriteGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 11))
+                    return def.Veins[veinIndex + 11];
+            }
+            else if (tool is UridiumGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 12))
+                    return def.Veins[veinIndex + 12];
+            }
+            else if (tool is TrilliumGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 13))
+                    return def.Veins[veinIndex + 13];
+            }
+            else if (tool is TitaniumGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 14))
+                    return def.Veins[veinIndex + 14];
+            }
+            else if (tool is PlatinumGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 15))
+                    return def.Veins[veinIndex + 15];
+            }
+            else if (tool is ZeniteGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 16))
+                    return def.Veins[veinIndex + 16];
+            }
+            else if (tool is NaquiniteGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 17))
+                    return def.Veins[veinIndex + 17];
+            }
+            else if (tool is GalviniteGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 18))
+                    return def.Veins[veinIndex + 18];
+            }
+            else if (tool is TrilamideGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 19))
+                    return def.Veins[veinIndex + 19];
+            }
+            /*else if (tool is VeramideGargoylesAxe && def == this.m_Wood)
+            {
+                int veinIndex = Array.IndexOf(def.Veins, vein);
+
+                if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 20))
+                    return def.Veins[veinIndex + 20];
+            }*/
             return base.MutateVein(from, tool, def, bank, toHarvest, vein);
         }
 
