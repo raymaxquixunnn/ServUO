@@ -104,7 +104,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 1;
+                return 6;
             }
         }
         public override void GenerateLoot()

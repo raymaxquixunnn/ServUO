@@ -51,6 +51,14 @@ namespace Server.Mobiles
             PackNecroReg(24, 45);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 7;
+            }
+        }
+
         public Lifestealer(Serial serial)
             : base(serial)
         {

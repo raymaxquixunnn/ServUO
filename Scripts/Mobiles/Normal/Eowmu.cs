@@ -93,6 +93,14 @@ namespace Server.Mobiles
         public override int Hides { get { return 10; } }
         public override FoodType FavoriteFood { get { return FoodType.FruitsAndVegies; } }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

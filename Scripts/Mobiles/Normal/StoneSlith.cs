@@ -44,6 +44,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.TailSwipe);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public StoneSlith(Serial serial)
             : base(serial)
         {

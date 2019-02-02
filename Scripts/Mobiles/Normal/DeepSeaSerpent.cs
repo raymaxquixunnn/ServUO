@@ -54,7 +54,7 @@ namespace Server.Mobiles
         {
         }
 
-        public override int TreasureMapLevel { get { return 2; } }
+        public override int TreasureMapLevel { get { return 1; } }
         public override bool HasBreath { get { return true; } }
         public override int Meat { get { return 10; } }
 		public override int Hides { get { return 10; } }

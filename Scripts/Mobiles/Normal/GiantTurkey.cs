@@ -6,13 +6,13 @@ namespace Server.Mobiles
 	[CorpseName( "a giant turkey corpse" )]
 	public class GiantTurkey : BaseCreature
 	{
-		[Constructable]
-		public GiantTurkey()
+        [Constructable]
+        public GiantTurkey()
             : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
-		{
-			Name = "a giant turkey";
-			Body = 1026;
-			BaseSoundID = 0x66A;
+        {
+            Name = "a giant turkey";
+            Body = 1026;
+            BaseSoundID = 0x66A;
 
             SetStr(1200, 1400);
             SetDex(170, 260);
@@ -41,6 +41,14 @@ namespace Server.Mobiles
             SetAreaEffect(AreaEffect.EssenceOfDisease);
             SetSpecialAbility(SpecialAbility.HowlOfCacophony);
             SetWeaponAbility(WeaponAbility.Dismount);
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 16;
+            }
         }
 
         public override int Meat { get { return 1; } }
@@ -73,20 +81,20 @@ namespace Server.Mobiles
             return 0x66B;
         }
 
-		public GiantTurkey(Serial serial) : base(serial)
-		{
-		}
+        public GiantTurkey(Serial serial) : base(serial)
+        {
+        }
 
-		public override void Serialize(GenericWriter writer)
-		{
-			base.Serialize(writer);
-			writer.Write((int) 0);
-		}
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int) 0);
+        }
 
-		public override void Deserialize(GenericReader reader)
-		{
-			base.Deserialize(reader);
-			int version = reader.ReadInt();
-		}
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
 	}
 }

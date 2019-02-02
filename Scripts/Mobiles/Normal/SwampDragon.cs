@@ -56,6 +56,14 @@ namespace Server.Mobiles
             MinTameSkill = 93.9;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public SwampDragon(Serial serial)
             : base(serial)
         {

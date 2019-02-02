@@ -48,6 +48,14 @@ namespace Server.Mobiles
             PackItem(new SulfurousAsh(Utility.Random(4, 10)));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public LavaLizard(Serial serial)
             : base(serial)
         {

@@ -103,7 +103,7 @@ namespace Server.Mobiles
 
         public override int TreasureMapLevel
         {
-            get { return 4; }
+            get { return 2; }
         }
 
         public override int Meat

@@ -58,7 +58,6 @@ namespace Server.Mobiles
 
         public override bool ReacquireOnMovement { get { return !Controlled; } }
         public override bool HasBreath { get { return true; } } // fire breath enabled
-        
         public override double BonusPetDamageScalar { get { return Controlled ? 1.0 : (Core.SE) ? 3.0 : 1.0; } }
         public override bool AutoDispel { get { return !Controlled; } }
         public override HideType HideType { get { return HideType.Barbed; } }
@@ -73,7 +72,7 @@ namespace Server.Mobiles
                 return (Utility.RandomBool() ? ScaleType.Black : ScaleType.White);
             }
         }
-        public override int TreasureMapLevel { get { return 4; } }
+        public override int TreasureMapLevel { get { return 2; } }
         public override bool CanAngerOnTame { get { return true; } }
 
         public override void GenerateLoot()

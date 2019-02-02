@@ -42,9 +42,17 @@ namespace Server.Mobiles
         {
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 5;
+            }
+        }
+
         public override bool IsScaryToPets { get { return true; } }
         public override bool BardImmune { get { return true; } }
-		
+
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

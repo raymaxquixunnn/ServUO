@@ -46,6 +46,14 @@ namespace Server.Mobiles
             // TODO: body parts, armour
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public LavaSerpent(Serial serial)
             : base(serial)
         {

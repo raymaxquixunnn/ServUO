@@ -40,6 +40,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.ConcussionBlow);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Moloch(Serial serial)
             : base(serial)
         {

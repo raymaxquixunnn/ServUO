@@ -43,6 +43,13 @@ namespace Server.Mobiles
 
             VirtualArmor = 80;
         }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
 
         public SkeletalDragon(Serial serial)
             : base(serial)

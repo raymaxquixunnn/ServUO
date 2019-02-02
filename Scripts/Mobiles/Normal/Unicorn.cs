@@ -52,6 +52,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.ArmorIgnore);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Unicorn(Serial serial)
             : base(serial)
         {
@@ -174,7 +182,7 @@ namespace Server.Mobiles
             AddLoot(LootPack.Potions);
         }
 
-		public override void OnDeath(Container c)
+        public override void OnDeath(Container c)
         {
             base.OnDeath(c);
 

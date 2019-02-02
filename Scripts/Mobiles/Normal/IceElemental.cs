@@ -10,40 +10,48 @@ namespace Server.Mobiles
         public IceElemental()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            this.Name = "an ice elemental";
-            this.Body = 161;
-            this.BaseSoundID = 268;
+                Name = "an ice elemental";
+                Body = 161;
+                BaseSoundID = 268;
 
-            this.SetStr(156, 185);
-            this.SetDex(96, 115);
-            this.SetInt(171, 192);
+                SetStr(156, 185);
+                SetDex(96, 115);
+                SetInt(171, 192);
 
-            this.SetHits(94, 111);
+                SetHits(94, 111);
 
-            this.SetDamage(10, 21);
+                SetDamage(10, 21);
 
-            this.SetDamageType(ResistanceType.Physical, 25);
-            this.SetDamageType(ResistanceType.Cold, 75);
+                SetDamageType(ResistanceType.Physical, 25);
+                SetDamageType(ResistanceType.Cold, 75);
 
-            this.SetResistance(ResistanceType.Physical, 35, 45);
-            this.SetResistance(ResistanceType.Fire, 5, 10);
-            this.SetResistance(ResistanceType.Cold, 50, 60);
-            this.SetResistance(ResistanceType.Poison, 20, 30);
-            this.SetResistance(ResistanceType.Energy, 20, 30);
+                SetResistance(ResistanceType.Physical, 35, 45);
+                SetResistance(ResistanceType.Fire, 5, 10);
+                SetResistance(ResistanceType.Cold, 50, 60);
+                SetResistance(ResistanceType.Poison, 20, 30);
+                SetResistance(ResistanceType.Energy, 20, 30);
 
-            this.SetSkill(SkillName.EvalInt, 10.5, 60.0);
-            this.SetSkill(SkillName.Magery, 10.5, 60.0);
-            this.SetSkill(SkillName.MagicResist, 30.1, 80.0);
-            this.SetSkill(SkillName.Tactics, 70.1, 100.0);
-            this.SetSkill(SkillName.Wrestling, 60.1, 100.0);
+                SetSkill(SkillName.EvalInt, 10.5, 60.0);
+                SetSkill(SkillName.Magery, 10.5, 60.0);
+                SetSkill(SkillName.MagicResist, 30.1, 80.0);
+                SetSkill(SkillName.Tactics, 70.1, 100.0);
+                SetSkill(SkillName.Wrestling, 60.1, 100.0);
 
-            this.Fame = 4000;
-            this.Karma = -4000;
+                Fame = 4000;
+                Karma = -4000;
 
-            this.VirtualArmor = 40;
+                VirtualArmor = 40;
 
-            this.PackItem(new BlackPearl());
-            this.PackReg(3);
+                PackItem(new BlackPearl());
+                PackReg(3);
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
         }
 
         public IceElemental(Serial serial)
@@ -66,13 +74,13 @@ namespace Server.Mobiles
 
         public override void AuraEffect(Mobile m)
         {
-            m.SendLocalizedMessage(1008111, false, this.Name); //  : The intense cold is damaging you!
+            m.SendLocalizedMessage(1008111, false,     Name); //  : The intense cold is damaging you!
         }
 
         public override void GenerateLoot()
         {
-            this.AddLoot(LootPack.Average, 2);
-            this.AddLoot(LootPack.Gems, 2);
+                AddLoot(LootPack.Average, 2);
+                AddLoot(LootPack.Gems, 2);
         }
 
         public override void Serialize(GenericWriter writer)

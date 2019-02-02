@@ -99,7 +99,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 3;
+                return 1;
             }
         }
         public override void GenerateLoot()

@@ -51,6 +51,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.ParalyzingBlow);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public MinotaurCaptain(Serial serial)
             : base(serial)
         {

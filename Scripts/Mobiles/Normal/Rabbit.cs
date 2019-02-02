@@ -42,6 +42,14 @@ namespace Server.Mobiles
             MinTameSkill = -18.9;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Rabbit(Serial serial)
             : base(serial)
         {

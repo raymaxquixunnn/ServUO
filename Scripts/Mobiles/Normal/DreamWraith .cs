@@ -50,6 +50,14 @@ namespace Server.Mobiles
             PackReg(10);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public DreamWraith(Serial serial)
             : base(serial)
         {

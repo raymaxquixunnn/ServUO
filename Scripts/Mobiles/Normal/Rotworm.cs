@@ -46,6 +46,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.BloodDisease);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Rotworm(Serial serial)
             : base(serial)
         {

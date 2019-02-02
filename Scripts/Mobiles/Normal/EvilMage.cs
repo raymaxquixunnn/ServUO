@@ -90,9 +90,10 @@ namespace Server.Mobiles
         {
             get
             {
-                return Core.AOS ? 1 : 0;
+                return 1;
             }
         }
+
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);

@@ -49,6 +49,14 @@ namespace Server.Mobiles
             PackItem(new LesserPoisonPotion());
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Scorpion(Serial serial)
             : base(serial)
         {

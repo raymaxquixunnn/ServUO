@@ -46,6 +46,14 @@ namespace Server.Mobiles
             MinTameSkill = 59.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public WolfSpider(Serial serial)
             : base(serial)
         {

@@ -48,6 +48,14 @@ namespace Server.Mobiles
             SetMagicalAbility(MagicalAbility.Piercing);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public override int GetIdleSound() { return 0x673; }
         public override int GetAngerSound() { return 0x670; }
         public override int GetHurtSound() { return 0x672; }

@@ -45,6 +45,14 @@ namespace Server.Mobiles
             PackItem(new SpidersSilk(5));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public GiantSpider(Serial serial)
             : base(serial)
         {

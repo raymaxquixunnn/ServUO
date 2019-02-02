@@ -48,6 +48,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.ManaDrain);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public MaddeningHorror(Serial serial)
             : base(serial)
         {

@@ -184,6 +184,14 @@ namespace Server.Mobiles
             return 0x579;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

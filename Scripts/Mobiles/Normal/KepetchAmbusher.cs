@@ -73,6 +73,14 @@ namespace Server.Mobiles
             return false;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public KepetchAmbusher(Serial serial)
             : base(serial)
         {

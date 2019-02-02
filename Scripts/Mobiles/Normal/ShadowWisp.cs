@@ -45,6 +45,14 @@ namespace Server.Mobiles
             PackBones();
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public ShadowWisp(Serial serial)
             : base(serial)
         {

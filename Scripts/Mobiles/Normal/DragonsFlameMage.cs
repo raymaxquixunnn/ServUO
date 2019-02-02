@@ -60,6 +60,14 @@ namespace Server.Mobiles
         {
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public override bool AlwaysMurderer { get { return true; } }
         public override bool ShowFameTitle { get { return false; } }
 

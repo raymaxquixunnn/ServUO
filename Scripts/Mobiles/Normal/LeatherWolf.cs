@@ -49,6 +49,13 @@ namespace Server.Mobiles
             Tamable = false;
             SetWeaponAbility(WeaponAbility.BleedAttack);
         }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
 
         public LeatherWolf(Serial serial)
             : base(serial)

@@ -57,6 +57,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.BleedAttack);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public RuneBeetle(Serial serial)
             : base(serial)
         {

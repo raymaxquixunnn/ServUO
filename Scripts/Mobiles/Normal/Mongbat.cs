@@ -40,6 +40,14 @@ namespace Server.Mobiles
             MinTameSkill = -18.9;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Mongbat(Serial serial)
             : base(serial)
         {

@@ -75,7 +75,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 5;
+                return 3;
             }
         }
 

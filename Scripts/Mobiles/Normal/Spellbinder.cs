@@ -37,6 +37,14 @@ namespace Server.Mobiles
             VirtualArmor = 28;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Spellbinder(Serial serial)
             : base(serial)
         {

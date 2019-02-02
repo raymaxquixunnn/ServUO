@@ -35,6 +35,14 @@ namespace Server.Mobiles
             MinTameSkill = 80.7;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Slith(Serial serial) : base(serial)
         {
         }

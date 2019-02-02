@@ -48,6 +48,14 @@ namespace Server.Items
             Karma = -7000;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public override int GetIdleSound() { return 0x2EF; }
         public override int GetAttackSound() { return 0x2EE; }
         public override int GetAngerSound() { return 0x2EF; }

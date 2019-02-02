@@ -37,8 +37,16 @@ namespace Server.Mobiles
 
             DelayBeginTunnel();
         }
-		
-		public virtual void SpawnPackItems()
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 4;
+            }
+        }
+
+        public virtual void SpawnPackItems()
         {
             int carrots = Utility.RandomMinMax(5, 10);
             PackItem(new Carrot(carrots));
@@ -57,7 +65,7 @@ namespace Server.Mobiles
         public override int Meat { get { return 1; } }
         public override int Hides { get { return 1; } }
         public override bool BardImmune { get { return !Core.AOS; } }
-		
+
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich);
@@ -81,7 +89,6 @@ namespace Server.Mobiles
                 }
             }
         }
-
 
         public override bool CheckFlee()
         {

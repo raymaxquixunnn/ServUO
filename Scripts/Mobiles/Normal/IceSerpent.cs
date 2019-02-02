@@ -44,6 +44,14 @@ namespace Server.Mobiles
 
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public IceSerpent(Serial serial)
             : base(serial)
         {

@@ -54,6 +54,14 @@ namespace Server.Mobiles
             MinTameSkill = 108.0;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public DreadWarhorse(Serial serial)
             : base(serial)
         {

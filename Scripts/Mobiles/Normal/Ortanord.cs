@@ -49,6 +49,14 @@ namespace Server.Mobiles
                 PackItem(new DaemonBone(10));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Ortanord(Serial serial)
             : base(serial)
         {

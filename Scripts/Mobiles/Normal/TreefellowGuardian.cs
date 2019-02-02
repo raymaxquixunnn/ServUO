@@ -45,6 +45,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.Dismount);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public TreefellowGuardian(Serial serial)
             : base(serial)
         {

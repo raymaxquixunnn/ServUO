@@ -62,7 +62,7 @@ namespace Server.Mobiles
         public override bool CanAngerOnTame { get { return true; } }
         public override Poison PoisonImmune { get { return Poison.Lethal; } }
         public override Poison HitPoison { get { return Poison.Lethal; } }
-        public override int TreasureMapLevel { get { return 3; } }
+        public override int TreasureMapLevel { get { return 1; } }
 
         public override void GenerateLoot()
         {

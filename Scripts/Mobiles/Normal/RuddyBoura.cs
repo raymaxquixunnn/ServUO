@@ -48,6 +48,14 @@ namespace Server.Mobiles
             VirtualArmor = 16;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public RuddyBoura(Serial serial) : base(serial)
         {
         }

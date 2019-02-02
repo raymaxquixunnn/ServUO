@@ -47,6 +47,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.StickySkin);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Viscera(Serial serial)
             : base(serial)
         {

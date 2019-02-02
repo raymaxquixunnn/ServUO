@@ -48,6 +48,14 @@ namespace Server.Mobiles
             PackNecroReg(24, 45);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public Devourer(Serial serial)
             : base(serial)
         {

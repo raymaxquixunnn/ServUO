@@ -19,7 +19,7 @@ namespace Server.Mobiles
             SetHits(833, 931);
 
             SetDamage(21, 28);
-			
+
             SetDamageType(ResistanceType.Physical, 0);
             SetDamageType(ResistanceType.Poison, 25);
             SetDamageType(ResistanceType.Energy, 75);
@@ -34,7 +34,7 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 101.7, 108.2);
             SetSkill(SkillName.MagicResist, 76.4, 89.9);
             SetSkill(SkillName.Anatomy, 56.4, 59.7);
-			
+
             Tamable = true;
             ControlSlots = 4;
             MinTameSkill = 101.1;
@@ -51,7 +51,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 5;
+                return 3;
             }
         }
         public override int Meat

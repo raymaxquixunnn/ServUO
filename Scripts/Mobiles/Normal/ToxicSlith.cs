@@ -35,6 +35,14 @@ namespace Server.Mobiles
             SetSkill(SkillName.Poisoning, 90.0, 110.0);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public override int DragonBlood { get { return 6; } }
 
         public ToxicSlith(Serial serial) : base(serial)
@@ -81,17 +89,17 @@ namespace Server.Mobiles
                     case 2:
                         c.DropItem(new SlithEye());
                         break;
-				}
+                }
             }
-			
-			if (Utility.RandomDouble() < 0.25)
+            
+            if (Utility.RandomDouble() < 0.25)
             {
-				switch (Utility.Random(2))
+                switch (Utility.Random(2))
                 {
-					case 0: c.DropItem(new AncientPotteryFragments());
-						break;
+                    case 0: c.DropItem(new AncientPotteryFragments());
+                        break;
                     case 1: c.DropItem(new TatteredAncientScroll());
-						break;
+                        break;
                 }
             }
         }

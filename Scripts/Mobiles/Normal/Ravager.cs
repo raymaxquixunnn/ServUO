@@ -43,6 +43,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.Dismount);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Ravager(Serial serial)
             : base(serial)
         {

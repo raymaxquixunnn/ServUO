@@ -84,6 +84,14 @@ namespace Server.Mobiles
             ControlSlots = 1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Windrunner(Serial serial)
             : base(serial)
         {

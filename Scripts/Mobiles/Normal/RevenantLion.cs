@@ -48,6 +48,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.BleedAttack);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public RevenantLion(Serial serial)
             : base(serial)
         {

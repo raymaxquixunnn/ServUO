@@ -55,6 +55,14 @@ namespace Server.Mobiles
             PackItem(new Yeast());
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public OrcBrute(Serial serial)
             : base(serial)
         {

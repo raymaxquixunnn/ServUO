@@ -12,7 +12,7 @@ namespace Server.Mobiles
         {
             Name = "a minotaur scout";
             Body = 281;
-		   
+
             SetStr(353, 375);
             SetDex(111, 130);
             SetInt(34, 50);
@@ -45,6 +45,14 @@ namespace Server.Mobiles
             }
 
             SetWeaponAbility(WeaponAbility.ParalyzingBlow);
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
         }
 
         public MinotaurScout(Serial serial)

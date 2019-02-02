@@ -48,6 +48,14 @@ namespace Server.Mobiles
             MinTameSkill = 102.0;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Phoenix(Serial serial)
             : base(serial)
         {

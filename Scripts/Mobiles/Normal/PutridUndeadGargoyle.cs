@@ -57,6 +57,14 @@ namespace Server.Mobiles
                 PackItem(new AncientPotteryFragments());
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public PutridUndeadGargoyle(Serial serial)
             : base(serial)
         {

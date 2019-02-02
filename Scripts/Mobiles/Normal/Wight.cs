@@ -50,6 +50,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.ColdWind);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Wight(Serial serial)
             : base(serial)
         {

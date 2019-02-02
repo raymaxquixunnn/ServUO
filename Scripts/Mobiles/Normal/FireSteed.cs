@@ -51,6 +51,14 @@ namespace Server.Mobiles
             PackItem(new Ruby(Utility.RandomMinMax(16, 30)));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public FireSteed(Serial serial)
             : base(serial)
         {

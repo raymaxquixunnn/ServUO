@@ -49,6 +49,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.TailSwipe);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public HighPlainsBoura(Serial serial) : base(serial)
         {
         }

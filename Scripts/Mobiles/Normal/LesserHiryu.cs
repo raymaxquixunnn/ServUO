@@ -49,6 +49,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.GraspingClaw);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public LesserHiryu(Serial serial)
             : base(serial)
         {
@@ -59,13 +67,6 @@ namespace Server.Mobiles
             get
             {
                 return true;
-            }
-        }
-        public override int TreasureMapLevel
-        {
-            get
-            {
-                return 3;
             }
         }
         public override int Meat

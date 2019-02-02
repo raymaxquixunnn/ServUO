@@ -44,6 +44,14 @@ namespace Server.Mobiles
             this.MinTameSkill = 29.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public ForestOstard(Serial serial)
             : base(serial)
         {

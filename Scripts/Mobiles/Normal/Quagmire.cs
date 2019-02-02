@@ -9,35 +9,43 @@ namespace Server.Mobiles
         public Quagmire()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.4, 0.8)
         {
-            this.Name = "a quagmire";
-            this.Body = 789;
-            this.BaseSoundID = 352;
+            Name = "a quagmire";
+            Body = 789;
+            BaseSoundID = 352;
 
-            this.SetStr(101, 130);
-            this.SetDex(66, 85);
-            this.SetInt(31, 55);
+            SetStr(101, 130);
+            SetDex(66, 85);
+            SetInt(31, 55);
 
-            this.SetHits(91, 105);
+            SetHits(91, 105);
 
-            this.SetDamage(10, 14);
+            SetDamage(10, 14);
 
-            this.SetDamageType(ResistanceType.Physical, 60);
-            this.SetDamageType(ResistanceType.Poison, 40);
+            SetDamageType(ResistanceType.Physical, 60);
+            SetDamageType(ResistanceType.Poison, 40);
 
-            this.SetResistance(ResistanceType.Physical, 50, 60);
-            this.SetResistance(ResistanceType.Fire, 10, 20);
-            this.SetResistance(ResistanceType.Cold, 10, 20);
-            this.SetResistance(ResistanceType.Poison, 100);
-            this.SetResistance(ResistanceType.Energy, 20, 30);
+            SetResistance(ResistanceType.Physical, 50, 60);
+            SetResistance(ResistanceType.Fire, 10, 20);
+            SetResistance(ResistanceType.Cold, 10, 20);
+            SetResistance(ResistanceType.Poison, 100);
+            SetResistance(ResistanceType.Energy, 20, 30);
 
-            this.SetSkill(SkillName.MagicResist, 65.1, 75.0);
-            this.SetSkill(SkillName.Tactics, 50.1, 60.0);
-            this.SetSkill(SkillName.Wrestling, 60.1, 80.0);
+            SetSkill(SkillName.MagicResist, 65.1, 75.0);
+            SetSkill(SkillName.Tactics, 50.1, 60.0);
+            SetSkill(SkillName.Wrestling, 60.1, 80.0);
 
-            this.Fame = 1500;
-            this.Karma = -1500;
+            Fame = 1500;
+            Karma = -1500;
 
-            this.VirtualArmor = 32;
+            VirtualArmor = 32;
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
         }
 
         public Quagmire(Serial serial)
@@ -68,7 +76,7 @@ namespace Server.Mobiles
         }
         public override void GenerateLoot()
         {
-            this.AddLoot(LootPack.Average);
+            AddLoot(LootPack.Average);
         }
 
         public override int GetAngerSound()
@@ -87,8 +95,8 @@ namespace Server.Mobiles
             base.Deserialize(reader);
             int version = reader.ReadInt();
 
-            if (this.BaseSoundID == -1)
-                this.BaseSoundID = 352;
+            if (BaseSoundID == -1)
+                BaseSoundID = 352;
         }
     }
 }

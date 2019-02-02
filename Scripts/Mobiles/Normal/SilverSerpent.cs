@@ -46,6 +46,14 @@ namespace Server.Mobiles
             VirtualArmor = 40;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public SilverSerpent(Serial serial)
             : base(serial)
         {

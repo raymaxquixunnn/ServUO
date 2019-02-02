@@ -62,6 +62,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.LifeLeech);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Kappa(Serial serial)
             : base(serial)
         {

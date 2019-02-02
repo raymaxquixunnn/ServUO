@@ -46,6 +46,14 @@ namespace Server.Mobiles
             VirtualArmor = 16;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public LowlandBoura(Serial serial) : base(serial)
         {
         }

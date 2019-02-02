@@ -68,7 +68,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 5;
+                return 3;
             }
         }
         public override int Meat

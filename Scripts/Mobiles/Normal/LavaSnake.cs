@@ -44,6 +44,14 @@ namespace Server.Mobiles
             PackItem(new SulfurousAsh());
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public LavaSnake(Serial serial)
             : base(serial)
         {

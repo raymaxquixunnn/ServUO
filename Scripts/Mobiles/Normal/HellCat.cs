@@ -47,6 +47,14 @@ namespace Server.Mobiles
             MinTameSkill = 71.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public HellCat(Serial serial)
             : base(serial)
         {

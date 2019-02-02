@@ -43,6 +43,14 @@ namespace Server.Mobiles
             MinTameSkill = 102.0;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public DragonWolf(Serial serial)
             : base(serial)
         {

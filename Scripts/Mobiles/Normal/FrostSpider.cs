@@ -51,6 +51,14 @@ namespace Server.Mobiles
             PackItem(new SpidersSilk(7));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public FrostSpider(Serial serial)
             : base(serial)
         {

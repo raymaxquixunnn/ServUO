@@ -79,6 +79,14 @@ namespace Server.Mobiles
         public override bool CanAngerOnTame { get { return true; } }
         public override bool StatLossAfterTame { get { return true; } }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public override void AuraEffect(Mobile m)
         {
             m.SendLocalizedMessage(1008111, false, Name); //  : The intense cold is damaging you!

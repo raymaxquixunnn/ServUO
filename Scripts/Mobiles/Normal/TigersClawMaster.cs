@@ -10,20 +10,28 @@ namespace Server.Mobiles
         public TigersClawMaster()
             : base()
         {
-            this.Name = "Black Order Master";
-            this.Title = "of the Serpent's Fang Sect";
-            this.SetStr(440, 460);
-            this.SetDex(400, 415);
-            this.SetInt(200, 215);
+            Name = "Black Order Master";
+            Title = "of the Serpent's Fang Sect";
+            SetStr(440, 460);
+            SetDex(400, 415);
+            SetInt(200, 215);
 
-            this.SetHits(850, 875);
+            SetHits(850, 875);
 
-            this.SetDamage(15, 20);
+            SetDamage(15, 20);
 
-            this.Fame = 25000;
-            this.Karma = -25000;
+            Fame = 25000;
+            Karma = -25000;
 
-            this.VirtualArmor = 60;
+            VirtualArmor = 60;
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
         }
 
         public TigersClawMaster(Serial serial)
@@ -47,7 +55,7 @@ namespace Server.Mobiles
         }
         public override void GenerateLoot()
         {
-            this.AddLoot(LootPack.AosFilthyRich, 6);
+            AddLoot(LootPack.AosFilthyRich, 6);
         }
 
         public override void OnDeath(Container c)

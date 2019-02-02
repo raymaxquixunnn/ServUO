@@ -73,6 +73,14 @@ namespace Server.Mobiles
             VirtualArmor = 58;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public TigersClawThief(Serial serial)
             : base(serial)
         {

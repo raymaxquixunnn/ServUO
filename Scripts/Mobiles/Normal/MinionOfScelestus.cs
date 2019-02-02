@@ -14,7 +14,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Mage, FightMode.Weakest, 10, 1, 0.2, 0.4)
         {
             Name = "a minion of scelestus";
-            Body = 9;	
+            Body = 9;    
             BaseSoundID = 357;
             Hue = 1159;
 
@@ -50,8 +50,16 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            this.AddLoot(LootPack.SuperBoss);
-            this.AddLoot(LootPack.UltraRich);
+                AddLoot(LootPack.SuperBoss);
+                AddLoot(LootPack.UltraRich);
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 17;
+            }
         }
 
         public override Poison PoisonImmune { get { return Poison.Parasitic; } }
@@ -70,7 +78,7 @@ namespace Server.Mobiles
                 {
                     if (Server.Spells.Ninjitsu.AnimalForm.UnderTransformation(defender))
                     {
-                        defender.SendLocalizedMessage(1114066, this.Name); // ~1_NAME~ knocked you out of animal form!
+                        defender.SendLocalizedMessage(1114066,     Name); // ~1_NAME~ knocked you out of animal form!
                     }
                     else if (defender.Mounted)
                     {
@@ -106,9 +114,9 @@ namespace Server.Mobiles
         {
             base.OnThink();
 
-            if (this.GetDistanceToSqrt(Home) > MaxWanderDistance && (Combatant == null || 0.01 > Utility.RandomDouble()))
+            if (    GetDistanceToSqrt(Home) > MaxWanderDistance && (Combatant == null || 0.01 > Utility.RandomDouble()))
             {
-                IPooledEnumerable eable = this.GetMobilesInRange(10);
+                IPooledEnumerable eable =     GetMobilesInRange(10);
                 foreach (Mobile m in eable)
                 {
                     if (m.NetState != null)
@@ -116,18 +124,18 @@ namespace Server.Mobiles
                 }
                 eable.Free();
 
-                this.FixedParticles(0x376A, 9, 32, 0x13AF, EffectLayer.Waist);
-                MoveToWorld(Home, this.Map);
+                    FixedParticles(0x376A, 9, 32, 0x13AF, EffectLayer.Waist);
+                MoveToWorld(Home,     Map);
             }
         }
 
         private Type[] m_Types = new Type[]
-		{
-			typeof(ChallengeRite), 			typeof(AnthenaeumDecree), 		typeof(LetterFromTheKing),
-			typeof(OnTheVoid),				typeof(ShilaxrinarsMemorial),	typeof(ToTheHighScholar),
-			typeof(ToTheHighBroodmother),	typeof(ReplyToTheHighScholar),	typeof(AccessToTheIsle),
-			typeof(InMemory)
-		};
+        {
+            typeof(ChallengeRite),             typeof(AnthenaeumDecree),         typeof(LetterFromTheKing),
+            typeof(OnTheVoid),                typeof(ShilaxrinarsMemorial),    typeof(ToTheHighScholar),
+            typeof(ToTheHighBroodmother),    typeof(ReplyToTheHighScholar),    typeof(AccessToTheIsle),
+            typeof(InMemory)
+        };
 
         public MinionOfScelestus(Serial serial)
             : base(serial)

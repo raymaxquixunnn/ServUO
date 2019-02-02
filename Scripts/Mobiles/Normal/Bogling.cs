@@ -67,6 +67,14 @@ namespace Server.Mobiles
             AddLoot(LootPack.Meager);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

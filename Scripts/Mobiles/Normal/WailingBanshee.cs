@@ -43,6 +43,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.MortalStrike);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public WailingBanshee(Serial serial)
             : base(serial)
         {

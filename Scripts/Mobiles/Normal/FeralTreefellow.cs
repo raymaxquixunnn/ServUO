@@ -41,6 +41,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.Dismount);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 4;
+            }
+        }
+
         public FeralTreefellow(Serial serial)
             : base(serial)
         {

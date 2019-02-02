@@ -44,6 +44,14 @@ namespace Server.Mobiles
             MinTameSkill = 95.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Skree(Serial serial)
             : base(serial)
         {

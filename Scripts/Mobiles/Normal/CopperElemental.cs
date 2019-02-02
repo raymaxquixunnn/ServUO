@@ -50,6 +50,7 @@ namespace Server.Mobiles
             PackItem(ore);
         }
 
+
         public CopperElemental(Serial serial)
             : base(serial)
         {

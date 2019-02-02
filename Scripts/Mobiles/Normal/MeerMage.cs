@@ -45,13 +45,21 @@ namespace Server.Mobiles
 
             VirtualArmor = 16;
 
-			switch (Utility.Random(8))
+            switch (Utility.Random(8))
             {
                 case 0: PackItem(new StrangleScroll()); break;
                 case 1: PackItem(new WitherScroll()); break;
-			}
+            }
 
             m_NextAbilityTime = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(2, 5));
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
         }
 
         public MeerMage(Serial serial)
@@ -78,13 +86,6 @@ namespace Server.Mobiles
             get
             {
                 return true;
-            }
-        }
-        public override int TreasureMapLevel
-        {
-            get
-            {
-                return 3;
             }
         }
         public override bool InitialInnocent

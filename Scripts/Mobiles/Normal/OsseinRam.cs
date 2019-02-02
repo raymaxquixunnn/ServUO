@@ -48,6 +48,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.LifeLeech);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public override int Meat { get { return 3; } }
         public override FoodType FavoriteFood { get { return FoodType.Meat; } }
         public override bool CanAngerOnTame { get { return true; } }

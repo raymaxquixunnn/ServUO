@@ -38,6 +38,14 @@ namespace Server.Mobiles
             SetAreaEffect(AreaEffect.ExplosiveGoo);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public FireAnt(Serial serial) : base(serial)
         {
         }

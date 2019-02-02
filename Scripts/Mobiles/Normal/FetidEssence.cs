@@ -50,6 +50,14 @@ namespace Server.Mobiles
             SetAreaEffect(AreaEffect.EssenceOfDisease);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public FetidEssence(Serial serial)
             : base(serial)
         {

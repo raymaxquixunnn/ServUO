@@ -44,6 +44,14 @@ namespace Server.Mobiles
             MinTameSkill = 53.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Panther(Serial serial)
             : base(serial)
         {

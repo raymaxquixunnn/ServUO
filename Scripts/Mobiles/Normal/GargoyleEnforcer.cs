@@ -48,6 +48,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.WhirlwindAttack);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public GargoyleEnforcer(Serial serial)
             : base(serial)
         {

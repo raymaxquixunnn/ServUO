@@ -56,6 +56,14 @@ namespace Server.Mobiles
             AddItem(shroud);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Protector(Serial serial)
             : base(serial)
         {

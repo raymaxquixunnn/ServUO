@@ -49,6 +49,14 @@ namespace Server.Mobiles
             PackItem(new SulfurousAsh(5));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public HellHound(Serial serial)
             : base(serial)
         {

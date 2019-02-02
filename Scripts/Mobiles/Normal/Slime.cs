@@ -43,6 +43,14 @@ namespace Server.Mobiles
             MinTameSkill = 23.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Slime(Serial serial)
             : base(serial)
         {

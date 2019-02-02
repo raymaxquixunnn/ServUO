@@ -148,7 +148,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 6;
+                return 17;
             }
         }
         private static bool CheckLocation(Mobile m)

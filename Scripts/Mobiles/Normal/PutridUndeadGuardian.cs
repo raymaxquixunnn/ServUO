@@ -38,6 +38,14 @@ namespace Server.Mobiles
             PackNecroReg(10, 15); /// Stratics didn't specify
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public PutridUndeadGuardian(Serial serial)
             : base(serial)
         {

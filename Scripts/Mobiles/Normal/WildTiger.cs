@@ -64,6 +64,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.GraspingClaw);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public override void OnDoubleClick(Mobile from)
         {
             if (CanRide)

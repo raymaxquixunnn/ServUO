@@ -38,6 +38,14 @@ namespace Server.Mobiles
             PackItem(new Apple(5));
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Gremlin(Serial serial)
             : base(serial)
         {

@@ -52,6 +52,14 @@ namespace Server.Mobiles
         {
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public DateTime MilkedOn
         {

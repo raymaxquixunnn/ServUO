@@ -70,6 +70,14 @@ namespace Server.Mobiles
             AddLoot(LootPack.Gems, 6);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 10;
+            }
+        }
+
         public override int Meat { get { return 1; } }
         public override bool AlwaysMurderer { get { return true; } }
 

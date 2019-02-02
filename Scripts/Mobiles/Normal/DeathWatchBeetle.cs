@@ -142,6 +142,14 @@ namespace Server.Mobiles
             writer.Write((int)1);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public override void Deserialize(GenericReader reader)
         {
             base.Deserialize(reader);

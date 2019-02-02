@@ -64,7 +64,7 @@ namespace Server.Mobiles
             get { return OppositionGroup.FeyAndUndead; }
         }
 
-        public override int TreasureMapLevel { get { return Utility.RandomMinMax(1, 3); } }
+        public override int TreasureMapLevel { get { return 1; } }
         public override bool BleedImmune { get { return true; } }
         public override Poison PoisonImmune { get { return Poison.Lethal; } }
         public override bool Unprovokable { get { return true; } }

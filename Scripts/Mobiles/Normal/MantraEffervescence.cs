@@ -45,6 +45,14 @@ namespace Server.Mobiles
             SetAreaEffect(AreaEffect.AuraOfEnergy);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public MantraEffervescence(Serial serial)
             : base(serial)
         {

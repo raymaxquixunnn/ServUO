@@ -86,6 +86,14 @@ namespace Server.Mobiles
             StopFlee();
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public BattleChickenLizard(Serial serial)
             : base(serial)
         {

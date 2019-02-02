@@ -35,6 +35,14 @@ namespace Server.Mobiles
             VirtualArmor = 4;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public override IDamageable Combatant
         {
             get { return base.Combatant; }

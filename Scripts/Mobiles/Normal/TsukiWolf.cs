@@ -67,6 +67,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.Rage);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public TsukiWolf(Serial serial)
             : base(serial)
         {

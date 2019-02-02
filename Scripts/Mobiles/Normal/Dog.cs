@@ -41,6 +41,14 @@ namespace Server.Mobiles
             MinTameSkill = -21.3;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Dog(Serial serial)
             : base(serial)
         {

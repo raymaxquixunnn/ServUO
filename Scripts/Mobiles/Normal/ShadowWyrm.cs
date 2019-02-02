@@ -61,7 +61,7 @@ namespace Server.Mobiles
         public override bool AutoDispel { get { return !Controlled; } }
         public override Poison PoisonImmune { get { return Poison.Deadly; } }
         public override Poison HitPoison { get { return Poison.Deadly; } }
-        public override int TreasureMapLevel { get { return 5; } }
+        public override int TreasureMapLevel { get { return 2; } }
         public override int Meat { get { return 19; } }
         public override int Hides { get { return 20; } }
         public override int Scales { get { return 10; } }

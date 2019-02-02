@@ -81,6 +81,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.CrushingBlow);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public OrcChopper(Serial serial)
             : base(serial)
         {

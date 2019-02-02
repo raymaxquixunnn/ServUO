@@ -71,6 +71,14 @@ namespace Server.Mobiles
             }
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public Changeling(Serial serial)
             : base(serial)
         {

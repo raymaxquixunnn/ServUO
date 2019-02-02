@@ -54,6 +54,14 @@ namespace Server.Mobiles
             m_MiningTimer = Timer.DelayCall(MiningInterval, MiningInterval, DoMining);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
+        }
+
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Meager);

@@ -9,31 +9,39 @@ namespace Server.Mobiles
         public HeadlessOne()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            this.Name = "a headless one";
-            this.Body = 31;
-            this.Hue = Utility.RandomSkinHue() & 0x7FFF;
-            this.BaseSoundID = 0x39D;
+                Name = "a headless one";
+                Body = 31;
+                Hue = Utility.RandomSkinHue() & 0x7FFF;
+                BaseSoundID = 0x39D;
 
-            this.SetStr(26, 50);
-            this.SetDex(36, 55);
-            this.SetInt(16, 30);
+                SetStr(26, 50);
+                SetDex(36, 55);
+                SetInt(16, 30);
 
-            this.SetHits(16, 30);
+                SetHits(16, 30);
 
-            this.SetDamage(5, 10);
+                SetDamage(5, 10);
 
-            this.SetDamageType(ResistanceType.Physical, 100);
+                SetDamageType(ResistanceType.Physical, 100);
 
-            this.SetResistance(ResistanceType.Physical, 15, 20);
+                SetResistance(ResistanceType.Physical, 15, 20);
 
-            this.SetSkill(SkillName.MagicResist, 15.1, 20.0);
-            this.SetSkill(SkillName.Tactics, 25.1, 40.0);
-            this.SetSkill(SkillName.Wrestling, 25.1, 40.0);
+                SetSkill(SkillName.MagicResist, 15.1, 20.0);
+                SetSkill(SkillName.Tactics, 25.1, 40.0);
+                SetSkill(SkillName.Wrestling, 25.1, 40.0);
 
-            this.Fame = 450;
-            this.Karma = -450;
+                Fame = 450;
+                Karma = -450;
 
-            this.VirtualArmor = 18;
+                VirtualArmor = 18;
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
         }
 
         public HeadlessOne(Serial serial)
@@ -57,7 +65,7 @@ namespace Server.Mobiles
         }
         public override void GenerateLoot()
         {
-            this.AddLoot(LootPack.Poor);
+                AddLoot(LootPack.Poor);
             // TODO: body parts
         }
 

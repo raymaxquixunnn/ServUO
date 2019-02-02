@@ -45,6 +45,14 @@ namespace Server.Mobiles
             Hue = 0x489;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public FireBeetle(Serial serial)
             : base(serial)
         {

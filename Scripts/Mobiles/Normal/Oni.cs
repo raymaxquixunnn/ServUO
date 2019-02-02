@@ -64,7 +64,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 4;
+                return 2;
             }
         }
         public override int GetAngerSound()

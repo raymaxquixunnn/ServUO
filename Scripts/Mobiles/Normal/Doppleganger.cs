@@ -37,6 +37,14 @@ namespace Server.Mobiles
             VirtualArmor = 55;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Doppleganger(Serial serial)
             : base(serial)
         {

@@ -46,6 +46,14 @@ namespace Server.Mobiles
             MinTameSkill = 83.1;
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public SavageRidgeback(Serial serial)
             : base(serial)
         {

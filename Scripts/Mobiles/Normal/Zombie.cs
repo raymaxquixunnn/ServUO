@@ -40,6 +40,14 @@ namespace Server.Mobiles
             PackBodyPartOrBones();
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public Zombie(Serial serial)
             : base(serial)
         {

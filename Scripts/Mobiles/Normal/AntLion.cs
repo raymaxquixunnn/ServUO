@@ -74,16 +74,16 @@ namespace Server.Mobiles
             PackItem(orepile);
 
             PackBones();
-			
-			if ( 0.07 >= Utility.RandomDouble() )
-			{
-				switch ( Utility.Random( 3 ) )
-				{
-					case 0: PackItem( new UnknownBardSkeleton() ); break;
-					case 1: PackItem( new UnknownMageSkeleton() ); break;
-					case 2: PackItem( new UnknownRogueSkeleton() ); break;
-				}
-			}					
+
+            if ( 0.07 >= Utility.RandomDouble() )
+            {
+                switch ( Utility.Random( 3 ) )
+                {
+                    case 0: PackItem( new UnknownBardSkeleton() ); break;
+                    case 1: PackItem( new UnknownMageSkeleton() ); break;
+                    case 2: PackItem( new UnknownRogueSkeleton() ); break;
+                }
+            }
         }
 
         public override bool HasBreath { get { return true; } }
@@ -183,8 +183,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		
-		public override void OnGotMeleeAttack(Mobile attacker)
+
+        public override void OnGotMeleeAttack(Mobile attacker)
         {
             if (attacker.Weapon is BaseRanged)
                 BeginAcidBreath();
@@ -240,6 +240,14 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average, 2);
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
         }
 
         public override void Serialize(GenericWriter writer)

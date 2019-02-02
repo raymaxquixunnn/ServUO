@@ -73,6 +73,13 @@ namespace Server.Mobiles
 
             VirtualArmor = 58;
         }
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
 
         public SerpentsFangAssassin(Serial serial)
             : base(serial)

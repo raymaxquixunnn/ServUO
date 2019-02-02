@@ -10,20 +10,28 @@ namespace Server.Mobiles
         public DragonsFlameGrandMage()
             : base()
         {
-            this.Name = "Black Order Grand Mage";
-            this.Title = "of the Dragon's Flame Sect";
-            this.SetStr(340, 360);
-            this.SetDex(200, 215);
-            this.SetInt(500, 515);
+            Name = "Black Order Grand Mage";
+            Title = "of the Dragon's Flame Sect";
+            SetStr(340, 360);
+            SetDex(200, 215);
+            SetInt(500, 515);
 
-            this.SetHits(800);
+            SetHits(800);
 
-            this.SetDamage(15, 20);
+            SetDamage(15, 20);
 
-            this.Fame = 25000;
-            this.Karma = -25000;
+            Fame = 25000;
+            Karma = -25000;
 
-            this.VirtualArmor = 60;
+            VirtualArmor = 60;
+        }
+
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 3;
+            }
         }
 
         public DragonsFlameGrandMage(Serial serial)
@@ -47,7 +55,7 @@ namespace Server.Mobiles
         }
         public override void GenerateLoot()
         {
-            this.AddLoot(LootPack.AosFilthyRich, 6);
+            AddLoot(LootPack.AosFilthyRich, 6);
         }
 
         public override void OnDeath(Container c)

@@ -98,7 +98,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return 1;
+                return 8;
             }
         }
 
@@ -106,8 +106,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.UltraRich, 2);
         }
-
-       
 
         public override void Serialize(GenericWriter writer)
         {

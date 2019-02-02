@@ -66,6 +66,14 @@ namespace Server.Mobiles
             PackItem(new WoodenShield());
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
         public SkeletalKnight(Serial serial)
             : base(serial)
         {

@@ -49,6 +49,14 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.FlurryForce);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public KazeKemono(Serial serial)
             : base(serial)
         {
@@ -65,8 +73,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.Rich, 3);
         }
-
-        
 
         public override void Serialize(GenericWriter writer)
         {

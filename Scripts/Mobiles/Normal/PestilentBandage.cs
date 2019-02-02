@@ -57,6 +57,14 @@ namespace Server.Mobiles
             SetAreaEffect(AreaEffect.PoisonBreath);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public PestilentBandage(Serial serial)
             : base(serial)
         {

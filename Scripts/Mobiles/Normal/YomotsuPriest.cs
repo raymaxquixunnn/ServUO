@@ -75,6 +75,14 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.DoubleStrike);
         }
 
+        public override int TreasureMapLevel
+        {
+            get
+            {
+                return 2;
+            }
+        }
+
         public YomotsuPriest(Serial serial)
             : base(serial)
         {
