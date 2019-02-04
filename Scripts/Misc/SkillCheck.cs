@@ -195,8 +195,8 @@ namespace Server.Misc
 
 			gc *= skill.Info.GainFactor;
 
-			if (gc < 0.01)
-				gc = 0.01;
+			if (gc < 0.0002)
+				gc = 0.0002;
 
 			// Pets get a 100% bonus
 			if (from is BaseCreature && ((BaseCreature)from).Controlled)
@@ -303,7 +303,7 @@ namespace Server.Misc
 
 			if (skill.Base < skill.Cap && skill.Lock == SkillLock.Up)
 			{
-				var toGain = 1;
+				var toGain = 0.1;
 				var skills = from.Skills;
 
 				if (from is PlayerMobile && Siege.SiegeShard)
@@ -327,12 +327,12 @@ namespace Server.Misc
 				}
 
 				if (skill.Base <= 10.0)
-					toGain = Utility.Random(4) + 1;
+					toGain = Utility.Random(10);
 
 				#region Mondain's Legacy
 				if (from is PlayerMobile && QuestHelper.EnhancedSkill((PlayerMobile)from, skill))
 				{
-					toGain *= Utility.RandomMinMax(2, 4);
+					toGain *= Utility.RandomMinMax(1, 3);
 				}
 				#endregion
 
@@ -343,7 +343,7 @@ namespace Server.Misc
 					// You are infused with intense energy. You are under the effects of an accelerated skillgain scroll.
 					((PlayerMobile)from).SendLocalizedMessage(1077956);
 
-					toGain = Utility.RandomMinMax(2, 5);
+					toGain = Utility.RandomMinMax(1, 4);
 				}
 				#endregion
 
@@ -359,7 +359,7 @@ namespace Server.Misc
 						if (spell != null && master.InRange(from.Location, spell.PartyRange) && master.Map == from.Map &&
 							spell.EnhancedGainChance >= Utility.Random(100))
 						{
-							toGain = Utility.RandomMinMax(2, 5);
+							toGain = Utility.RandomMinMax(1, 4);
 						}
 					}
 				}
