@@ -303,7 +303,7 @@ namespace Server.Misc
 
 			if (skill.Base < skill.Cap && skill.Lock == SkillLock.Up)
 			{
-				var toGain = 0.1;
+				var toGain = 1;
 				var skills = from.Skills;
 
 				if (from is PlayerMobile && Siege.SiegeShard)
@@ -316,9 +316,9 @@ namespace Server.Misc
 						{
 							CheckReduceSkill(skills, toGain, skill);
 
-							if (skills.Total + toGain <= skills.Cap)
+							if (skills.Total + toGain /10 <= skills.Cap)
 							{
-								skill.BaseFixedPoint += toGain;
+								skill.BaseFixedPoint += toGain /10;
 							}
 						}
 
@@ -327,12 +327,12 @@ namespace Server.Misc
 				}
 
 				if (skill.Base <= 10.0)
-					toGain = Utility.Random(10);
+					toGain = Utility.Random(10) /10;
 
 				#region Mondain's Legacy
 				if (from is PlayerMobile && QuestHelper.EnhancedSkill((PlayerMobile)from, skill))
 				{
-					toGain *= Utility.RandomMinMax(1, 3);
+					toGain *= Utility.RandomMinMax(1, 3) /10;
 				}
 				#endregion
 
@@ -343,7 +343,7 @@ namespace Server.Misc
 					// You are infused with intense energy. You are under the effects of an accelerated skillgain scroll.
 					((PlayerMobile)from).SendLocalizedMessage(1077956);
 
-					toGain = Utility.RandomMinMax(1, 4);
+					toGain = Utility.RandomMinMax(1, 4) /10;
 				}
 				#endregion
 
@@ -359,7 +359,7 @@ namespace Server.Misc
 						if (spell != null && master.InRange(from.Location, spell.PartyRange) && master.Map == from.Map &&
 							spell.EnhancedGainChance >= Utility.Random(100))
 						{
-							toGain = Utility.RandomMinMax(1, 4);
+							toGain = Utility.RandomMinMax(1, 4) /10;
 						}
 					}
 				}
@@ -370,9 +370,9 @@ namespace Server.Misc
 					CheckReduceSkill(skills, toGain, skill);
 				}
 
-				if (!from.Player || (skills.Total + toGain <= skills.Cap))
+				if (!from.Player || (skills.Total + toGain /10 <= skills.Cap))
 				{
-					skill.BaseFixedPoint = Math.Min(skill.CapFixedPoint, skill.BaseFixedPoint + toGain);
+					skill.BaseFixedPoint = Math.Min(skill.CapFixedPoint, skill.BaseFixedPoint + toGain /10);
 
 					EventSink.InvokeSkillGain(new SkillGainEventArgs(from, skill, toGain));
 
@@ -416,9 +416,9 @@ namespace Server.Misc
 			{
 				foreach (var toLower in skills)
 				{
-					if (toLower != gainSKill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
+					if (toLower != gainSKill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain /10)
 					{
-						toLower.BaseFixedPoint -= toGain;
+						toLower.BaseFixedPoint -= toGain /10;
 						break;
 					}
 				}
