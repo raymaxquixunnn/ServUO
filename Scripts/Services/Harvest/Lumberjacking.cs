@@ -21,13 +21,13 @@ namespace Server.Engines.Harvest
             }
         }
 
-        private readonly HarvestDefinition  m_Wood;
+        private readonly HarvestDefinition m_Definition;
 
-        public HarvestDefinition lumber
+        public HarvestDefinition Definition
         {
             get
             {
-                return this.m_Wood;
+                return this.m_Definition;
             }
         }
 
@@ -37,15 +37,15 @@ namespace Server.Engines.Harvest
             HarvestVein[] veins;
 
             #region Lumberjacking
-            HarvestDefinition lumber = this.m_Wood = new HarvestDefinition();
+            HarvestDefinition lumber = this.m_Definition = new HarvestDefinition();
 
             // Resource banks are every 4x3 tiles
             lumber.BankWidth = 4;
             lumber.BankHeight = 3;
 
             // Every bank holds from 20 to 45 logs
-            lumber.MinTotal = 20000;
-            lumber.MaxTotal = 45000;
+            lumber.MinTotal = 200000;
+            lumber.MaxTotal = 450000;
 
             // A resource bank will respawn its content every 20 to 30 minutes
             lumber.MinRespawn = TimeSpan.FromMinutes(0.0);
@@ -77,57 +77,60 @@ namespace Server.Engines.Harvest
             lumber.PackFullMessage = 500497; // You can't place any wood into your backpack!
             lumber.ToolBrokeMessage = 500499; // You broke your axe.
 
+            res = new HarvestResource[]
+            {
+                new HarvestResource(00.0, 00.0, 100.0, 1072540, typeof(Log), typeof(WoodGElemental)),
+                new HarvestResource(65.0, 25.0, 105.0, 1072541, typeof(OakLog), typeof(OakWoodGElemental)),
+                new HarvestResource(80.0, 40.0, 120.0, 1072542, typeof(AshLog), typeof(AshWoodGElemental)),
+                new HarvestResource(95.0, 55.0, 135.0, 1072543, typeof(YewLog), typeof(YewWoodGElemental)),
+                new HarvestResource(100.0, 60.0, 140.0, 1072544, typeof(HeartwoodLog), typeof(HeartwoodGElemental)),
+                new HarvestResource(105.0, 65.0, 145.0, 1072545, typeof(BloodwoodLog), typeof(BloodwoodGElemental)),
+                new HarvestResource(110.0, 70.0, 150.0, 1072546, typeof(FrostwoodLog), typeof(FrostwoodGElemental)),
+                new HarvestResource(115.0, 75.0, 155.0, 1072540, typeof(CalcitewoodLog), typeof(CalcitewoodGElemental)),
+                new HarvestResource(120.0, 80.0, 160.0, 1072540, typeof(GoldwoodLog), typeof(GoldwoodGElemental)),
+                new HarvestResource(125.0, 85.0, 165.0, 1072540, typeof(LabradoritewoodLog), typeof(LabradoritewoodGElemental)),
+                new HarvestResource(125.0, 85.0, 165.0, 1072540, typeof(MoldavitewoodLog), typeof(MoldavitewoodGElemental)),
+                new HarvestResource(130.0, 90.0, 170.0, 1072540, typeof(MorganitewoodLog), typeof(MorganitewoodGElemental)),
+                new HarvestResource(130.0, 90.0, 170.0, 1072540, typeof(QuartzwoodLog), typeof(QuartzwoodGElemental)),
+                new HarvestResource(135.0, 95.0, 175.0, 1072540, typeof(RhodonitewoodLog), typeof(RhodonitewoodGElemental)),
+                new HarvestResource(135.0, 95.0, 175.0, 1072540, typeof(RubywoodLog), typeof(RubywoodGElemental)),
+                new HarvestResource(140.0, 100.0, 180.0, 1072540, typeof(SapphirewoodLog), typeof(SapphirewoodGElemental)),
+                new HarvestResource(140.0, 100.0, 180.0, 1072540, typeof(SugilitewoodLog), typeof(SugilitewoodGElemental)),
+                new HarvestResource(145.0, 105.0, 185.0, 1072540, typeof(TanzanitewoodLog), typeof(TanzanitewoodGElemental)),
+                new HarvestResource(145.0, 105.0, 185.0, 1072540, typeof(TurquoisewoodLog), typeof(TurquoisewoodGElemental)),
+                new HarvestResource(150.0, 110.0, 190.0, 1072540, typeof(VarisitewoodLog), typeof(VarisitewoodGElemental)),
+                new HarvestResource(150.0, 110.0, 190.0, 1072540, typeof(GuardianswoodLog), typeof(GuardianswoodGElemental)),
+            };
+
+            veins = new HarvestVein[]
+            {
+				new HarvestVein(50.0000, 0.0, res[0], null),
+				new HarvestVein(25.0000, 0.5, res[1], res[0]),
+				new HarvestVein(12.5000, 0.5, res[2], res[0]),
+				new HarvestVein(06.2500, 0.5, res[3], res[0]),
+				new HarvestVein(03.1250, 0.5, res[4], res[0]),
+				new HarvestVein(01.5625, 0.5, res[5], res[0]),
+				new HarvestVein(00.7813, 0.5, res[6], res[0]),
+				new HarvestVein(00.3906, 0.5, res[7], res[0]),
+				new HarvestVein(00.1953, 0.5, res[8], res[0]),
+				new HarvestVein(00.0977, 0.5, res[9], res[0]),
+				new HarvestVein(00.0488, 0.5, res[10], res[0]),
+				new HarvestVein(00.0244, 0.5, res[11], res[0]),
+				new HarvestVein(00.0122, 0.5, res[12], res[0]),
+				new HarvestVein(00.0061, 0.5, res[13], res[0]),
+				new HarvestVein(00.0031, 0.5, res[14], res[0]),
+				new HarvestVein(00.0015, 0.5, res[15], res[0]),
+				new HarvestVein(00.0008, 0.5, res[16], res[0]),
+				new HarvestVein(00.0004, 0.5, res[17], res[0]),
+				new HarvestVein(00.0002, 0.5, res[18], res[0]),
+				new HarvestVein(00.0001, 0.5, res[19], res[0]),
+            };
+
+            lumber.Resources = res;
+            lumber.Veins = veins;
+
             if (Core.ML)
             {
-                res = new HarvestResource[]
-                {
-                    new HarvestResource(00.0, 00.0, 100.0, 1072540, typeof(Log), typeof(WoodGElemental)),
-                    new HarvestResource(65.0, 25.0, 105.0, 1072541, typeof(OakLog), typeof(OakWoodGElemental)),
-                    new HarvestResource(80.0, 40.0, 120.0, 1072542, typeof(AshLog), typeof(AshWoodGElemental)),
-                    new HarvestResource(95.0, 55.0, 135.0, 1072543, typeof(YewLog), typeof(YewWoodGElemental)),
-                    new HarvestResource(100.0, 60.0, 140.0, 1072544, typeof(HeartwoodLog), typeof(HeartwoodGElemental)),
-                    new HarvestResource(105.0, 65.0, 145.0, 1072545, typeof(BloodwoodLog), typeof(BloodwoodGElemental)),
-                    new HarvestResource(110.0, 70.0, 150.0, 1072546, typeof(FrostwoodLog), typeof(FrostwoodGElemental)),
-                    new HarvestResource(115.0, 75.0, 155.0, 1072540, typeof(CalcitewoodLog), typeof(CalcitewoodGElemental)),
-                    new HarvestResource(120.0, 80.0, 160.0, 1072540, typeof(GoldwoodLog), typeof(GoldwoodGElemental)),
-                    new HarvestResource(125.0, 85.0, 165.0, 1072540, typeof(LabradoritewoodLog), typeof(LabradoritewoodGElemental)),
-                    new HarvestResource(125.0, 85.0, 165.0, 1072540, typeof(MoldavitewoodLog), typeof(MoldavitewoodGElemental)),
-                    new HarvestResource(130.0, 90.0, 170.0, 1072540, typeof(MorganitewoodLog), typeof(MorganitewoodGElemental)),
-                    new HarvestResource(130.0, 90.0, 170.0, 1072540, typeof(QuartzwoodLog), typeof(QuartzwoodGElemental)),
-                    new HarvestResource(135.0, 95.0, 175.0, 1072540, typeof(RhodonitewoodLog), typeof(RhodonitewoodGElemental)),
-                    new HarvestResource(135.0, 95.0, 175.0, 1072540, typeof(RubywoodLog), typeof(RubywoodGElemental)),
-                    new HarvestResource(140.0, 100.0, 180.0, 1072540, typeof(SapphirewoodLog), typeof(SapphirewoodGElemental)),
-                    new HarvestResource(140.0, 100.0, 180.0, 1072540, typeof(SugilitewoodLog), typeof(SugilitewoodGElemental)),
-                    new HarvestResource(145.0, 105.0, 185.0, 1072540, typeof(TanzanitewoodLog), typeof(TanzanitewoodGElemental)),
-                    new HarvestResource(145.0, 105.0, 185.0, 1072540, typeof(TurquoisewoodLog), typeof(TurquoisewoodGElemental)),
-                    new HarvestResource(150.0, 110.0, 190.0, 1072540, typeof(VarisitewoodLog), typeof(VarisitewoodGElemental)),
-                    new HarvestResource(150.0, 110.0, 190.0, 1072540, typeof(GuardianswoodLog), typeof(GuardianswoodGElemental)),
-                };
-
-                veins = new HarvestVein[]
-                {
-					new HarvestVein(50.0000, 0.0, res[0], null),
-					new HarvestVein(25.0000, 0.5, res[1], res[0]),
-					new HarvestVein(12.5000, 0.5, res[2], res[0]),
-					new HarvestVein(06.2500, 0.5, res[3], res[0]),
-					new HarvestVein(03.1250, 0.5, res[4], res[0]),
-					new HarvestVein(01.5625, 0.5, res[5], res[0]),
-					new HarvestVein(00.7813, 0.5, res[6], res[0]),
-					new HarvestVein(00.3906, 0.5, res[7], res[0]),
-					new HarvestVein(00.1953, 0.5, res[8], res[0]),
-					new HarvestVein(00.0977, 0.5, res[9], res[0]),
-					new HarvestVein(00.0488, 0.5, res[10], res[0]),
-					new HarvestVein(00.0244, 0.5, res[11], res[0]),
-					new HarvestVein(00.0122, 0.5, res[12], res[0]),
-					new HarvestVein(00.0061, 0.5, res[13], res[0]),
-					new HarvestVein(00.0031, 0.5, res[14], res[0]),
-					new HarvestVein(00.0015, 0.5, res[15], res[0]),
-					new HarvestVein(00.0008, 0.5, res[16], res[0]),
-					new HarvestVein(00.0004, 0.5, res[17], res[0]),
-					new HarvestVein(00.0002, 0.5, res[18], res[0]),
-					new HarvestVein(00.0001, 0.5, res[19], res[0]),
-                };
-
                 lumber.BonusResources = new BonusHarvestResource[]
                 {
                     new BonusHarvestResource(0, 82.0, null, null), //Nothing
@@ -139,106 +142,48 @@ namespace Server.Engines.Harvest
                     new BonusHarvestResource(100, 01.0, 1113756, typeof(CrystalShards), Map.TerMur),
                 };
             }
-            else
-            {
-                res = new HarvestResource[]
-                {
-                    new HarvestResource(00.0, 00.0, 100.0, 500498, typeof(Log))
-                };
-
-                veins = new HarvestVein[]
-                {
-                    new HarvestVein(100.0, 0.0, res[0], null)
-                };
-            }
-
-            lumber.Resources = res;
-            lumber.Veins = veins;
 
             lumber.RaceBonus = Core.ML;
             lumber.RandomizeVeins = false;
 
-            this.Definitions.Add(lumber);
+            Definitions.Add(lumber);
             #endregion
         }
 
-        public override Type MutateType(Type type, Mobile from, Item tool, HarvestDefinition def, Map map, Point3D loc, HarvestResource resource)
+        /*public override Type GetResourceType(Mobile from, Item tool, HarvestDefinition def, Map map, Point3D loc, HarvestResource resource)
         {
-            var newType = type;
-
-            if (tool is HarvestersAxe && ((HarvestersAxe)tool).Charges > 0)
+            if (def == this.m_Definition)
             {
-                if (type == typeof(Log))
-                    newType = typeof(Board);
-                else if (type == typeof(OakLog))
-                    newType = typeof(OakBoard);
-                else if (type == typeof(AshLog))
-                    newType = typeof(AshBoard);
-                else if (type == typeof(YewLog))
-                    newType = typeof(YewBoard);
-                else if (type == typeof(HeartwoodLog))
-                    newType = typeof(HeartwoodBoard);
-                else if (type == typeof(BloodwoodLog))
-                    newType = typeof(BloodwoodBoard);
-                else if (type == typeof(FrostwoodLog))
-                    newType = typeof(FrostwoodBoard);
-                else if (type == typeof(CalcitewoodLog))
-                    newType = typeof(CalcitewoodBoard);
-                else if (type == typeof(GoldwoodLog))
-                    newType = typeof(GoldwoodBoard);
-                else if (type == typeof(LabradoritewoodLog))
-                    newType = typeof(LabradoritewoodBoard);
-                else if (type == typeof(MoldavitewoodLog))
-                    newType = typeof(MoldavitewoodBoard);
-                else if (type == typeof(MorganitewoodLog))
-                    newType = typeof(MorganitewoodBoard);
-                else if (type == typeof(QuartzwoodLog))
-                    newType = typeof(QuartzwoodBoard);
-                else if (type == typeof(RhodonitewoodLog))
-                    newType = typeof(RhodonitewoodBoard);
-                else if (type == typeof(RubywoodLog))
-                    newType = typeof(RubywoodBoard);
-                else if (type == typeof(SapphirewoodLog))
-                    newType = typeof(SapphirewoodBoard);
-                else if (type == typeof(SugilitewoodLog))
-                    newType = typeof(SugilitewoodBoard);
-                else if (type == typeof(TanzanitewoodLog))
-                    newType = typeof(TanzanitewoodBoard);
-                else if (type == typeof(TurquoisewoodLog))
-                    newType = typeof(TurquoisewoodBoard);
-                else if (type == typeof(VarisitewoodLog))
-                    newType = typeof(VarisitewoodBoard);
-                else if (type == typeof(GuardianswoodLog))
-                    newType = typeof(GuardianswoodBoard);
+                #region Void Pool Items
+                HarvestMap hmap = HarvestMap.CheckMapOnHarvest(from, loc, def);
 
-                if (newType != type)
+                if (hmap != null && hmap.Resource >= CraftResource.RegularWood && hmap.Resource <= CraftResource.Frostwood)
                 {
-                    ((HarvestersAxe)tool).Charges--;
+                    hmap.UsesRemaining--;
+                    hmap.InvalidateProperties();
+
+                    CraftResourceInfo info = CraftResources.GetInfo(hmap.Resource);
+
+                    if (info != null)
+                        return info.ResourceTypes[1];
                 }
+                #endregion
+
+                PlayerMobile pm = from as PlayerMobile;
+
+                if (pm != null && from.Skills[SkillName.Lumberjacking].Base >= 100.0 && 0.15 > Utility.RandomDouble())
+                        return resource.Types[1];
+
+                if (pm != null )
+                {
+                     return null;
+                }
+
+                return resource.Types[0];
             }
-
-            return newType;
-        }
-
-        public override Type GetResourceType(Mobile from, Item tool, HarvestDefinition def, Map map, Point3D loc, HarvestResource resource)
-        {
-            #region Void Pool Items
-            HarvestMap hmap = HarvestMap.CheckMapOnHarvest(from, loc, def);
-
-            if (hmap != null && hmap.Resource >= CraftResource.RegularWood && hmap.Resource <= CraftResource.Frostwood)
-            {
-                hmap.UsesRemaining--;
-                hmap.InvalidateProperties();
-
-                CraftResourceInfo info = CraftResources.GetInfo(hmap.Resource);
-
-                if (info != null)
-                    return info.ResourceTypes[0];
-            }
-            #endregion
 
             return base.GetResourceType(from, tool, def, map, loc, resource);
-        }
+        }*/
 
         public override void SendSuccessTo(Mobile from, Item item, HarvestResource resource)
         {
@@ -251,7 +196,7 @@ namespace Server.Engines.Harvest
                 }
                 else
                 {
-                    foreach (var res in lumber.Resources.Where(r => r.Types != null))
+                    foreach (var res in m_Definition.Resources.Where(r => r.Types != null))
                     {
                         foreach (var type in res.Types)
                         {
@@ -288,7 +233,7 @@ namespace Server.Engines.Harvest
             if (!base.CheckHarvest(from, tool, def, toHarvest))
                 return false;
 
-            if (def == this.m_Wood && !(from is PlayerMobile && from.Skills[SkillName.Lumberjacking].Base >= 100.0 && ((PlayerMobile)from).SandMining))
+            if (def == this.m_Definition && !(from is PlayerMobile && from.Skills[SkillName.Lumberjacking].Base >= 100.0 ))
             {
                 this.OnBadHarvestTarget(from, tool, toHarvest);
                 return false;
@@ -309,140 +254,140 @@ namespace Server.Engines.Harvest
 
         public override HarvestVein MutateVein(Mobile from, Item tool, HarvestDefinition def, HarvestBank bank, object toHarvest, HarvestVein vein)
         {
-            if (tool is GargoylesAxe && def == this.m_Wood)
+            if (tool is GargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 1))
                     return def.Veins[veinIndex + 1];
             }
-            else if (tool is GargoylesAxe && def == this.m_Wood)
+            else if (tool is GargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 2))
                     return def.Veins[veinIndex + 2];
             }
-            else if (tool is DullCopperGargoylesAxe && def == this.m_Wood)
+            else if (tool is DullCopperGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 3))
                     return def.Veins[veinIndex + 3];
             }
-            else if (tool is ShadowIronGargoylesAxe && def == this.m_Wood)
+            else if (tool is ShadowIronGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 4))
                     return def.Veins[veinIndex + 4];
             }
-            else if (tool is CopperGargoylesAxe && def == this.m_Wood)
+            else if (tool is CopperGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 5))
                     return def.Veins[veinIndex + 5];
             }
-            else if (tool is BronzeGargoylesAxe && def == this.m_Wood)
+            else if (tool is BronzeGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 6))
                     return def.Veins[veinIndex + 6];
             }
-            else if (tool is GoldenGargoylesAxe && def == this.m_Wood)
+            else if (tool is GoldenGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 7))
                     return def.Veins[veinIndex + 7];
             }
-            else if (tool is SilverGargoylesAxe && def == this.m_Wood)
+            else if (tool is SilverGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 8))
                     return def.Veins[veinIndex + 8];
             }
-            else if (tool is AgapiteGargoylesAxe && def == this.m_Wood)
+            else if (tool is AgapiteGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 9))
                     return def.Veins[veinIndex + 9];
             }
-            else if (tool is VeriteGargoylesAxe && def == this.m_Wood)
+            else if (tool is VeriteGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 10))
                     return def.Veins[veinIndex + 10];
             }
-            else if (tool is ValoriteGargoylesAxe && def == this.m_Wood)
+            else if (tool is ValoriteGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 11))
                     return def.Veins[veinIndex + 11];
             }
-            else if (tool is UridiumGargoylesAxe && def == this.m_Wood)
+            else if (tool is UridiumGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 12))
                     return def.Veins[veinIndex + 12];
             }
-            else if (tool is TrilliumGargoylesAxe && def == this.m_Wood)
+            else if (tool is TrilliumGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 13))
                     return def.Veins[veinIndex + 13];
             }
-            else if (tool is TitaniumGargoylesAxe && def == this.m_Wood)
+            else if (tool is TitaniumGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 14))
                     return def.Veins[veinIndex + 14];
             }
-            else if (tool is PlatinumGargoylesAxe && def == this.m_Wood)
+            else if (tool is PlatinumGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 15))
                     return def.Veins[veinIndex + 15];
             }
-            else if (tool is ZeniteGargoylesAxe && def == this.m_Wood)
+            else if (tool is ZeniteGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 16))
                     return def.Veins[veinIndex + 16];
             }
-            else if (tool is NaquiniteGargoylesAxe && def == this.m_Wood)
+            else if (tool is NaquiniteGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 17))
                     return def.Veins[veinIndex + 17];
             }
-            else if (tool is GalviniteGargoylesAxe && def == this.m_Wood)
+            else if (tool is GalviniteGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 18))
                     return def.Veins[veinIndex + 18];
             }
-            else if (tool is TrilamideGargoylesAxe && def == this.m_Wood)
+            else if (tool is TrilamideGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
                 if (veinIndex >= 0 && veinIndex < (def.Veins.Length - 19))
                     return def.Veins[veinIndex + 19];
             }
-            /*else if (tool is VeramideGargoylesAxe && def == this.m_Wood)
+            /*else if (tool is VeramideGargoylesAxe && def == this.m_Definition)
             {
                 int veinIndex = Array.IndexOf(def.Veins, vein);
 
@@ -466,7 +411,7 @@ namespace Server.Engines.Harvest
 
         public override void OnHarvestFinished(Mobile from, Item tool, HarvestDefinition def, HarvestVein vein, HarvestBank bank, HarvestResource resource, object harvested)
         {
-            if (tool is GargoylesPickaxe && def == this.m_Wood && 0.1 > Utility.RandomDouble() && HarvestMap.CheckMapOnHarvest(from, harvested, def) == null)
+            if (tool is GargoylesPickaxe && def == this.m_Definition && 0.1 > Utility.RandomDouble() && HarvestMap.CheckMapOnHarvest(from, harvested, def) == null)
             {
                 HarvestResource res = vein.PrimaryResource;
 
@@ -522,6 +467,47 @@ namespace Server.Engines.Harvest
                 }
             }
         }
+
+        #region High Seas
+        public override bool SpecialHarvest(Mobile from, Item tool, HarvestDefinition def, Map map, Point3D loc)
+        {
+            if (!Core.HS)
+                return base.SpecialHarvest(from, tool, def, map, loc);
+
+            HarvestBank bank = def.GetBank(map, loc.X, loc.Y);
+
+            if (bank == null)
+                return false;
+
+            bool boat = Server.Multis.BaseBoat.FindBoatAt(from, from.Map) != null;
+
+            if (!boat)
+                return false;
+
+            if (boat || !NiterDeposit.HasBeenChecked(bank))
+            {
+                int luck = from is PlayerMobile ? ((PlayerMobile)from).RealLuck : from.Luck;
+                double bonus = (from.Skills[SkillName.Lumberjacking].Value / 9999) + ((double)luck / 150000);
+
+                if (boat)
+                    bonus -= (bonus * .33);
+
+                if (Utility.RandomDouble() < bonus)
+                {
+                    int size = Utility.RandomMinMax(1, 5);
+
+                    if (luck / 2500.0 > Utility.RandomDouble())
+                        size++;
+
+                    NiterDeposit niter = new NiterDeposit(size);
+
+                    niter.Delete();
+                }
+            }
+
+            return false;
+        }
+        #endregion
 
         public override void OnHarvestStarted(Mobile from, Item tool, HarvestDefinition def, object toHarvest)
         {

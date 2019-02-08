@@ -111,7 +111,7 @@ namespace Server.Targets
                 }
 
                 HarvestSystem system = Lumberjacking.System;
-                HarvestDefinition def = Lumberjacking.System.lumber;
+                HarvestDefinition def = Lumberjacking.System.Definition;
 
                 int tileID;
                 Map map;

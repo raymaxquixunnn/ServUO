@@ -589,7 +589,7 @@ namespace Server.Engines.Harvest
                         break;
                     case 2: // wood
                         if (system is Lumberjacking)
-                            def = ((Lumberjacking)system).lumber;
+                            def = ((Lumberjacking)system).Definition;
                         break;
                     case 3: // grave
                         if (TryHarvestGrave(m))
