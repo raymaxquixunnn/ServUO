@@ -3,24 +3,26 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    [Flipable(0x1028, 0x1029)]
-    public class DovetailSaw : BaseTool
+    public class SturdyMortarPestle : BaseTool
     {
         [Constructable]
-        public DovetailSaw()
-            : base(0x1028)
+        public SturdyMortarPestle()
+            : this(180)
         {
-            this.Weight = 2.0;
         }
 
         [Constructable]
-        public DovetailSaw(int uses)
-            : base(uses, 0x1028)
+        public SturdyMortarPestle(int uses)
+            : base(uses, 0xE9B)
         {
             this.Weight = 2.0;
+            this.UsesRemaining = uses;
+            this.ShowUsesRemaining = true;
         }
 
-        public DovetailSaw(Serial serial)
+        public override string DefaultName { get { return "sturdy mortar and pestle"; } }
+
+        public SturdyMortarPestle(Serial serial)
             : base(serial)
         {
         }
@@ -29,7 +31,7 @@ namespace Server.Items
         {
             get
             {
-                return DefCarpentry.CraftSystem;
+                return DefAlchemy.CraftSystem;
             }
         }
         public override void Serialize(GenericWriter writer)
@@ -44,7 +46,6 @@ namespace Server.Items
             base.Deserialize(reader);
 
             int version = reader.ReadInt();
-
         }
     }
 }

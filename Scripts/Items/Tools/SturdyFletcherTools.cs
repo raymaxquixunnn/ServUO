@@ -3,33 +3,36 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    [Flipable(0x1028, 0x1029)]
-    public class DovetailSaw : BaseTool
+    [FlipableAttribute(0x1022, 0x1023)]
+    public class SturdyFletcherTools : BaseTool
     {
         [Constructable]
-        public DovetailSaw()
-            : base(0x1028)
+        public SturdyFletcherTools()
+            : this(180)
         {
-            this.Weight = 2.0;
         }
 
         [Constructable]
-        public DovetailSaw(int uses)
-            : base(uses, 0x1028)
+        public SturdyFletcherTools(int uses)
+            : base(uses, 0x1022)
         {
             this.Weight = 2.0;
+            this.UsesRemaining = uses;
+            this.ShowUsesRemaining = true;
         }
 
-        public DovetailSaw(Serial serial)
+        public SturdyFletcherTools(Serial serial)
             : base(serial)
         {
         }
+
+        public override string DefaultName { get { return "sturdy fletchertools"; } }
 
         public override CraftSystem CraftSystem
         {
             get
             {
-                return DefCarpentry.CraftSystem;
+                return DefBowFletching.CraftSystem;
             }
         }
         public override void Serialize(GenericWriter writer)

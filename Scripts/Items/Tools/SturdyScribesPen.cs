@@ -3,24 +3,27 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    [Flipable(0x1028, 0x1029)]
-    public class DovetailSaw : BaseTool
+    [FlipableAttribute(0x0FBF, 0x0FC0)]
+    public class SturdyScribesPen : BaseTool
     {
         [Constructable]
-        public DovetailSaw()
-            : base(0x1028)
+        public SturdyScribesPen()
+            : this(180)
         {
-            this.Weight = 2.0;
         }
 
         [Constructable]
-        public DovetailSaw(int uses)
-            : base(uses, 0x1028)
+        public SturdyScribesPen(int uses)
+            : base(uses, 0x0FBF)
         {
             this.Weight = 2.0;
+            this.UsesRemaining = uses;
+            this.ShowUsesRemaining = true;
         }
 
-        public DovetailSaw(Serial serial)
+        public override string DefaultName { get { return "sturdy ScribesPen"; } }
+
+        public SturdyScribesPen(Serial serial)
             : base(serial)
         {
         }
@@ -29,9 +32,10 @@ namespace Server.Items
         {
             get
             {
-                return DefCarpentry.CraftSystem;
+                return DefInscription.CraftSystem;
             }
         }
+
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -3,27 +3,31 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    [Flipable(0x1028, 0x1029)]
-    public class DovetailSaw : BaseTool
+    [FlipableAttribute(0x1034, 0x1035)]
+    public class SturdySaw : BaseTool
     {
         [Constructable]
-        public DovetailSaw()
-            : base(0x1028)
+        public SturdySaw()
+            : this(180)
         {
             this.Weight = 2.0;
         }
 
         [Constructable]
-        public DovetailSaw(int uses)
-            : base(uses, 0x1028)
+        public SturdySaw(int uses)
+            : base(uses, 0x1034)
         {
             this.Weight = 2.0;
+            this.UsesRemaining = uses;
+            this.ShowUsesRemaining = true;
         }
 
-        public DovetailSaw(Serial serial)
+        public SturdySaw(Serial serial)
             : base(serial)
         {
         }
+
+        public override string DefaultName { get { return "sturdy Saw"; } }
 
         public override CraftSystem CraftSystem
         {
@@ -44,7 +48,6 @@ namespace Server.Items
             base.Deserialize(reader);
 
             int version = reader.ReadInt();
-
         }
     }
 }
