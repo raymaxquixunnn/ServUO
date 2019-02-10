@@ -112,13 +112,13 @@ namespace Server.Misc
 			false, // Focus = 50,
 			false, // Chivalry = 51
 			false, // Bushido = 52
-			false, //Ninjitsu = 53
+			false, // Ninjitsu = 53
 			false, // Spellweaving = 54
 
 			#region Stygian Abyss
 			false, // Mysticism = 55
 			false, // Imbuing = 56
-			false // Throwing = 57
+			false  // Throwing = 57
 			#endregion
 		};
 
