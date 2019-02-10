@@ -1466,7 +1466,7 @@ namespace Server.Items
             return false;
         }
 
-        private static double[] m_ArmorScalars = { 0.07, 0.07, 0.14, 0.15, 0.22, 0.35 };
+        private static double[] m_ArmorScalars = { 0.14, 0.14, 0.28, 0.30, 0.44, 0.70 };
 
         public static double[] ArmorScalars
         {
