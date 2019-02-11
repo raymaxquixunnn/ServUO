@@ -5162,82 +5162,73 @@ namespace Server.Items
 
 			switch (m_Resource)
 			{
-				case CraftResource.DullCopper:
-					oreType = 1053108;
-					break; // dull copper
-				case CraftResource.ShadowIron:
-					oreType = 1053107;
-					break; // shadow iron
-				case CraftResource.Copper:
-					oreType = 1053106;
-					break; // copper
-				case CraftResource.Bronze:
-					oreType = 1053105;
-					break; // bronze
-				case CraftResource.Gold:
-					oreType = 1053104;
-					break; // golden
-				case CraftResource.Agapite:
-					oreType = 1053103;
-					break; // agapite
-				case CraftResource.Verite:
-					oreType = 1053102;
-					break; // verite
-				case CraftResource.Valorite:
-					oreType = 1053101;
-					break; // valorite
-				case CraftResource.SpinedLeather:
-					oreType = 1061118;
-					break; // spined
-				case CraftResource.HornedLeather:
-					oreType = 1061117;
-					break; // horned
-				case CraftResource.BarbedLeather:
-					oreType = 1061116;
-					break; // barbed
-				case CraftResource.RedScales:
-					oreType = 1060814;
-					break; // red
-				case CraftResource.YellowScales:
-					oreType = 1060818;
-					break; // yellow
-				case CraftResource.BlackScales:
-					oreType = 1060820;
-					break; // black
-				case CraftResource.GreenScales:
-					oreType = 1060819;
-					break; // green
-				case CraftResource.WhiteScales:
-					oreType = 1060821;
-					break; // white
-				case CraftResource.BlueScales:
-					oreType = 1060815;
-					break; // blue
-
-					#region Mondain's Legacy
-				case CraftResource.OakWood:
-					oreType = 1072533;
-					break; // oak
-				case CraftResource.AshWood:
-					oreType = 1072534;
-					break; // ash
-				case CraftResource.YewWood:
-					oreType = 1072535;
-					break; // yew
-				case CraftResource.Heartwood:
-					oreType = 1072536;
-					break; // heartwood
-				case CraftResource.Bloodwood:
-					oreType = 1072538;
-					break; // bloodwood
-				case CraftResource.Frostwood:
-					oreType = 1072539;
-					break; // frostwood
-					#endregion
-
-				default:
-					oreType = 0;
-					break;
+                case CraftResource.DullCopper: oreType = 1053108; break; // dull copper
+                case CraftResource.ShadowIron: oreType = 1053107; break; // shadow iron
+                case CraftResource.Copper: oreType = 1053106; break; // copper
+                case CraftResource.Bronze: oreType = 1053105; break; // bronze
+                case CraftResource.Gold: oreType = 1053104; break; // golden
+                //case CraftResource.Silver: oreType = _______; break; // need to fix
+                case CraftResource.Agapite: oreType = 1053103; break; // agapite
+                case CraftResource.Verite: oreType = 1053102; break; // verite
+                case CraftResource.Valorite: oreType = 1053101; break; // valorite
+                //case CraftResource.Uridium: oreType = _______; break; // need to fix
+                //case CraftResource.Trillium: oreType = _______; break; // need to fix
+                //case CraftResource.Titanium: oreType = _______; break; // need to fix
+                //case CraftResource.Platinum: oreType = _______; break; // need to fix
+                //case CraftResource.Zenite: oreType = _______; break; // need to fix
+                //case CraftResource.Naquinite: oreType = _______; break; // need to fix
+                //case CraftResource.Galvinite: oreType = _______; break; // need to fix
+                //case CraftResource.Trilamide: oreType = _______; break; // need to fix
+                //case CraftResource.Veramide: oreType = _______; break; // need to fix
+                //case CraftResource.Zenlamide: oreType = _______; break; // need to fix
+                //case CraftResource.Guardians: oreType = _______; break; // need to fix
+                case CraftResource.SpinedLeather: oreType = 1061118; break; // spined
+                case CraftResource.HornedLeather: oreType = 1061117; break; // horned
+                case CraftResource.BarbedLeather: oreType = 1061116; break; // barbed
+                //case CraftResource.DullLeather: oreType = _______; break; // need to fix
+                //case CraftResource.ShadowLeather: oreType = _______; break; // need to fix
+                //case CraftResource.CopperLeather: oreType = _______; break; // need to fix
+                //case CraftResource.BronzeLeather: oreType = _______; break; // need to fix
+                //case CraftResource.GoldenLeather: oreType = _______; break; // need to fix
+                //case CraftResource.SilverLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AgapiteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.VeriteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.ValoriteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.UridiumLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AmberLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AmethystLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AragoniteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.BixbiteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.BloodLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AmazonLeather: oreType = _______; break; // need to fix
+                //case CraftResource.GuardiansLeather: oreType = _______; break; // need to fix
+                case CraftResource.RedScales: oreType = 1060814; break; // red
+                case CraftResource.YellowScales: oreType = 1060818; break; // yellow
+                case CraftResource.BlackScales: oreType = 1060820; break; // black
+                case CraftResource.GreenScales: oreType = 1060819; break; // green
+                case CraftResource.WhiteScales: oreType = 1060821; break; // white
+                case CraftResource.BlueScales: oreType = 1060815; break; // blue
+                case CraftResource.OakWood: oreType = 1072533;  break; // oak
+                case CraftResource.AshWood: oreType = 1072534; break; // ash
+                case CraftResource.YewWood: oreType = 1072535; break; // yew
+                case CraftResource.Heartwood: oreType = 1072536; break; // heartwood
+                case CraftResource.Bloodwood: oreType = 1072538; break; // bloodwood
+                case CraftResource.Frostwood: oreType = 1072539; break; // frostwood
+                //case CraftResource.Calcitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Goldwood: oreType = _______; break; // need to fix
+                //case CraftResource.Labradoritewood: oreType = _______; break; // need to fix
+                //case CraftResource.Moldavitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Morganitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Quartzwood: oreType = _______; break; // need to fix
+                //case CraftResource.Rhodonitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Rubywood: oreType = _______; break; // need to fix
+                //case CraftResource.Sapphirewood: oreType = _______; break; // need to fix
+                //case CraftResource.Sugilitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Tanzanitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Turquoisewood: oreType = _______; break; // need to fix
+                //case CraftResource.Varisitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Guardianswood: oreType = _______; break; // need to fix
+                default: oreType = 0; break;
 			}
 
             if (m_ReforgedPrefix != ReforgedPrefix.None || m_ReforgedSuffix != ReforgedSuffix.None)
