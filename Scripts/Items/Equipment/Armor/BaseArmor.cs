@@ -437,23 +437,110 @@ namespace Server.Items
                     case CraftResource.Gold:
                         ar += 10;
                         break;
-                    case CraftResource.Agapite:
+                    case CraftResource.Silver:
                         ar += 12;
                         break;
-                    case CraftResource.Verite:
+                    case CraftResource.Agapite:
                         ar += 14;
                         break;
-                    case CraftResource.Valorite:
+                    case CraftResource.Verite:
                         ar += 16;
+                        break;
+                    case CraftResource.Valorite:
+                        ar += 18;
+                        break;
+                    case CraftResource.Uridium:
+                        ar += 20;
+                        break;
+                    case CraftResource.Trillium:
+                        ar += 22;
+                        break;
+                    case CraftResource.Titanium:
+                        ar += 24;
+                        break;
+                    case CraftResource.Platinum:
+                        ar += 26;
+                        break;
+                    case CraftResource.Zenite:
+                        ar += 28;
+                        break;
+                    case CraftResource.Naquinite:
+                        ar += 30;
+                        break;
+                    case CraftResource.Galvinite:
+                        ar += 32;
+                        break;
+                     case CraftResource.Trilamide:
+                        ar += 34;
+                        break;
+                    case CraftResource.Veramide:
+                        ar += 36;
+                        break;
+                    case CraftResource.Zenlamide:
+                        ar += 38;
+                        break;
+                    case CraftResource.Guardians:
+                        ar += 40;
                         break;
                     case CraftResource.SpinedLeather:
-                        ar += 10;
+                        ar += 2;
                         break;
                     case CraftResource.HornedLeather:
-                        ar += 13;
+                        ar += 4;
                         break;
                     case CraftResource.BarbedLeather:
+                        ar += 6;
+                        break;
+                    case CraftResource.DullLeather:
+                        ar += 8;
+                        break;
+                    case CraftResource.ShadowLeather:
+                        ar += 10;
+                        break;
+                    case CraftResource.CopperLeather:
+                        ar += 12;
+                        break;
+                    case CraftResource.BronzeLeather:
+                        ar += 14;
+                        break;
+                    case CraftResource.GoldenLeather:
                         ar += 16;
+                        break;
+                    case CraftResource.SilverLeather:
+                        ar += 18;
+                        break;
+                    case CraftResource.AgapiteLeather:
+                        ar += 20;
+                        break;
+                    case CraftResource.VeriteLeather:
+                        ar += 22;
+                        break;
+                    case CraftResource.ValoriteLeather:
+                        ar += 24;
+                        break;
+                    case CraftResource.UridiumLeather:
+                        ar += 26;
+                        break;
+                    case CraftResource.AmberLeather:
+                        ar += 28;
+                        break;
+                    case CraftResource.AmethystLeather:
+                        ar += 30;
+                        break;
+                    case CraftResource.AragoniteLeather:
+                        ar += 32;
+                        break;
+                    case CraftResource.BixbiteLeather:
+                        ar += 34;
+                        break;
+                    case CraftResource.BloodLeather:
+                        ar += 36;
+                        break;
+                    case CraftResource.AmazonLeather:
+                        ar += 38;
+                        break;
+                    case CraftResource.GuardiansLeather:
+                        ar += 40;
                         break;
                 }
 
@@ -2237,15 +2324,42 @@ namespace Server.Items
                                 case 8:
                                     info = OreInfo.Valorite;
                                     break;
+                                case 9:
+                                    info = OreInfo.Uridium;
+                                    break;
+                                case 10:
+                                    info = OreInfo.Trillium;
+                                    break;
+                                case 11:
+                                    info = OreInfo.Titanium;
+                                    break;
+                                case 12:
+                                    info = OreInfo.Platinum;
+                                    break;
+                                case 13:
+                                    info = OreInfo.Zenite;
+                                    break;
+                                case 14:
+                                    info = OreInfo.Naquinite;
+                                    break;
+                                case 15:
+                                    info = OreInfo.Galvinite;
+                                    break;
+                                case 16:
+                                    info = OreInfo.Trilamide;
+                                    break;
+                                case 17:
+                                    info = OreInfo.Veramide;
+                                    break;
+                                case 18:
+                                    info = OreInfo.Zenlamide;
+                                    break;
+                                case 19:
+                                    info = OreInfo.Guardians;
+                                    break;
                             }
-
-                            m_Resource = CraftResources.GetFromOreInfo(info, mat);
                         }
 
-                        m_StrBonus = reader.ReadInt();
-                        m_DexBonus = reader.ReadInt();
-                        m_IntBonus = reader.ReadInt();
-                        m_StrReq = reader.ReadInt();
                         m_DexReq = reader.ReadInt();
                         m_IntReq = reader.ReadInt();
 
@@ -2675,12 +2789,41 @@ namespace Server.Items
                 case CraftResource.Copper: oreType = 1053106; break; // copper
                 case CraftResource.Bronze: oreType = 1053105; break; // bronze
                 case CraftResource.Gold: oreType = 1053104; break; // golden
+                //case CraftResource.Silver: oreType = _______; break; // need to fix
                 case CraftResource.Agapite: oreType = 1053103; break; // agapite
                 case CraftResource.Verite: oreType = 1053102; break; // verite
                 case CraftResource.Valorite: oreType = 1053101; break; // valorite
+                //case CraftResource.Uridium: oreType = _______; break; // need to fix
+                //case CraftResource.Trillium: oreType = _______; break; // need to fix
+                //case CraftResource.Titanium: oreType = _______; break; // need to fix
+                //case CraftResource.Platinum: oreType = _______; break; // need to fix
+                //case CraftResource.Zenite: oreType = _______; break; // need to fix
+                //case CraftResource.Naquinite: oreType = _______; break; // need to fix
+                //case CraftResource.Galvinite: oreType = _______; break; // need to fix
+                //case CraftResource.Trilamide: oreType = _______; break; // need to fix
+                //case CraftResource.Veramide: oreType = _______; break; // need to fix
+                //case CraftResource.Zenlamide: oreType = _______; break; // need to fix
+                //case CraftResource.Guardians: oreType = _______; break; // need to fix
                 case CraftResource.SpinedLeather: oreType = 1061118; break; // spined
                 case CraftResource.HornedLeather: oreType = 1061117; break; // horned
                 case CraftResource.BarbedLeather: oreType = 1061116; break; // barbed
+                //case CraftResource.DullLeather: oreType = _______; break; // need to fix
+                //case CraftResource.ShadowLeather: oreType = _______; break; // need to fix
+                //case CraftResource.CopperLeather: oreType = _______; break; // need to fix
+                //case CraftResource.BronzeLeather: oreType = _______; break; // need to fix
+                //case CraftResource.GoldenLeather: oreType = _______; break; // need to fix
+                //case CraftResource.SilverLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AgapiteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.VeriteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.ValoriteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.UridiumLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AmberLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AmethystLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AragoniteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.BixbiteLeather: oreType = _______; break; // need to fix
+                //case CraftResource.BloodLeather: oreType = _______; break; // need to fix
+                //case CraftResource.AmazonLeather: oreType = _______; break; // need to fix
+                //case CraftResource.GuardiansLeather: oreType = _______; break; // need to fix
                 case CraftResource.RedScales: oreType = 1060814; break; // red
                 case CraftResource.YellowScales: oreType = 1060818; break; // yellow
                 case CraftResource.BlackScales: oreType = 1060820; break; // black
@@ -2693,6 +2836,20 @@ namespace Server.Items
                 case CraftResource.Heartwood: oreType = 1072536; break; // heartwood
                 case CraftResource.Bloodwood: oreType = 1072538; break; // bloodwood
                 case CraftResource.Frostwood: oreType = 1072539; break; // frostwood
+                //case CraftResource.Calcitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Goldwood: oreType = _______; break; // need to fix
+                //case CraftResource.Labradoritewood: oreType = _______; break; // need to fix
+                //case CraftResource.Moldavitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Morganitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Quartzwood: oreType = _______; break; // need to fix
+                //case CraftResource.Rhodonitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Rubywood: oreType = _______; break; // need to fix
+                //case CraftResource.Sapphirewood: oreType = _______; break; // need to fix
+                //case CraftResource.Sugilitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Tanzanitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Turquoisewood: oreType = _______; break; // need to fix
+                //case CraftResource.Varisitewood: oreType = _______; break; // need to fix
+                //case CraftResource.Guardianswood: oreType = _______; break; // need to fix
                 default: oreType = 0; break;
             }
 
