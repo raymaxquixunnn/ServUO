@@ -303,7 +303,7 @@ namespace Server.Misc
 
 			if (skill.Base < skill.Cap && skill.Lock == SkillLock.Up)
 			{
-				var toGain = 1;
+				var toGain = 0.01;
 				var skills = from.Skills;
 
 				if (from is PlayerMobile && Siege.SiegeShard)
@@ -327,7 +327,7 @@ namespace Server.Misc
 				}
 
 				if (skill.Base <= 10.0)
-					toGain = Utility.Random(10) /10;
+					toGain = 1;
 
 				#region Mondain's Legacy
 				if (from is PlayerMobile && QuestHelper.EnhancedSkill((PlayerMobile)from, skill))
@@ -343,7 +343,7 @@ namespace Server.Misc
 					// You are infused with intense energy. You are under the effects of an accelerated skillgain scroll.
 					((PlayerMobile)from).SendLocalizedMessage(1077956);
 
-					toGain = Utility.RandomMinMax(1, 4) /10;
+					toGain = Utility.RandomMinMax(1, 3) /10;
 				}
 				#endregion
 
@@ -359,7 +359,7 @@ namespace Server.Misc
 						if (spell != null && master.InRange(from.Location, spell.PartyRange) && master.Map == from.Map &&
 							spell.EnhancedGainChance >= Utility.Random(100))
 						{
-							toGain = Utility.RandomMinMax(1, 4) /10;
+							toGain = Utility.RandomMinMax(1, 3) /10;
 						}
 					}
 				}
