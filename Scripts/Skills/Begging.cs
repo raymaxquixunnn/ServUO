@@ -192,7 +192,710 @@ namespace Server.SkillHandlers
                             double chance = Utility.RandomDouble();
                             Item reward = null;
                             string rewardName = "";
-                            if (chance >= .99)
+                            if (chance >= 0.999999999999999)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Kilt();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Shirt();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Scepter();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new RingmailChest();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new Cutlass();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999999998)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Obi();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new SamuraiTabi();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new FancyKilt();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new GargoyleHalfApron();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new HalfApron();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999999995)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Cleaver();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new GargishCleaver();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new JesterShoes();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Key();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new MortarPestle();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999999985)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Shoes();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new RingmailArms();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new GargishMaul();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Maul();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new RingmailLegs();
+                                }
+                            }
+
+
+                            else if (chance >= 0.999999999999956)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new HeavyGrapeshot();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Matches();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new N10HealPotion();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new PoisonPotion();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new SweetCocoaButter();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999999869)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Mace();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new AgilityPotion();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new ChocolateNutcracker();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new DarkChocolate();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new HealPotion();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999999607)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new TinkerTools();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new RingmailGloves();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new PlainDress();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Sandals();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new ChainCoif();
+                                }
+                            }
+
+                            else if (chance >= 0.99999999999882)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Goblet();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new HeavyCannonball();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new KeyRing();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new PewterMug();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new SewingKit();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999996459)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new JesterSuit();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Surcoat();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Bascinet();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new DungeonNightSightPotion();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new FlowerGarland();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999989378)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new TricorneHat();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new WideBrimHat();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new TallStrawHat();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new JesterHat();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new WizardsHat();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999968134)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new ChefsToque();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new FeatheredHat();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new FloppyHat();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new LeatherCap();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new StrawHat();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999904401)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new LesserExplosionPotion();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Scissors();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Springs();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Bonnet();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new Cap();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999713203)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new GargishSash();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new GargishKiteShield();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new MetalKiteShield();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Gears();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new Hinge();
+                                }
+                            }
+
+                            else if (chance >= 0.999999999139608)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new UncookedSausagePizza();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new WallSafeDeed();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new WarriorStatueEastDeed();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new WarriorStatueSouthDeed();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new BodySash();
+                                }
+                            }
+
+                            else if (chance >= 0.999999992256476)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Swab();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new SweetDough();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Tunic();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new UnbakedApplePie();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new UnbakedFruitPie();
+                                }
+                            }
+
+                            else if (chance >= 0.999999976769427)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new SmoothingPlane();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new SpoonLeft();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new SpoonRight();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new SquirrelStatueEastDeed();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new SquirrelStatueSouthDeed();
+                                }
+                            }
+
+                            else if (chance >= 0.999999930308281)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new SausagePizza();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Sextant();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new SextantParts();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Shaft();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new SkullCap();
+                                }
+                            }
+
+                            else if (chance >= 0.999999790924842)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new PumpkinPie();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Quiche();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Ribs();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new RollingPin();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new SackFlour();
+                                }
+                            }
+
+                            else if (chance >= 0.999999372774526)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new MouldingPlane();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Muffins();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new PeachCobbler();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Plate();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new Potash();
+                                }
+                            }
+
+                            else if (chance >= 0.999998118323577)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new LambLeg();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new LightCannonball();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new LightGrapeshot();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new LightPowderCharge();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new MeatPie();
+                                }
+                            }
+
+                            else if (chance >= 0.999994354970731)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new HeavyPowderCharge();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new HotCocoaMug();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new JointingPlane();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new KnifeLeft();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new KnifeRight();
+                                }
+                            }
+
+                            else if (chance >= 0.999983064912192)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new ForkLeft();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new ForkRight();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new FriedEggs();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new FruitPie();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new GargishDagger();
+                                }
+                            }
+
+                            else if (chance >= 0.999949194736575)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Cookies();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new CutUpCloth();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Doublet();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Dough();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new FishSteak();
+                                }
+                            }
+
+                            else if (chance >= 0.999847584209724)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new CocoaLiquor();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new CoffeeMug();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new CombineCloth();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new CookedBird();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new CookieMix();
+                                }
+                            }
+
+                            else if (chance >= 0.999542752629172)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new ClockFrame();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new ClockLeft();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new ClockParts();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new ClockRight();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new CocoaButter();
+                                }
+                            }
+
+                            else if (chance >= 0.998628257887517)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Cake();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new CakeMix();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Charcoal();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new CheesePizza();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new ChickenLeg();
+                                }
+                            }
+
+                            else if (chance >= 0.995884773662551)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Bandana();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new BasketOfGreenTeaMug();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new Bolt();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new BowlOfRotwormStew();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new BreadLoaf();
+                                }
+                            }
+
+                            else if (chance >= 0.990000000000000)
                             {
                                 int rand = Utility.Random(8);
 
@@ -242,7 +945,86 @@ namespace Server.SkillHandlers
                                     rewardName = "a Pitcher of wine.";
                                 }
                             }
-                            else if (chance >= .76)
+
+                            else if (chance >= 0.987654320987654)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new ApplePie();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new ArcanistStatueEastDeed();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new ArcanistStatueSouthDeed();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new Arrow();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new AxleGears();
+                                }
+                            }
+
+                            else if (chance >= 0.962962962962963)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new MediumPlateShield();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new MetalShield();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new LesserCurePotion();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new LesserPoisonPotion();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new Dagger();
+                                }
+                            }
+
+                            else if (chance >= 0.888888888888889)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new RefreshPotion();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new SmallPlateShield();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new BronzeShield();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new WoodenKiteShield();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new BarrelHoops();
+                                }
+                            }
+ 
+                            else if (chance >= 0.760000000000000)
                             {
                                 int rand = Utility.Random(6);
 
@@ -282,7 +1064,34 @@ namespace Server.SkillHandlers
                                     rewardName = "a shirt.";
                                 }
                             }
-                            else if (chance >= .25)
+
+                            else if (chance >= 0.666666666666667)
+                            {
+                                int rand = Utility.Random(4);
+
+                                if (rand == 0)
+                                {
+                                    reward = new Axle();
+                                }
+                                else if (rand == 1)
+                                {
+                                    reward = new Buckler();
+                                }
+                                else if (rand == 2)
+                                {
+                                    reward = new L10HealPotion();
+                                }
+                                else if (rand == 3)
+                                {
+                                    reward = new LesserHealPotion();
+                                }
+                                else if (rand == 4)
+                                {
+                                    reward = new NightSightPotion();
+                                }
+                            }
+
+                            else if (chance >= 0.250000000000000)
                             {
                                 int rand = Utility.Random(1);
 
@@ -326,7 +1135,6 @@ namespace Server.SkillHandlers
                     {
                         m_Target.SendLocalizedMessage(500404); // They seem unwilling to give you any money.
                     }
-
 
                     m_From.NextSkillTime = Core.TickCount + 10000;
                 }
