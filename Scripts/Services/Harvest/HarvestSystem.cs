@@ -100,7 +100,7 @@ namespace Server.Engines.Harvest
             if (!CheckHarvest(from, tool))
                 return false;
 
-			EventSink.InvokeResourceHarvestAttempt(new ResourceHarvestAttemptEventArgs(from, tool, this));
+            EventSink.InvokeResourceHarvestAttempt(new ResourceHarvestAttemptEventArgs(from, tool, this));
             from.Target = new HarvestTarget(tool, this);
             return true;
         }
@@ -126,7 +126,7 @@ namespace Server.Engines.Harvest
                 OnBadHarvestTarget(from, tool, toHarvest);
                 return;
             }
-			
+            
             if (!CheckRange(from, tool, def, map, loc, true))
                 return;
             else if (!CheckResources(from, tool, def, map, loc, true))
@@ -204,7 +204,7 @@ namespace Server.Engines.Harvest
                         }
 
                         bank.Consume(amount, from);
-						EventSink.InvokeResourceHarvestSuccess(new ResourceHarvestSuccessEventArgs(from, tool,item, this));
+                        EventSink.InvokeResourceHarvestSuccess(new ResourceHarvestSuccessEventArgs(from, tool,item, this));
 
                         if (Give(from, item, def.PlaceAtFeetIfFull))
                         {
@@ -220,19 +220,19 @@ namespace Server.Engines.Harvest
 
                         if (bonus != null && bonus.Type != null && skillBase >= bonus.ReqSkill)
                         {
-							if (bonus.RequiredMap == null || bonus.RequiredMap == from.Map)
-							{
-								Item bonusItem = Construct(bonus.Type, from, tool);
+                            if (bonus.RequiredMap == null || bonus.RequiredMap == from.Map)
+                            {
+                                Item bonusItem = Construct(bonus.Type, from, tool);
 
-								if (Give(from, bonusItem, true))	//Bonuses always allow placing at feet, even if pack is full irregrdless of def
-								{
-									bonus.SendSuccessTo(from);
-								}
-								else
-								{
+                                if (Give(from, bonusItem, true))    //Bonuses always allow placing at feet, even if pack is full irregrdless of def
+                                {
+                                    bonus.SendSuccessTo(from);
+                                }
+                                else
+                                {
                                     bonusItem.Delete();
-								}
-							}
+                                }
+                            }
                         }
                     }
 
@@ -589,7 +589,7 @@ namespace Server.Engines.Harvest
                         break;
                     case 2: // wood
                         if (system is Lumberjacking)
-                            def = ((Lumberjacking)system).Definition;
+                            def = ((Lumberjacking)system).Lumber;
                         break;
                     case 3: // grave
                         if (TryHarvestGrave(m))
